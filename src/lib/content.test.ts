@@ -1,4 +1,6 @@
 import {
+  formatDateRange,
+  formatYearMonth,
   getProjectBySlug,
   getProjectsByCategory,
   isPlaceholderHref,
@@ -26,6 +28,11 @@ describe("content utilities", () => {
     expect(isPlaceholderHref("https://example.com/demo")).toBe(true);
     expect(isPlaceholderHref("/resume/mock.pdf")).toBe(true);
     expect(isPlaceholderHref("https://github.com/JuanLord")).toBe(false);
+  });
+
+  it("formats experience dates consistently", () => {
+    expect(formatYearMonth("2025-05")).toBe("May 2025");
+    expect(formatDateRange("2024-09", "2025-04")).toBe("Sep 2024 - Apr 2025");
   });
 
   it("keeps generated mock content internally consistent", () => {

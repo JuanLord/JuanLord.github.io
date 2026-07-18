@@ -10,6 +10,8 @@ The current milestone includes:
 - Hash-based navigation suitable for GitHub Pages.
 - Typed mock content for profile, experience, projects, photography, hiking,
   and music.
+- Complete data-driven Home, About, Experience, Education, Skills, and Contact
+  views.
 - Content integrity, navigation, and component tests.
 
 All professional and creative records are placeholders unless explicitly marked

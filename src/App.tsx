@@ -1,18 +1,12 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/layout/SiteLayout";
-import { HomeFoundationPage } from "./pages/HomeFoundationPage";
+import { AboutPage } from "./pages/AboutPage";
+import { ContactPage } from "./pages/ContactPage";
+import { HomePage } from "./pages/HomePage";
 import { ModulePreviewPage } from "./pages/ModulePreviewPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 
 const modulePages = [
-  {
-    path: "about",
-    index: "01",
-    eyebrow: "Profile",
-    title: "About & Experience",
-    description:
-      "A structured view of experience, education, certifications, and the technical perspective behind the work.",
-  },
   {
     path: "projects",
     index: "02",
@@ -29,14 +23,6 @@ const modulePages = [
     description:
       "Photography, travel, hiking, and music collected as a separate but connected part of the portfolio.",
   },
-  {
-    path: "contact",
-    index: "04",
-    eyebrow: "Start a conversation",
-    title: "Contact",
-    description:
-      "Direct ways to discuss engineering roles, software projects, and thoughtful collaborations.",
-  },
 ] as const;
 
 export function App() {
@@ -44,7 +30,9 @@ export function App() {
     <HashRouter>
       <Routes>
         <Route element={<SiteLayout />}>
-          <Route index element={<HomeFoundationPage />} />
+          <Route index element={<HomePage />} />
+          <Route path="about" element={<AboutPage />} />
+          <Route path="contact" element={<ContactPage />} />
           {modulePages.map((page) => (
             <Route
               key={page.path}

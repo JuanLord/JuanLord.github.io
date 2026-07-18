@@ -29,6 +29,21 @@ export function isPlaceholderHref(href: string): boolean {
   );
 }
 
+export function formatYearMonth(value: string): string {
+  const [year, month] = value.split("-").map(Number);
+  const date = new Date(Date.UTC(year, month - 1, 1));
+
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    year: "numeric",
+    timeZone: "UTC",
+  }).format(date);
+}
+
+export function formatDateRange(startDate: string, endDate: string): string {
+  return `${formatYearMonth(startDate)} - ${formatYearMonth(endDate)}`;
+}
+
 export function validateMockContent(): string[] {
   const issues: string[] = [];
   const projectSlugs = projects.map((project) => project.slug);

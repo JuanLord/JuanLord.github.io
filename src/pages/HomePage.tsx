@@ -1,9 +1,15 @@
-import { ArrowDownRight, ArrowRight, Terminal } from "lucide-react";
+import {
+  ArrowDownRight,
+  ArrowRight,
+  ArrowUpRight,
+  Terminal,
+} from "lucide-react";
 import { motion } from "framer-motion";
-import { profile, projects } from "../content";
+import { experience, profile, projects } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
 import { MockBadge } from "../components/ui/MockBadge";
+import { formatDateRange } from "../lib/content";
 
 const systemProfile = [
   { label: "Focus", value: "Software + physical systems" },
@@ -11,7 +17,7 @@ const systemProfile = [
   { label: "Status", value: profile.availability },
 ];
 
-export function HomeFoundationPage() {
+export function HomePage() {
   return (
     <>
       <section className="hero">
@@ -98,6 +104,55 @@ export function HomeFoundationPage() {
                 </div>
               ))}
           </div>
+        </Container>
+      </section>
+
+      <section className="home-profile" aria-labelledby="home-profile-title">
+        <Container className="home-profile-layout">
+          <div className="home-profile-copy">
+            <p className="section-index">00.1 / Profile</p>
+            <h2 id="home-profile-title">
+              Systems thinking, from prototype to interface.
+            </h2>
+            <p>{profile.bio[0]}</p>
+            <ActionLink icon={ArrowRight} to="/about">
+              About & experience
+            </ActionLink>
+          </div>
+
+          <div className="home-experience">
+            <div className="home-experience-heading">
+              <span>Recent trajectory</span>
+              <span>{String(experience.length).padStart(2, "0")} records</span>
+            </div>
+            {experience.map((item) => (
+              <div className="home-experience-row" key={item.id}>
+                <div>
+                  <h3>{item.role}</h3>
+                  <p>{item.organization}</p>
+                </div>
+                <span>{formatDateRange(item.startDate, item.endDate)}</span>
+              </div>
+            ))}
+          </div>
+        </Container>
+      </section>
+
+      <section className="creative-teaser" aria-labelledby="creative-title">
+        <Container className="creative-teaser-inner">
+          <div>
+            <p className="section-index">00.2 / Off-hours</p>
+            <h2 id="creative-title">
+              Field notes beyond engineering and code.
+            </h2>
+          </div>
+          <p>
+            Photography, trails, travel, and music provide another way to study
+            systems, places, and the details people overlook.
+          </p>
+          <ActionLink icon={ArrowUpRight} to="/creative">
+            Explore creative work
+          </ActionLink>
         </Container>
       </section>
     </>

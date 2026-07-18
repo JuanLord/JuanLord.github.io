@@ -19,6 +19,7 @@ export interface Profile {
   name: string;
   role: string;
   tagline: string;
+  bio: string[];
   location: string;
   availability: string;
   email: ExternalLink;
@@ -26,6 +27,12 @@ export interface Profile {
   linkedin: ExternalLink;
   resume: ExternalLink;
   status: ContentStatus;
+}
+
+export interface SkillGroup {
+  id: string;
+  label: string;
+  skills: string[];
 }
 
 export interface Experience {
