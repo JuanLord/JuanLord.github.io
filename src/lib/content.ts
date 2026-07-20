@@ -1,5 +1,6 @@
 import {
   certifications,
+  creativeProfile,
   education,
   experience,
   hikes,
@@ -82,6 +83,10 @@ export function validateMockContent(): string[] {
     issues.push("Expected profile to be mock.");
   }
 
+  if (creativeProfile.status !== "mock") {
+    issues.push("Expected creative profile to be mock.");
+  }
+
   for (const project of projects) {
     if (!project.media.alt || !project.media.aspectRatio) {
       issues.push(`Project ${project.slug} needs complete media metadata.`);
@@ -95,6 +100,34 @@ export function validateMockContent(): string[] {
       !project.details.outcome
     ) {
       issues.push(`Project ${project.slug} needs complete case-study details.`);
+    }
+  }
+
+  for (const photo of photos) {
+    if (!photo.media.alt || !photo.media.aspectRatio || !photo.media.src) {
+      issues.push(`Photo ${photo.id} needs complete media metadata.`);
+    }
+  }
+
+  for (const hike of hikes) {
+    if (
+      hike.distanceMiles <= 0 ||
+      hike.elevationFeet <= 0 ||
+      !hike.difficulty
+    ) {
+      issues.push(`Hike ${hike.id} needs complete trail details.`);
+    }
+  }
+
+  for (const musicProject of musicProjects) {
+    if (
+      !musicProject.role ||
+      musicProject.tools.length === 0 ||
+      !musicProject.mediaLink.href
+    ) {
+      issues.push(
+        `Music project ${musicProject.id} needs complete production details.`,
+      );
     }
   }
 

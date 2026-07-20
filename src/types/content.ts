@@ -103,6 +103,7 @@ export interface Hike {
   date: string;
   distanceMiles: number;
   elevationFeet: number;
+  difficulty: "Easy" | "Moderate" | "Strenuous";
   summary: string;
   media: MediaAsset;
   status: ContentStatus;
@@ -114,7 +115,18 @@ export interface MusicProject {
   year: number;
   format: "audio" | "video";
   description: string;
+  role: string;
+  tools: string[];
   mediaLink: ExternalLink;
   cover: MediaAsset;
+  status: ContentStatus;
+}
+
+export interface CreativeProfile {
+  eyebrow: string;
+  title: string;
+  introduction: string;
+  reflection: string;
+  heroMedia: MediaAsset;
   status: ContentStatus;
 }

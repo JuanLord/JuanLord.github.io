@@ -137,6 +137,48 @@ describe("App shell", () => {
     ).toHaveAttribute("href", "#/projects");
   });
 
+  it("renders the complete creative field journal from mock content", () => {
+    window.location.hash = "#/creative";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Creative Field Notes",
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Photography & travel" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Trail notes" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Music & moving image" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("img", {
+        name: /Point Reyes coastline/,
+      }),
+    ).toHaveAttribute("src", "/images/creative/point-reyes-spring.webp");
+    expect(
+      screen.getByRole("img", {
+        name: /wet ferns beside a woodland pond/,
+      }),
+    ).toHaveAttribute("src", "/images/creative/spring-lake-ferns.webp");
+    expect(
+      screen.getByRole("navigation", { name: "Creative field index" }),
+    ).toBeInTheDocument();
+
+    const mediaButtons = screen.getAllByRole("button", {
+      name: /Listen|Watch/,
+    });
+    expect(mediaButtons).toHaveLength(2);
+    expect(
+      mediaButtons.every((button) => button.hasAttribute("disabled")),
+    ).toBe(true);
+  });
+
   it("renders the complete professional profile from mock content", () => {
     window.location.hash = "#/about";
     render(<App />);

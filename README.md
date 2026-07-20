@@ -16,10 +16,14 @@ The current milestone includes:
   state.
 - Slug-driven project case studies with mock diagrams, project facts, and
   invalid-route recovery.
+- A nature-forward Creative Field Notes module for generated photography,
+  hiking records, and placeholder music projects.
 - Content integrity, navigation, and component tests.
 
 All professional and creative records are placeholders unless explicitly marked
 otherwise. Replace records in `src/content/` without changing page components.
+Generated creative images live in `public/images/creative/` and are visibly
+labeled as placeholders in the interface.
 
 ## Local Development
 
@@ -43,12 +47,13 @@ content integrity tests, and the production build.
 src/
   components/
     layout/       Shared header, footer, and route layout
+    creative/     Photography, trail, and music presentation components
     projects/     Reusable project cards and mock technical visuals
     ui/           Reusable interface primitives
   content/        Replaceable portfolio records
   lib/            Content queries and validation
   pages/          Route-level components
-  styles/         Global design tokens and responsive styles
+  styles/         Core and creative-theme responsive styles
   test/           Shared test setup
   types/          Content contracts
 ```

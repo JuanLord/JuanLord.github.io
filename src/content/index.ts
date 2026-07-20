@@ -6,4 +6,4 @@ export {
   skills,
 } from "./profile";
 export { projects } from "./projects";
-export { hikes, musicProjects, photos } from "./creative";
+export { creativeProfile, hikes, musicProjects, photos } from "./creative";

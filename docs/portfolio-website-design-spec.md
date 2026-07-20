@@ -259,6 +259,20 @@ UX:
 
 Purpose: show personality, taste, and creative range without distracting from professional goals.
 
+Visual direction:
+
+- Treat the Creative route as a gradual transition from the dark technical
+  interface into a more natural field-journal mode.
+- Keep the shared navigation and portfolio identity for continuity.
+- Use a full-bleed woodland threshold, bookish serif display type, and slower,
+  more editorial spacing.
+- Shift the palette toward deep fern green, spring-leaf green, cool pale
+  foliage, and restrained clay-orange accents.
+- Return to the portfolio's charcoal foundation at the end of the page so the
+  section feels connected rather than like a separate website.
+- Keep generated placeholder photography explicitly labeled until real travel
+  and hobby media is supplied.
+
 Top-level creative page:
 
 - Tabs or sections:
@@ -269,6 +283,8 @@ Top-level creative page:
 Photography & Travel:
 
 - Responsive masonry or adaptive grid.
+- Generated placeholder images with stable aspect ratios for the initial
+  implementation.
 - Image captions:
   - Location.
   - Date.
