@@ -21,6 +21,12 @@ export function getProjectBySlug(slug: string): Project | undefined {
   return projects.find((project) => project.slug === slug);
 }
 
+export function getNextProject(slug: string): Project {
+  const currentIndex = projects.findIndex((project) => project.slug === slug);
+  const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % projects.length;
+  return projects[nextIndex];
+}
+
 export function isPlaceholderHref(href: string): boolean {
   return (
     href.includes("example.com") ||
@@ -79,6 +85,16 @@ export function validateMockContent(): string[] {
   for (const project of projects) {
     if (!project.media.alt || !project.media.aspectRatio) {
       issues.push(`Project ${project.slug} needs complete media metadata.`);
+    }
+
+    if (
+      !project.details.problem ||
+      !project.details.role ||
+      project.details.constraints.length === 0 ||
+      project.details.approach.length === 0 ||
+      !project.details.outcome
+    ) {
+      issues.push(`Project ${project.slug} needs complete case-study details.`);
     }
   }
 

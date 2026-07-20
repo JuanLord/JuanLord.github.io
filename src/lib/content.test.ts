@@ -1,6 +1,7 @@
 import {
   formatDateRange,
   formatYearMonth,
+  getNextProject,
   getProjectBySlug,
   getProjectsByCategory,
   isPlaceholderHref,
@@ -22,6 +23,15 @@ describe("content utilities", () => {
       "Telemetry Workbench",
     );
     expect(getProjectBySlug("missing-project")).toBeUndefined();
+  });
+
+  it("cycles to the next project", () => {
+    expect(getNextProject("autonomous-sorting-system").slug).toBe(
+      "telemetry-workbench",
+    );
+    expect(getNextProject("field-notes-platform").slug).toBe(
+      "autonomous-sorting-system",
+    );
   });
 
   it("identifies links that should not become live controls", () => {

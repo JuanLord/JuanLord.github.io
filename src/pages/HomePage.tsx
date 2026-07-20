@@ -5,6 +5,7 @@ import {
   Terminal,
 } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { experience, profile, projects } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
@@ -93,7 +94,11 @@ export function HomePage() {
               .filter((project) => project.featured)
               .slice(0, 3)
               .map((project) => (
-                <div className="project-signal-row" key={project.slug}>
+                <Link
+                  className="project-signal-row"
+                  key={project.slug}
+                  to={`/projects/${project.slug}`}
+                >
                   <span
                     className={`project-type project-type-${project.category}`}
                   >
@@ -101,7 +106,12 @@ export function HomePage() {
                   </span>
                   <span className="project-signal-title">{project.title}</span>
                   <span className="project-signal-year">{project.year}</span>
-                </div>
+                  <ArrowUpRight
+                    aria-hidden
+                    className="project-signal-arrow"
+                    size={16}
+                  />
+                </Link>
               ))}
           </div>
         </Container>

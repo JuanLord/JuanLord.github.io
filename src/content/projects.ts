@@ -25,6 +25,12 @@ export const projects = [
     details: {
       problem:
         "Manual sorting is inconsistent and difficult to scale in constrained environments.",
+      role: "System architecture, control logic, mechanical prototyping, and validation planning.",
+      constraints: [
+        "Low-cost sensing and actuation",
+        "Repeatable timing under variable loads",
+        "Compact bench-scale footprint",
+      ],
       approach: [
         "Mapped sensor input to deterministic routing decisions.",
         "Prototyped mechanical layouts and actuator timing.",
@@ -64,6 +70,12 @@ export const projects = [
     details: {
       problem:
         "Test results were spread across files and difficult to compare between iterations.",
+      role: "Product definition, interface architecture, data modeling, and frontend implementation.",
+      constraints: [
+        "Mixed test-file formats",
+        "Fast review across repeated runs",
+        "Clear behavior on smaller screens",
+      ],
       approach: [
         "Designed a normalized run and measurement model.",
         "Built filterable views around the review workflow.",
@@ -98,6 +110,12 @@ export const projects = [
     details: {
       problem:
         "Small workshops often lack useful visibility into changing equipment loads.",
+      role: "Embedded architecture, sensing strategy, enclosure design, and test planning.",
+      constraints: [
+        "Limited onboard compute",
+        "Noisy sensor readings",
+        "Serviceable compact enclosure",
+      ],
       approach: [
         "Sampled current and voltage at repeatable intervals.",
         "Evaluated baseline and threshold detection strategies.",
@@ -132,6 +150,12 @@ export const projects = [
     details: {
       problem:
         "Field observations are easy to lose when connectivity is unreliable.",
+      role: "Offline workflow design, local data architecture, interface prototyping, and export strategy.",
+      constraints: [
+        "Intermittent connectivity",
+        "Mobile-first data entry",
+        "Durable local records",
+      ],
       approach: [
         "Designed an offline-first entry workflow.",
         "Modeled locations, media, and observations separately.",

@@ -12,6 +12,10 @@ The current milestone includes:
   and music.
 - Complete data-driven Home, About, Experience, Education, Skills, and Contact
   views.
+- A filterable Engineering and Software project catalog with URL-backed filter
+  state.
+- Slug-driven project case studies with mock diagrams, project facts, and
+  invalid-route recovery.
 - Content integrity, navigation, and component tests.
 
 All professional and creative records are placeholders unless explicitly marked
@@ -39,6 +43,7 @@ content integrity tests, and the production build.
 src/
   components/
     layout/       Shared header, footer, and route layout
+    projects/     Reusable project cards and mock technical visuals
     ui/           Reusable interface primitives
   content/        Replaceable portfolio records
   lib/            Content queries and validation

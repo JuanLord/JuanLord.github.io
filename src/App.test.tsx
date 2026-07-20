@@ -63,9 +63,78 @@ describe("App shell", () => {
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Engineering & Software",
+        name: "Projects",
       }),
     ).toBeInTheDocument();
+  });
+
+  it("filters the project archive and keeps the filter in the URL", async () => {
+    const user = userEvent.setup();
+    window.location.hash = "#/projects";
+    render(<App />);
+
+    expect(screen.getAllByRole("article")).toHaveLength(4);
+
+    await user.click(screen.getByRole("button", { name: "Software" }));
+
+    expect(window.location.hash).toContain("category=software");
+    expect(screen.getAllByRole("article")).toHaveLength(2);
+    expect(
+      screen.getByRole("heading", { name: "Telemetry Workbench" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.queryByRole("heading", { name: "Autonomous Sorting System" }),
+    ).not.toBeInTheDocument();
+  });
+
+  it("renders a complete project case study", () => {
+    window.location.hash = "#/projects/telemetry-workbench";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Telemetry Workbench" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByText(
+        "Product definition, interface architecture, data modeling, and frontend implementation.",
+      ),
+    ).toBeInTheDocument();
+    expect(screen.getByText("Mixed test-file formats")).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", {
+        name: "View Adaptive Energy Monitor case study",
+      }),
+    ).toBeInTheDocument();
+
+    const placeholderLinks = screen.getAllByRole("button", {
+      name: /GitHub|Live demo/,
+    });
+    expect(placeholderLinks).toHaveLength(2);
+    expect(
+      placeholderLinks.every((button) => button.hasAttribute("disabled")),
+    ).toBe(true);
+    expect(
+      placeholderLinks.every(
+        (button) =>
+          button.getAttribute("aria-describedby") ===
+          "project-link-placeholder-note",
+      ),
+    ).toBe(true);
+  });
+
+  it("handles an invalid project slug", () => {
+    window.location.hash = "#/projects/not-a-project";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Case study unavailable.",
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("link", { name: "Back to projects" }),
+    ).toHaveAttribute("href", "#/projects");
   });
 
   it("renders the complete professional profile from mock content", () => {
@@ -87,6 +156,12 @@ describe("App shell", () => {
     expect(resumeButtons).toHaveLength(2);
     expect(
       resumeButtons.every((button) => button.hasAttribute("disabled")),
+    ).toBe(true);
+    expect(
+      resumeButtons.every(
+        (button) =>
+          button.getAttribute("aria-describedby") === "placeholder-action-note",
+      ),
     ).toBe(true);
   });
 

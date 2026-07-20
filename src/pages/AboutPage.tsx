@@ -19,7 +19,10 @@ export function AboutPage() {
       <PageIntro
         actions={
           <>
-            <PlaceholderAction icon={ArrowDownToLine}>
+            <PlaceholderAction
+              describedBy="placeholder-action-note"
+              icon={ArrowDownToLine}
+            >
               Download resume
             </PlaceholderAction>
             <ActionLink icon={ArrowRight} to="/contact">
@@ -161,7 +164,10 @@ export function AboutPage() {
             <h2>Let&apos;s build something considered.</h2>
           </div>
           <div className="profile-cta-actions">
-            <PlaceholderAction icon={ArrowDownToLine}>
+            <PlaceholderAction
+              describedBy="placeholder-action-note"
+              icon={ArrowDownToLine}
+            >
               Download resume
             </PlaceholderAction>
             <ActionLink icon={ArrowRight} to="/contact" variant="primary">

@@ -67,6 +67,8 @@ export interface Certification {
 
 export interface ProjectDetails {
   problem: string;
+  role: string;
+  constraints: string[];
   approach: string[];
   outcome: string;
 }

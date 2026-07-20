@@ -5,16 +5,10 @@ import { ContactPage } from "./pages/ContactPage";
 import { HomePage } from "./pages/HomePage";
 import { ModulePreviewPage } from "./pages/ModulePreviewPage";
 import { NotFoundPage } from "./pages/NotFoundPage";
+import { ProjectDetailPage } from "./pages/ProjectDetailPage";
+import { ProjectsPage } from "./pages/ProjectsPage";
 
 const modulePages = [
-  {
-    path: "projects",
-    index: "02",
-    eyebrow: "Selected work",
-    title: "Engineering & Software",
-    description:
-      "Case studies across physical systems and software, organized around decisions, implementation, and outcomes.",
-  },
   {
     path: "creative",
     index: "03",
@@ -33,6 +27,8 @@ export function App() {
           <Route index element={<HomePage />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="contact" element={<ContactPage />} />
+          <Route path="projects" element={<ProjectsPage />} />
+          <Route path="projects/:slug" element={<ProjectDetailPage />} />
           {modulePages.map((page) => (
             <Route
               key={page.path}
