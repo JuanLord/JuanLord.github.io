@@ -1,6 +1,10 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { getProjectBySlug } from "../../lib/content";
+import {
+  getHikeBySlug,
+  getPhotoTripBySlug,
+  getProjectBySlug,
+} from "../../lib/content";
 
 interface PageMetadata {
   title: string;
@@ -28,7 +32,22 @@ const routeMetadata: Record<string, PageMetadata> = {
   "/creative": {
     title: "Creative Field Notes | Juan Varela",
     description:
-      "Photography, travel, hiking, and music projects collected in Juan Varela's creative field journal.",
+      "Photography, travel, hiking, film, and music collected in Juan Varela's creative field journal.",
+  },
+  "/creative/photography": {
+    title: "Photography Trips | Juan Varela",
+    description:
+      "Travel photography organized into complete trip folders with notes and listening companions.",
+  },
+  "/creative/travel": {
+    title: "Travel & Hiking | Juan Varela",
+    description:
+      "Places visited, hike records, route maps, and connected photography folders.",
+  },
+  "/creative/projects": {
+    title: "Film & Music | Juan Varela",
+    description:
+      "Short films, music projects, field recordings, and production notes.",
   },
   "/projects": {
     title: "Projects | Juan Varela",
@@ -38,6 +57,32 @@ const routeMetadata: Record<string, PageMetadata> = {
 };
 
 function getPageMetadata(pathname: string): PageMetadata {
+  const photoTripMatch = pathname.match(/^\/creative\/photography\/([^/]+)$/);
+
+  if (photoTripMatch) {
+    const trip = getPhotoTripBySlug(photoTripMatch[1]);
+
+    if (trip) {
+      return {
+        title: `${trip.title} | Juan Varela Photography`,
+        description: trip.summary,
+      };
+    }
+  }
+
+  const hikeMatch = pathname.match(/^\/creative\/travel\/hikes\/([^/]+)$/);
+
+  if (hikeMatch) {
+    const hike = getHikeBySlug(hikeMatch[1]);
+
+    if (hike) {
+      return {
+        title: `${hike.trail} | Juan Varela Hiking`,
+        description: hike.summary,
+      };
+    }
+  }
+
   const projectMatch = pathname.match(/^\/projects\/([^/]+)$/);
 
   if (projectMatch) {

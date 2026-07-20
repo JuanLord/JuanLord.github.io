@@ -146,16 +146,15 @@ Suggested routes:
 - `/projects` - Filterable project index
 - `/projects/:slug` - Project detail or case study
 - `/creative` - Hobbies and creative work landing page
-- `/creative/photography` - Photo gallery
-- `/creative/hiking` - Hiking highlights
-- `/creative/music` - Music and media projects
+- `/creative/photography` - Photography trip folders
+- `/creative/photography/:tripSlug` - One 50-100-photo trip collection
+- `/creative/travel` - Places, world map, and hiking index
+- `/creative/travel/hikes/:hikeSlug` - Hike data, route, and Strava embed
+- `/creative/projects` - Short films and music projects
 - `/contact` - Contact form and profile links
 
-For a simpler first release, the Creative route can use tabs instead of subroutes:
-
-- `/creative?tab=photography`
-- `/creative?tab=hiking`
-- `/creative?tab=music`
+Creative content uses dedicated routes because the planned photo collections are
+too large for one tabbed page.
 
 ## 7. Page Specifications
 
@@ -264,43 +263,46 @@ Visual direction:
 - Treat the Creative route as a gradual transition from the dark technical
   interface into a more natural field-journal mode.
 - Keep the shared navigation and portfolio identity for continuity.
-- Use a full-bleed woodland threshold, bookish serif display type, and slower,
-  more editorial spacing.
+- Use a typographic field-journal threshold, bookish serif display type, and
+  slower, more editorial spacing.
 - Shift the palette toward deep fern green, spring-leaf green, cool pale
   foliage, and restrained clay-orange accents.
 - Return to the portfolio's charcoal foundation at the end of the page so the
   section feels connected rather than like a separate website.
-- Keep generated placeholder photography explicitly labeled until real travel
-  and hobby media is supplied.
+- Never use AI-generated imagery. Render explicit empty media states until real,
+  owner-provided photography or artwork is supplied.
 
 Top-level creative page:
 
-- Tabs or sections:
-  - Photography & Travel.
-  - Hiking.
-  - Creative / Music Projects.
+- Routed collections:
+  - Photography trip folders.
+  - Travel and hiking field atlas.
+  - Film and music projects.
 
-Photography & Travel:
+Photography:
 
-- Responsive masonry or adaptive grid.
-- Generated placeholder images with stable aspect ratios for the initial
-  implementation.
-- Image captions:
+- Each trip is a folder containing 50-100 photographs.
+- Each folder has its own route and Spotify listening companion.
+- Responsive contact sheet using real optimized thumbnails.
+- Photo metadata:
   - Location.
   - Date.
-  - Short story.
+  - Alt text.
+  - Caption or short story.
 - Optional lightbox.
 - Optional tags such as city, landscape, architecture, nature.
 
-Hiking:
+Travel and Hiking:
 
-- Trail cards with distance, region, date, difficulty, and short reflection.
-- Optional static map links rather than full map integration for first release.
-- Featured hike section for the most meaningful trip.
+- Place cards connected to photography folders and hike records.
+- Key-free world map rendered from geographic data with linked points.
+- Trail cards with distance, elevation, moving time, region, date, difficulty,
+  and route geometry.
+- Hike detail routes with optional official Strava embeds.
 
-Creative / Music Projects:
+Film and Music Projects:
 
-- Embedded audio or video links.
+- Official YouTube, Vimeo, Spotify, or SoundCloud embeds.
 - Track/project description.
 - Role, instruments, software, or production notes.
 
@@ -409,10 +411,11 @@ Recommended structure:
 ```txt
 portfolio-site/
   public/
-    images/
-      projects/
+    media/
       photography/
-      hiking/
+        trip-slug/
+          full/
+          thumb/
     resume/
       juan-varela-resume.pdf
   src/
@@ -447,29 +450,35 @@ portfolio-site/
         ProjectDetailHeader.tsx
         ProjectCaseStudy.tsx
       creative/
-        CreativeTabs.tsx
-        PhotoGallery.tsx
-        PhotoCard.tsx
-        HikingHighlights.tsx
-        MusicProjectList.tsx
+        CreativeSectionNav.tsx
+        PhotoTripCard.tsx
+        PhotoContactSheet.tsx
+        WorldMap.tsx
+        HikeCard.tsx
+        RoutePreview.tsx
+        EmbedPanel.tsx
       contact/
         ContactLinks.tsx
         ContactForm.tsx
     content/
+      creative/
+        profile.ts
+        photography.ts
+        travel.ts
+        projects.ts
       profile.ts
-      experience.ts
-      education.ts
       projects.ts
-      photos.ts
-      hikes.ts
-      music.ts
-      links.ts
     pages/
       HomePage.tsx
       AboutPage.tsx
       ProjectsPage.tsx
       ProjectDetailPage.tsx
       CreativePage.tsx
+      PhotographyPage.tsx
+      PhotoTripPage.tsx
+      TravelPage.tsx
+      HikeDetailPage.tsx
+      CreativeProjectsPage.tsx
       ContactPage.tsx
       NotFoundPage.tsx
     routes/
@@ -566,21 +575,22 @@ export type Hike = {
 };
 ```
 
-### Music Project
+### Creative Project
 
 ```ts
-export type MusicProject = {
-  id: string;
+export type CreativeProject = {
+  slug: string;
   title: string;
-  year?: number;
+  year: number;
+  kind: "short-film" | "music";
   description: string;
-  role?: string;
-  embedUrl?: string;
-  audioUrl?: string;
-  links?: {
-    youtube?: string;
-    soundcloud?: string;
-    spotify?: string;
+  role: string;
+  tools: string[];
+  embed: {
+    provider: "youtube" | "vimeo" | "spotify" | "soundcloud";
+    title: string;
+    embedUrl?: string;
+    placeholder: boolean;
   };
 };
 ```
@@ -1149,10 +1159,11 @@ jobs:
 
 ### Milestone 4: Creative Work
 
-- Build Creative page.
-- Add photography gallery.
-- Add hiking highlights.
-- Add music project list.
+- Build the routed Creative index.
+- Add 50-100-photo trip folder infrastructure.
+- Add the travel atlas, linked place cards, and hike detail routes.
+- Add short-film and music project collections.
+- Add trusted Spotify and Strava embed placeholders.
 
 ### Milestone 5: Polish and Deploy
 
@@ -1164,7 +1175,10 @@ jobs:
 
 ## 21. Content Replacement Checklist for Juan
 
-None of the following is required to start building. The first implementation will generate and use mock records, placeholder links, a placeholder resume file, and locally stored placeholder media. Before the public portfolio is treated as final, replace the following:
+None of the following is required to start building. The first implementation
+uses mock records, placeholder links, a placeholder resume file, and explicit
+empty media states. It never generates substitute imagery. Before the public
+portfolio is treated as final, replace the following:
 
 - Resume PDF.
 - Professional headshot or alternative personal image.
@@ -1176,9 +1190,11 @@ None of the following is required to start building. The first implementation wi
 - 3 to 6 featured projects.
 - GitHub and live demo links.
 - Project screenshots or diagrams.
-- 8 to 15 photography images.
+- 50 to 100 optimized real photographs for each published trip folder.
 - 3 to 6 hiking entries.
-- Music embeds or links.
+- Spotify folder soundtracks.
+- Sanitized route data and optional public Strava embeds.
+- Short-film and music embeds or links.
 - LinkedIn URL.
 - GitHub URL.
 - Preferred contact email.
@@ -1190,7 +1206,8 @@ The implementation should make placeholder status obvious during development. Be
 - Markdown-based case studies.
 - Searchable project index.
 - Lightbox with keyboard navigation.
-- Interactive map for hikes and travel.
+- GPX/GeoJSON ingestion and route simplification.
+- Automated thumbnail and photo-manifest generation.
 - Optional light theme.
 - Blog or notes section.
 - CMS integration using GitHub-backed content.
@@ -1205,8 +1222,10 @@ The first release is complete when:
 - The site is responsive across mobile, tablet, and desktop.
 - Resume download works.
 - Projects can be filtered and opened as detail pages.
-- Creative section has generated placeholder content with the final structure.
-- Placeholder content is visually complete and does not create broken links or empty states.
+- Creative section has mock records and explicit empty media states in the final
+  routed structure.
+- No AI-generated images are present in the repository or deployed site.
+- Placeholder content is visually complete and does not create broken links.
 - Production deployment is configured for `https://JuanLord.github.io/` with Vite `base: "/"`.
 - Contact links work.
 - Build succeeds without TypeScript errors.

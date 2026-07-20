@@ -165,7 +165,7 @@ describe("App shell", () => {
     ).toHaveAttribute("href", "#/projects");
   });
 
-  it("renders the complete creative field journal from mock content", () => {
+  it("renders the routed creative index without synthetic imagery", () => {
     window.location.hash = "#/creative";
     render(<App />);
 
@@ -176,35 +176,121 @@ describe("App shell", () => {
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: "Photography & travel" }),
+      screen.getByRole("heading", { name: "Photography" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: "Trail notes" }),
+      screen.getByRole("heading", { name: "Travel & hiking" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("heading", { name: "Music & moving image" }),
+      screen.getByRole("heading", { name: "Film & music" }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("img", {
-        name: /Point Reyes coastline/,
-      }),
-    ).toHaveAttribute("src", "/images/creative/point-reyes-spring.webp");
-    expect(
-      screen.getByRole("img", {
-        name: /wet ferns beside a woodland pond/,
-      }),
-    ).toHaveAttribute("src", "/images/creative/spring-lake-ferns.webp");
-    expect(
-      screen.getByRole("navigation", { name: "Creative field index" }),
+      screen.getByRole("navigation", { name: "Creative sections" }),
     ).toBeInTheDocument();
+    expect(document.querySelectorAll("img")).toHaveLength(0);
+  });
 
-    const mediaButtons = screen.getAllByRole("button", {
-      name: /Listen|Watch/,
-    });
-    expect(mediaButtons).toHaveLength(2);
+  it("renders scalable photography folders with Spotify placeholders", () => {
+    window.location.hash = "#/creative/photography";
+    render(<App />);
+
     expect(
-      mediaButtons.every((button) => button.hasAttribute("disabled")),
-    ).toBe(true);
+      screen.getByRole("heading", { level: 1, name: "Trip folders" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Pacific Coast Weekend" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "High Desert in Spring" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Tahoe Alpine Summer" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("status", { name: "Spotify media pending" }),
+    ).toHaveLength(6);
+    expect(document.querySelectorAll("img")).toHaveLength(0);
+  });
+
+  it("renders a photography trip folder and planned contact sheet", () => {
+    window.location.hash = "#/creative/photography/pacific-coast-weekend";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+        name: "Pacific Coast Weekend",
+      }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("72 planned photographs")).toBeInTheDocument();
+    expect(
+      screen.getByRole("img", {
+        name: "Pacific Coast Weekend photo collection pending real images",
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("status", { name: "Spotify media pending" }),
+    ).toBeInTheDocument();
+    expect(document.title).toBe(
+      "Pacific Coast Weekend | Juan Varela Photography",
+    );
+  });
+
+  it("renders the travel map, places, and hike records", async () => {
+    window.location.hash = "#/creative/travel";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Field atlas" }),
+    ).toBeInTheDocument();
+    expect(
+      await screen.findByRole("img", {
+        name: "World map of photography folders and hikes",
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Point Reyes" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Mount Tallac" }),
+    ).toBeInTheDocument();
+  });
+
+  it("renders hike route data and an optional Strava embed state", () => {
+    window.location.hash = "#/creative/travel/hikes/mount-tallac";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Mount Tallac" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("img", { name: "Mount Tallac route preview" }),
+    ).toBeInTheDocument();
+    expect(screen.getByText("3,260 feet")).toBeInTheDocument();
+    expect(
+      screen.getByRole("status", { name: "Strava media pending" }),
+    ).toBeInTheDocument();
+  });
+
+  it("renders separate short-film and music project collections", () => {
+    window.location.hash = "#/creative/projects";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: "Creative projects" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Short films." }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Music projects." }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("heading", { name: "Light Between Trees" }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getByRole("status", { name: "Spotify media pending" }),
+    ).toBeInTheDocument();
   });
 
   it("renders the complete professional profile from mock content", () => {

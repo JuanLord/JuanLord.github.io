@@ -87,38 +87,94 @@ export interface Project {
   status: ContentStatus;
 }
 
-export interface Photo {
+export type Coordinates = [longitude: number, latitude: number];
+
+export type CreativeEmbedProvider =
+  "spotify" | "strava" | "youtube" | "vimeo" | "soundcloud";
+
+export interface CreativeEmbed {
+  provider: CreativeEmbedProvider;
+  title: string;
+  embedUrl?: string;
+  sourceUrl?: string;
+  placeholder: boolean;
+}
+
+export interface TripPhoto {
   id: string;
-  location: string;
-  date: string;
+  src?: string;
+  thumbnailSrc?: string;
+  alt: string;
   caption: string;
-  media: MediaAsset;
+  date: string;
+  width?: number;
+  height?: number;
   status: ContentStatus;
+}
+
+export interface PhotoTrip {
+  slug: string;
+  title: string;
+  location: string;
+  country: string;
+  startDate: string;
+  endDate: string;
+  summary: string;
+  story: string;
+  coordinates: Coordinates;
+  photoCount: number;
+  previewSlots: number;
+  photos: TripPhoto[];
+  soundtrack: CreativeEmbed;
+  status: ContentStatus;
+}
+
+export interface TravelPlace {
+  slug: string;
+  title: string;
+  location: string;
+  country: string;
+  kind: "city" | "nature" | "landmark";
+  coordinates: Coordinates;
+  visited: string;
+  summary: string;
+  relatedPhotoTripSlug?: string;
+  relatedHikeSlug?: string;
+  status: ContentStatus;
+}
+
+export interface HikeRoute {
+  points: Coordinates[];
+  strava: CreativeEmbed;
+  placeholder: boolean;
 }
 
 export interface Hike {
-  id: string;
+  slug: string;
   trail: string;
   location: string;
+  country: string;
   date: string;
+  coordinates: Coordinates;
   distanceMiles: number;
   elevationFeet: number;
+  movingHours: number;
   difficulty: "Easy" | "Moderate" | "Strenuous";
   summary: string;
-  media: MediaAsset;
+  route: HikeRoute;
+  relatedPhotoTripSlug?: string;
   status: ContentStatus;
 }
 
-export interface MusicProject {
-  id: string;
+export interface CreativeProject {
+  slug: string;
   title: string;
   year: number;
-  format: "audio" | "video";
+  kind: "short-film" | "music";
   description: string;
   role: string;
   tools: string[];
-  mediaLink: ExternalLink;
-  cover: MediaAsset;
+  embed: CreativeEmbed;
   status: ContentStatus;
 }
 
@@ -127,6 +183,13 @@ export interface CreativeProfile {
   title: string;
   introduction: string;
   reflection: string;
-  heroMedia: MediaAsset;
   status: ContentStatus;
+}
+
+export interface CreativeMapPoint {
+  id: string;
+  label: string;
+  coordinates: Coordinates;
+  kind: "photography" | "hike";
+  to: string;
 }

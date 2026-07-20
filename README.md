@@ -16,8 +16,10 @@ The current milestone includes:
   state.
 - Slug-driven project case studies with mock diagrams, project facts, and
   invalid-route recovery.
-- A nature-forward Creative Field Notes module for generated photography,
-  hiking records, and placeholder music projects.
+- A nature-forward Creative Field Notes module for real photography, hiking
+  records, and placeholder music projects.
+- Separate Creative routes for trip folders, a world travel atlas, hike
+  details, short films, and music projects.
 - Route-aware document titles, social sharing metadata, and search discovery
   files.
 - A quality-gated GitHub Pages deployment workflow.
@@ -25,8 +27,8 @@ The current milestone includes:
 
 All professional and creative records are placeholders unless explicitly marked
 otherwise. Replace records in `src/content/` without changing page components.
-Generated creative images live in `public/images/creative/` and are visibly
-labeled as placeholders in the interface.
+The project does not use AI-generated images. Empty media states remain visible
+until real, user-owned photography or artwork is added.
 
 ## Local Development
 
@@ -53,16 +55,21 @@ src/
     creative/     Photography, trail, and music presentation components
     projects/     Reusable project cards and mock technical visuals
     ui/           Reusable interface primitives
-  content/        Replaceable portfolio records
+  content/        Replaceable portfolio records, split by creative collection
   lib/            Content queries and validation
   pages/          Route-level components
   styles/         Core and creative-theme responsive styles
   test/           Shared test setup
   types/          Content contracts
 public/
-  images/         Generated placeholder photography
-  og.png          Social sharing preview
+  media/          Real, optimized portfolio media added by the owner
+docs/
+  creative-content-guide.md
+                  Storage, editing, embeds, maps, and privacy workflow
 ```
+
+See [`docs/creative-content-guide.md`](docs/creative-content-guide.md) before
+adding photography, Spotify or Strava embeds, route files, film, or music.
 
 ## GitHub Pages Target
 

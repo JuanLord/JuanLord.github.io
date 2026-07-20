@@ -1,15 +1,17 @@
 import {
-  certifications,
-  creativeProfile,
-  education,
-  experience,
+  creativeProjects,
   hikes,
-  musicProjects,
-  photos,
-  profile,
+  photoTrips,
+  places,
   projects,
 } from "../content";
-import type { Project, ProjectCategory } from "../types/content";
+import type {
+  Coordinates,
+  Hike,
+  PhotoTrip,
+  Project,
+  ProjectCategory,
+} from "../types/content";
 
 export function getProjectsByCategory(
   category: ProjectCategory | "all",
@@ -26,6 +28,14 @@ export function getNextProject(slug: string): Project {
   const currentIndex = projects.findIndex((project) => project.slug === slug);
   const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % projects.length;
   return projects[nextIndex];
+}
+
+export function getPhotoTripBySlug(slug: string): PhotoTrip | undefined {
+  return photoTrips.find((trip) => trip.slug === slug);
+}
+
+export function getHikeBySlug(slug: string): Hike | undefined {
+  return hikes.find((hike) => hike.slug === slug);
 }
 
 export function isPlaceholderHref(href: string): boolean {
@@ -48,43 +58,32 @@ export function formatYearMonth(value: string): string {
 }
 
 export function formatDateRange(startDate: string, endDate: string): string {
+  if (startDate === endDate) return formatYearMonth(startDate);
   return `${formatYearMonth(startDate)} - ${formatYearMonth(endDate)}`;
 }
 
-export function validateMockContent(): string[] {
+function hasValidCoordinates([longitude, latitude]: Coordinates): boolean {
+  return (
+    longitude >= -180 && longitude <= 180 && latitude >= -90 && latitude <= 90
+  );
+}
+
+export function validateContent(): string[] {
   const issues: string[] = [];
   const projectSlugs = projects.map((project) => project.slug);
+  const photoTripSlugs = photoTrips.map((trip) => trip.slug);
+  const hikeSlugs = hikes.map((hike) => hike.slug);
 
   if (new Set(projectSlugs).size !== projectSlugs.length) {
     issues.push("Project slugs must be unique.");
   }
 
-  const collections = [
-    experience,
-    education,
-    certifications,
-    projects,
-    photos,
-    hikes,
-    musicProjects,
-  ];
-
-  for (const collection of collections) {
-    for (const item of collection) {
-      if (item.status !== "mock") {
-        issues.push(
-          `Expected ${"id" in item ? item.id : item.slug} to be mock.`,
-        );
-      }
-    }
+  if (new Set(photoTripSlugs).size !== photoTripSlugs.length) {
+    issues.push("Photo trip slugs must be unique.");
   }
 
-  if (profile.status !== "mock") {
-    issues.push("Expected profile to be mock.");
-  }
-
-  if (creativeProfile.status !== "mock") {
-    issues.push("Expected creative profile to be mock.");
+  if (new Set(hikeSlugs).size !== hikeSlugs.length) {
+    issues.push("Hike slugs must be unique.");
   }
 
   for (const project of projects) {
@@ -103,9 +102,31 @@ export function validateMockContent(): string[] {
     }
   }
 
-  for (const photo of photos) {
-    if (!photo.media.alt || !photo.media.aspectRatio || !photo.media.src) {
-      issues.push(`Photo ${photo.id} needs complete media metadata.`);
+  for (const trip of photoTrips) {
+    if (trip.photoCount < 50 || trip.photoCount > 100) {
+      issues.push(`Photo trip ${trip.slug} must plan for 50-100 photos.`);
+    }
+
+    if (trip.previewSlots < 1 || trip.previewSlots > 12) {
+      issues.push(`Photo trip ${trip.slug} needs 1-12 preview slots.`);
+    }
+
+    if (trip.soundtrack.provider !== "spotify") {
+      issues.push(`Photo trip ${trip.slug} needs a Spotify soundtrack.`);
+    }
+
+    if (!hasValidCoordinates(trip.coordinates)) {
+      issues.push(`Photo trip ${trip.slug} has invalid coordinates.`);
+    }
+
+    if (trip.photos.length > trip.photoCount) {
+      issues.push(`Photo trip ${trip.slug} exceeds its planned photo count.`);
+    }
+
+    for (const photo of trip.photos) {
+      if (!photo.src || !photo.alt || !photo.caption) {
+        issues.push(`Photo ${photo.id} needs a real source and metadata.`);
+      }
     }
   }
 
@@ -113,20 +134,43 @@ export function validateMockContent(): string[] {
     if (
       hike.distanceMiles <= 0 ||
       hike.elevationFeet <= 0 ||
-      !hike.difficulty
+      !hike.difficulty ||
+      hike.movingHours <= 0 ||
+      hike.route.points.length < 2
     ) {
-      issues.push(`Hike ${hike.id} needs complete trail details.`);
+      issues.push(`Hike ${hike.slug} needs complete trail details.`);
+    }
+
+    if (!hasValidCoordinates(hike.coordinates)) {
+      issues.push(`Hike ${hike.slug} has invalid coordinates.`);
     }
   }
 
-  for (const musicProject of musicProjects) {
+  for (const place of places) {
+    if (!hasValidCoordinates(place.coordinates)) {
+      issues.push(`Place ${place.slug} has invalid coordinates.`);
+    }
+
     if (
-      !musicProject.role ||
-      musicProject.tools.length === 0 ||
-      !musicProject.mediaLink.href
+      place.relatedPhotoTripSlug &&
+      !photoTripSlugs.includes(place.relatedPhotoTripSlug)
+    ) {
+      issues.push(`Place ${place.slug} links to a missing photo trip.`);
+    }
+
+    if (place.relatedHikeSlug && !hikeSlugs.includes(place.relatedHikeSlug)) {
+      issues.push(`Place ${place.slug} links to a missing hike.`);
+    }
+  }
+
+  for (const creativeProject of creativeProjects) {
+    if (
+      !creativeProject.role ||
+      creativeProject.tools.length === 0 ||
+      !creativeProject.embed.title
     ) {
       issues.push(
-        `Music project ${musicProject.id} needs complete production details.`,
+        `Creative project ${creativeProject.slug} needs complete production details.`,
       );
     }
   }

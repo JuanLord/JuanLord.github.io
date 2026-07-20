@@ -1,11 +1,13 @@
 import {
   formatDateRange,
   formatYearMonth,
+  getHikeBySlug,
   getNextProject,
+  getPhotoTripBySlug,
   getProjectBySlug,
   getProjectsByCategory,
   isPlaceholderHref,
-  validateMockContent,
+  validateContent,
 } from "./content";
 
 describe("content utilities", () => {
@@ -34,6 +36,13 @@ describe("content utilities", () => {
     );
   });
 
+  it("looks up creative trip and hike records by slug", () => {
+    expect(getPhotoTripBySlug("pacific-coast-weekend")?.photoCount).toBe(72);
+    expect(getPhotoTripBySlug("missing-trip")).toBeUndefined();
+    expect(getHikeBySlug("mount-tallac")?.distanceMiles).toBe(10.2);
+    expect(getHikeBySlug("missing-hike")).toBeUndefined();
+  });
+
   it("identifies links that should not become live controls", () => {
     expect(isPlaceholderHref("https://example.com/demo")).toBe(true);
     expect(isPlaceholderHref("/resume/mock.pdf")).toBe(true);
@@ -45,7 +54,7 @@ describe("content utilities", () => {
     expect(formatDateRange("2024-09", "2025-04")).toBe("Sep 2024 - Apr 2025");
   });
 
-  it("keeps generated mock content internally consistent", () => {
-    expect(validateMockContent()).toEqual([]);
+  it("keeps mock content internally consistent", () => {
+    expect(validateContent()).toEqual([]);
   });
 });
