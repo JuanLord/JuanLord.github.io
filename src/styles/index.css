@@ -108,11 +108,13 @@ button {
   z-index: 100;
   top: 0.75rem;
   left: 0.75rem;
+  border: 0;
   padding: 0.75rem 1rem;
   color: #080b10;
   background: #22d3ee;
   font-family: "JetBrains Mono", monospace;
   font-size: 0.75rem;
+  cursor: pointer;
   transform: translateY(-180%);
   transition: transform 160ms ease;
 }

@@ -68,6 +68,34 @@ describe("App shell", () => {
     ).toBeInTheDocument();
   });
 
+  it("skips to the main content without changing the hash route", async () => {
+    const user = userEvent.setup();
+    window.location.hash = "#/about";
+    render(<App />);
+
+    await user.click(screen.getByRole("button", { name: "Skip to content" }));
+
+    expect(window.location.hash).toBe("#/about");
+    expect(screen.getByRole("main")).toHaveFocus();
+  });
+
+  it("updates document metadata for routes and project case studies", async () => {
+    const user = userEvent.setup();
+    render(<App />);
+
+    expect(document.title).toBe("Juan Varela | Developer & Engineer");
+
+    await user.click(screen.getByRole("link", { name: "View projects" }));
+    expect(document.title).toBe("Projects | Juan Varela");
+
+    await user.click(
+      screen.getByRole("link", {
+        name: "View Telemetry Workbench case study",
+      }),
+    );
+    expect(document.title).toBe("Telemetry Workbench | Juan Varela");
+  });
+
   it("filters the project archive and keeps the filter in the URL", async () => {
     const user = userEvent.setup();
     window.location.hash = "#/projects";

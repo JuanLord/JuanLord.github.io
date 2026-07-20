@@ -1,0 +1,17 @@
+{
+  "name": "Juan Varela Portfolio",
+  "short_name": "JV Portfolio",
+  "description": "Engineering, software, and creative field notes by Juan Varela.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080b10",
+  "theme_color": "#080b10",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

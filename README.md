@@ -18,6 +18,9 @@ The current milestone includes:
   invalid-route recovery.
 - A nature-forward Creative Field Notes module for generated photography,
   hiking records, and placeholder music projects.
+- Route-aware document titles, social sharing metadata, and search discovery
+  files.
+- A quality-gated GitHub Pages deployment workflow.
 - Content integrity, navigation, and component tests.
 
 All professional and creative records are placeholders unless explicitly marked
@@ -46,7 +49,7 @@ content integrity tests, and the production build.
 ```text
 src/
   components/
-    layout/       Shared header, footer, and route layout
+    layout/       Shared shell, navigation, and document metadata
     creative/     Photography, trail, and music presentation components
     projects/     Reusable project cards and mock technical visuals
     ui/           Reusable interface primitives
@@ -56,6 +59,9 @@ src/
   styles/         Core and creative-theme responsive styles
   test/           Shared test setup
   types/          Content contracts
+public/
+  images/         Generated placeholder photography
+  og.png          Social sharing preview
 ```
 
 ## GitHub Pages Target
@@ -67,5 +73,10 @@ The project is configured for the root user site:
 - Vite base: `/`
 - Router: `HashRouter`
 
-The deployment workflow will be added in the deployment milestone after the
-portfolio pages and production content checks are complete.
+Pushes to `main` trigger `.github/workflows/deploy-pages.yml`. The workflow
+installs the locked dependencies, runs `npm run check`, uploads `dist/`, and
+deploys the verified artifact.
+
+For the first deployment, open the repository's **Settings > Pages** screen and
+set **Build and deployment > Source** to **GitHub Actions**. Later pushes deploy
+automatically when the quality checks pass.
