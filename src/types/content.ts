@@ -104,6 +104,8 @@ export interface TripPhoto {
   id: string;
   src?: string;
   thumbnailSrc?: string;
+  storageKey?: string;
+  thumbnailStorageKey?: string;
   alt: string;
   caption: string;
   date: string;

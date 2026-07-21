@@ -37,6 +37,19 @@ npm install
 npm run dev
 ```
 
+### Portfolio Studio
+
+Run the local creative content manager at `http://127.0.0.1:4174/`:
+
+```bash
+npm run studio
+```
+
+The Studio manages photo trips, R2 uploads, places, GPX hike routes, Spotify and
+Strava links, and film or music records. See
+[`docs/portfolio-studio.md`](docs/portfolio-studio.md) for R2 setup and the
+publishing workflow.
+
 ## Quality Checks
 
 ```bash
@@ -66,6 +79,8 @@ public/
 docs/
   creative-content-guide.md
                   Storage, editing, embeds, maps, and privacy workflow
+  portfolio-studio.md
+                  Local editor, Cloudflare R2 setup, and publishing workflow
 ```
 
 See [`docs/creative-content-guide.md`](docs/creative-content-guide.md) before
