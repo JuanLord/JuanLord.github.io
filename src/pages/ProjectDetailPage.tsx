@@ -2,7 +2,7 @@ import { ArrowLeft, ArrowRight, Braces, ExternalLink } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { ProjectVisual } from "../components/projects/ProjectVisual";
 import { Container } from "../components/ui/Container";
-import { MockBadge } from "../components/ui/MockBadge";
+import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { PlaceholderAction } from "../components/ui/PlaceholderAction";
 import { getNextProject, getProjectBySlug } from "../lib/content";
 
@@ -16,7 +16,10 @@ export function ProjectDetailPage() {
         <Container className="not-found">
           <p className="section-index">Error / Project not found</p>
           <h1>Case study unavailable.</h1>
-          <p>The requested project does not exist in the mock content index.</p>
+          <p>
+            The requested project does not exist in the placeholder content
+            index.
+          </p>
           <Link className="action-link action-link-primary" to="/projects">
             <ArrowLeft aria-hidden size={18} />
             Back to projects
@@ -49,7 +52,7 @@ export function ProjectDetailPage() {
             <div className="project-detail-summary">
               <p>{project.summary}</p>
               <div className="project-detail-status">
-                <MockBadge />
+                <PlaceholderBadge />
                 <span>{project.year}</span>
               </div>
             </div>
@@ -83,7 +86,7 @@ export function ProjectDetailPage() {
               </div>
               <div>
                 <dt>Status</dt>
-                <dd>Mock case study</dd>
+                <dd>Placeholder case study</dd>
               </div>
             </dl>
 

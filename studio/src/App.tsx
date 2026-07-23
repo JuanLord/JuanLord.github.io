@@ -2,6 +2,7 @@ import {
   Check,
   CircleAlert,
   CloudUpload,
+  Code2,
   Film,
   Footprints,
   Images,
@@ -10,11 +11,14 @@ import {
   MapPin,
   Save,
   Settings,
+  UserRound,
 } from "lucide-react";
 import { useEffect, useMemo, useState } from "react";
 import { HikesEditor } from "./editors/HikesEditor";
+import { DeveloperProjectsEditor } from "./editors/DeveloperProjectsEditor";
 import { PhotographyEditor } from "./editors/PhotographyEditor";
 import { PlacesEditor } from "./editors/PlacesEditor";
+import { ProfessionalEditor } from "./editors/ProfessionalEditor";
 import { ProjectsEditor } from "./editors/ProjectsEditor";
 import {
   loadStudio,
@@ -29,6 +33,12 @@ import type { StorageStatus, StudioDocument, StudioSection } from "./types";
 
 const navigation = [
   { id: "overview" as const, label: "Overview", icon: LayoutDashboard },
+  { id: "professional" as const, label: "Profile & Resume", icon: UserRound },
+  {
+    id: "developer-projects" as const,
+    label: "Professional Projects",
+    icon: Code2,
+  },
   { id: "photography" as const, label: "Photography", icon: Images },
   { id: "places" as const, label: "Places", icon: MapPin },
   { id: "hikes" as const, label: "Hikes", icon: Footprints },
@@ -55,9 +65,23 @@ export function App() {
     loadStudio()
       .then((bootstrap) => {
         if (!active) return;
-        setDocument(bootstrap.document || createSeedDocument());
+        const nextDocument = createSeedDocument(
+          bootstrap.document || undefined,
+        );
+        setDocument(nextDocument);
         setStorage(bootstrap.storage);
         setSaveState(bootstrap.document ? "saved" : "idle");
+        if (bootstrap.document) {
+          void saveStudioDocument(nextDocument).catch((error) => {
+            if (!active) return;
+            setSaveState("error");
+            setMessage(
+              error instanceof Error
+                ? error.message
+                : "Draft migration failed.",
+            );
+          });
+        }
       })
       .catch((error) => {
         if (!active) return;
@@ -76,6 +100,11 @@ export function App() {
   );
   const errorCount = issues.filter((issue) => issue.level === "error").length;
   const isDirty = revision !== savedRevision;
+
+  const navigateToSection = (nextSection: StudioSection) => {
+    setSection(nextSection);
+    window.scrollTo({ top: 0, behavior: "auto" });
+  };
 
   useEffect(() => {
     if (!document || !isDirty) return;
@@ -158,7 +187,7 @@ export function App() {
               key={id}
               type="button"
               className={section === id ? "studio-nav active" : "studio-nav"}
-              onClick={() => setSection(id)}
+              onClick={() => navigateToSection(id)}
               aria-current={section === id ? "page" : undefined}
             >
               <Icon size={17} aria-hidden="true" />
@@ -245,13 +274,22 @@ export function App() {
               document={document}
               issues={issues}
               storage={storage}
-              onNavigate={setSection}
+              onNavigate={navigateToSection}
             />
           ) : null}
           {section === "photography" ? (
             <PhotographyEditor
               document={document}
               storage={storage}
+              onChange={changeDocument}
+            />
+          ) : null}
+          {section === "professional" ? (
+            <ProfessionalEditor document={document} onChange={changeDocument} />
+          ) : null}
+          {section === "developer-projects" ? (
+            <DeveloperProjectsEditor
+              document={document}
               onChange={changeDocument}
             />
           ) : null}
@@ -264,7 +302,9 @@ export function App() {
           {section === "projects" ? (
             <ProjectsEditor document={document} onChange={changeDocument} />
           ) : null}
-          {section === "settings" ? <SettingsPage storage={storage} /> : null}
+          {section === "settings" ? (
+            <SettingsPage storage={storage} onStorageChange={setStorage} />
+          ) : null}
         </main>
       </div>
     </div>

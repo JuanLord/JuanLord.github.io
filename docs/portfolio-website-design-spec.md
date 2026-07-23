@@ -4,7 +4,7 @@
 
 This portfolio should present Juan Varela as a capable, modern, multidimensional professional. The site needs to work for employers and collaborators first: it should make professional background, technical ability, projects, resume access, and contact paths immediately clear. It should also make space for personality through photography, travel, hiking, music, and creative work.
 
-The first release should feel polished, fast, and complete using generated mock content and placeholder media. It should be easy to replace that content later by editing structured content files rather than rewriting components.
+The first release should feel polished, fast, and complete using generated placeholder content and placeholder media. It should be easy to replace that content later by editing structured content files rather than rewriting components.
 
 ## 2. Primary Goals
 
@@ -74,7 +74,7 @@ May care about:
 - Local TypeScript content files in `src/content/`.
 - Images stored in `public/images/` for simple GitHub Pages paths.
 - Resume PDF stored in `public/resume/juan-varela-resume.pdf`.
-- Begin with clearly fictional but realistic mock experience, education, certifications, projects, photography, hikes, and music entries.
+- Begin with clearly fictional but realistic placeholder experience, education, certifications, projects, photography, hikes, and music entries.
 - Use local placeholder images with stable dimensions so real media can be swapped in without layout changes.
 - Keep all replaceable copy, links, dates, statistics, and media paths out of presentation components.
 - Mark placeholder downloads and external links in the content model so the UI does not lead visitors to broken destinations.
@@ -1176,7 +1176,7 @@ jobs:
 ## 21. Content Replacement Checklist for Juan
 
 None of the following is required to start building. The first implementation
-uses mock records, placeholder links, a placeholder resume file, and explicit
+uses placeholder records, placeholder links, a placeholder resume file, and explicit
 empty media states. It never generates substitute imagery. Before the public
 portfolio is treated as final, replace the following:
 
@@ -1222,7 +1222,7 @@ The first release is complete when:
 - The site is responsive across mobile, tablet, and desktop.
 - Resume download works.
 - Projects can be filtered and opened as detail pages.
-- Creative section has mock records and explicit empty media states in the final
+- Creative section has placeholder records and explicit empty media states in the final
   routed structure.
 - No AI-generated images are present in the repository or deployed site.
 - Placeholder content is visually complete and does not create broken links.

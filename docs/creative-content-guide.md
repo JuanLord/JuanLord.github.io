@@ -37,9 +37,10 @@ src/content/creative/
 These are typed TypeScript records. A malformed field, unsupported provider, or
 missing required property fails `npm run typecheck` before deployment.
 
-The website is static. There is no private admin dashboard or database. Editing
-content means changing one of these files, running `npm run check`, and pushing
-to `main`. The GitHub Pages workflow publishes the verified build.
+The website remains static and has no production database. Portfolio Studio is
+a private local editor that writes these modules before they are committed.
+Direct file editing is also supported. Run `npm run check` before pushing to
+`main`; the GitHub Pages workflow publishes the verified build.
 
 ## Photography Storage
 
@@ -53,7 +54,8 @@ Each `PhotoTrip` plans for 50-100 photos and includes:
 - An optional list of real photos.
 - One Spotify soundtrack embed.
 
-For a small initial archive, optimized files can live in:
+Optimized web files are stored in Cloudflare R2 by Portfolio Studio. The
+repository can still hold a very small manually managed archive in:
 
 ```text
 public/media/photography/<trip-slug>/
@@ -98,9 +100,9 @@ storage service and place the resulting HTTPS URLs in `src` and
 reasonable candidates; the final choice can wait until the first real photo
 batch establishes actual storage needs.
 
-Before importing several hundred files, add a local media-ingestion script that
-creates thumbnails, strips metadata, reports file sizes, and generates the
-typed photo manifest. That avoids hand-editing 50-100 records for every trip.
+Portfolio Studio performs local ingestion: it creates display and thumbnail
+WebP derivatives, strips metadata, uploads them to R2, and updates the typed
+photo manifest.
 
 ## Spotify Soundtracks
 
@@ -129,7 +131,7 @@ Place and hike records live in `travel.ts`.
 - The inline route preview is rendered from the stored coordinates.
 
 For a real hike, export a GPX or GeoJSON route, simplify it for the web, and
-replace the mock `route.points`. Remove the beginning or end of a route when it
+replace the placeholder `route.points`. Remove the beginning or end of a route when it
 could reveal a home address or another sensitive location.
 
 Strava supports embeds for public activities and public routes. Use Strava's
@@ -159,15 +161,14 @@ provider, and `placeholder` is `false`.
 
 1. Select the first real trip and decide whether local GitHub storage is still
    sufficient after optimization.
-2. Build the photo-ingestion and manifest-generation script.
+2. Configure the bucket-scoped R2 token and a public media origin.
 3. Supply owner-written captions, alt text, stories, and trip soundtracks.
 4. Export sanitized hike routes and decide which Strava activities can be
    public.
 5. Supply published film and music embed URLs.
-6. Replace mock records incrementally and review privacy before each push.
+6. Replace placeholder records incrementally and review privacy before each push.
 7. Create a social preview from owner-provided photography or original artwork
    if an image-based link preview is desired later.
 
-No backend is required for the current editing workflow. A lightweight CMS can
-be added later if browser-based editing becomes more important than the
-type-checked Git workflow.
+No hosted backend is required. Portfolio Studio runs only on the local machine,
+while GitHub Pages serves the static site and R2 serves optimized media.

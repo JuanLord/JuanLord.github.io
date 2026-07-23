@@ -126,7 +126,7 @@ export function StatusField({
       value={value}
       onChange={onChange}
       options={[
-        { value: "mock", label: "Mock" },
+        { value: "placeholder", label: "Placeholder" },
         { value: "draft", label: "Draft" },
         { value: "published", label: "Published" },
       ]}

@@ -18,7 +18,7 @@ export function PhotoTripPage() {
           backLabel="Photography folders"
           backTo="/creative/photography"
           eyebrow="Photography / Missing folder"
-          introduction="The requested trip folder is not part of the current mock archive."
+          introduction="The requested trip folder is not part of the current placeholder archive."
           title="Photo folder unavailable."
         />
         <CreativeSectionNav />

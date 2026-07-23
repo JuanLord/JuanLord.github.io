@@ -17,7 +17,7 @@ export function SiteFooter() {
         <div>
           <p className="footer-name">{profile.name}</p>
           <p className="footer-note">
-            Built with care. Content marked as mock will be replaced.
+            Built with care. Content marked as placeholder will be replaced.
           </p>
         </div>
 

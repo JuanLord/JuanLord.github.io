@@ -19,7 +19,7 @@ const creativeChapters = [
       "Trip folders built for complete 50-100 image collections, captions, stories, and one listening companion.",
     to: "/creative/photography",
     icon: Camera,
-    detail: `${photoTrips.length} mock folders`,
+    detail: `${photoTrips.length} placeholder folders`,
   },
   {
     index: "02",
@@ -37,7 +37,7 @@ const creativeChapters = [
       "Short films, sound studies, and music projects with room for their original media players.",
     to: "/creative/projects",
     icon: Film,
-    detail: `${creativeProjects.length} mock projects`,
+    detail: `${creativeProjects.length} placeholder projects`,
   },
 ] as const;
 
@@ -85,7 +85,7 @@ export function CreativePage() {
         <Container className="creative-reflection-inner">
           <Leaf aria-hidden size={28} strokeWidth={1.25} />
           <p>{creativeProfile.reflection}</p>
-          <span>Mock field journal / real media only</span>
+          <span>Placeholder field journal / real media only</span>
         </Container>
       </section>
     </div>

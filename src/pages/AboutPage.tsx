@@ -8,10 +8,34 @@ import {
 } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
-import { MockBadge } from "../components/ui/MockBadge";
+import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { PageIntro } from "../components/ui/PageIntro";
 import { PlaceholderAction } from "../components/ui/PlaceholderAction";
 import { formatDateRange } from "../lib/content";
+
+function ResumeAction() {
+  if (profile.resume.placeholder) {
+    return (
+      <PlaceholderAction
+        describedBy="placeholder-action-note"
+        icon={ArrowDownToLine}
+      >
+        Download resume
+      </PlaceholderAction>
+    );
+  }
+
+  return (
+    <a
+      className="action-link action-link-secondary"
+      href={profile.resume.href}
+      download
+    >
+      Download resume
+      <ArrowDownToLine aria-hidden size={18} strokeWidth={1.8} />
+    </a>
+  );
+}
 
 export function AboutPage() {
   return (
@@ -19,12 +43,7 @@ export function AboutPage() {
       <PageIntro
         actions={
           <>
-            <PlaceholderAction
-              describedBy="placeholder-action-note"
-              icon={ArrowDownToLine}
-            >
-              Download resume
-            </PlaceholderAction>
+            <ResumeAction />
             <ActionLink icon={ArrowRight} to="/contact">
               Contact
             </ActionLink>
@@ -45,10 +64,11 @@ export function AboutPage() {
           <span aria-hidden>·</span>
           {profile.availability}
         </div>
-        <p className="placeholder-action-note" id="placeholder-action-note">
-          Resume and professional details are currently represented by mock
-          content.
-        </p>
+        {profile.resume.placeholder ? (
+          <p className="placeholder-action-note" id="placeholder-action-note">
+            A public resume will be available here after it is uploaded.
+          </p>
+        ) : null}
       </PageIntro>
 
       <section className="profile-section" aria-labelledby="experience-title">
@@ -56,7 +76,7 @@ export function AboutPage() {
           <div className="profile-section-heading">
             <p className="section-index">01.1 / Timeline</p>
             <h2 id="experience-title">Experience</h2>
-            <MockBadge />
+            <PlaceholderBadge />
           </div>
 
           <ol className="experience-list">
@@ -164,12 +184,7 @@ export function AboutPage() {
             <h2>Let&apos;s build something considered.</h2>
           </div>
           <div className="profile-cta-actions">
-            <PlaceholderAction
-              describedBy="placeholder-action-note"
-              icon={ArrowDownToLine}
-            >
-              Download resume
-            </PlaceholderAction>
+            <ResumeAction />
             <ActionLink icon={ArrowRight} to="/contact" variant="primary">
               Start a conversation
             </ActionLink>

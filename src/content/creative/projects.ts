@@ -15,7 +15,7 @@ export const creativeProjects = [
       title: "Light Between Trees short film",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "signal-path",
@@ -31,7 +31,7 @@ export const creativeProjects = [
       title: "Signal Path music project",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "edges-of-water",
@@ -39,7 +39,7 @@ export const creativeProjects = [
     year: 2024,
     kind: "short-film",
     description:
-      "A mock short-film record focused on shoreline movement, weather, and patient observation.",
+      "A placeholder short-film record focused on shoreline movement, weather, and patient observation.",
     role: "Direction, camera, edit, and sound",
     tools: ["DaVinci Resolve", "Mirrorless camera", "Field recorder"],
     embed: {
@@ -47,6 +47,6 @@ export const creativeProjects = [
       title: "Edges of Water short film",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies CreativeProject[];

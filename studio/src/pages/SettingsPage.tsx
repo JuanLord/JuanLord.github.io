@@ -3,10 +3,44 @@ import {
   CircleAlert,
   ExternalLink,
   FolderLock,
+  RefreshCw,
+  ShieldCheck,
 } from "lucide-react";
+import { useState } from "react";
+import { refreshStorageUsage } from "../lib/studio";
 import type { StorageStatus } from "../types";
 
-export function SettingsPage({ storage }: { storage: StorageStatus }) {
+interface SettingsPageProps {
+  storage: StorageStatus;
+  onStorageChange: (storage: StorageStatus) => void;
+}
+
+function formatBytes(bytes: number): string {
+  if (bytes < 1024 ** 2) return `${(bytes / 1024).toFixed(1)} KB`;
+  if (bytes < 1024 ** 3) return `${(bytes / 1024 ** 2).toFixed(1)} MB`;
+  return `${(bytes / 1024 ** 3).toFixed(2)} GB`;
+}
+
+export function SettingsPage({ storage, onStorageChange }: SettingsPageProps) {
+  const [refreshing, setRefreshing] = useState(false);
+  const [message, setMessage] = useState("");
+  const usage = storage.usage;
+
+  const refreshUsage = async () => {
+    setRefreshing(true);
+    setMessage("");
+    try {
+      const nextUsage = await refreshStorageUsage();
+      onStorageChange({ ...storage, usage: nextUsage });
+    } catch (error) {
+      setMessage(
+        error instanceof Error ? error.message : "Usage refresh failed.",
+      );
+    } finally {
+      setRefreshing(false);
+    }
+  };
+
   return (
     <section className="settings-page">
       <header className="page-heading">
@@ -95,6 +129,89 @@ export function SettingsPage({ storage }: { storage: StorageStatus }) {
           Cloudflare R2 setup
           <ExternalLink size={15} aria-hidden="true" />
         </a>
+      </section>
+
+      <section className="settings-section">
+        <div className="section-heading">
+          <div>
+            <p>Local guardrails</p>
+            <h2>Free-tier headroom</h2>
+          </div>
+          <button
+            className="button button-secondary"
+            type="button"
+            disabled={!storage.configured || refreshing}
+            onClick={() => void refreshUsage()}
+          >
+            <RefreshCw
+              className={refreshing ? "spin" : undefined}
+              size={15}
+              aria-hidden="true"
+            />
+            Refresh usage
+          </button>
+        </div>
+
+        {usage ? (
+          <div className="usage-grid">
+            <div className="usage-meter">
+              <div>
+                <strong>Stored media</strong>
+                <span>
+                  {formatBytes(usage.storageBytes)} /{" "}
+                  {formatBytes(usage.maxStorageBytes)}
+                </span>
+              </div>
+              <progress
+                value={usage.storageBytes}
+                max={usage.maxStorageBytes}
+                aria-label="R2 storage usage"
+              />
+            </div>
+            <div className="usage-meter">
+              <div>
+                <strong>Class A operations</strong>
+                <span>
+                  {usage.classAOperations.toLocaleString()} /{" "}
+                  {usage.maxClassAOperations.toLocaleString()}
+                </span>
+              </div>
+              <progress
+                value={usage.classAOperations}
+                max={usage.maxClassAOperations}
+                aria-label="R2 Class A operations"
+              />
+            </div>
+          </div>
+        ) : null}
+
+        <div className="guardrail-note">
+          <ShieldCheck size={20} aria-hidden="true" />
+          <div>
+            <strong>Uploads stop before the configured limits</strong>
+            <p>
+              The Studio checks bucket size before every photo upload and
+              locally counts its R2 writes and listings for{" "}
+              {usage?.month || "the current month"}. Public reads cannot be
+              hard-capped by this local tool.
+            </p>
+          </div>
+        </div>
+        {usage?.measuredAt ? (
+          <p className="usage-timestamp">
+            Storage measured {new Date(usage.measuredAt).toLocaleString()}.
+          </p>
+        ) : null}
+        {message ? (
+          <p className="inline-message" role="status">
+            {message}
+          </p>
+        ) : null}
+        <p className="settings-caveat">
+          Cloudflare budget alerts notify you after usage is recorded; they do
+          not stop service or charges. Keep a billing alert enabled in the
+          Cloudflare dashboard as a second line of notice.
+        </p>
       </section>
 
       <section className="settings-section privacy-section">

@@ -60,7 +60,7 @@ describe("Portfolio Studio content utilities", () => {
     expect(isValidCoordinates([-122.4, -91])).toBe(false);
   });
 
-  it("treats incomplete mock galleries as warnings, not publish blockers", () => {
+  it("treats incomplete placeholder galleries as warnings, not publish blockers", () => {
     const issues = validateStudioDocument(createSeedDocument());
 
     expect(issues.filter(({ level }) => level === "error")).toEqual([]);
@@ -78,6 +78,21 @@ describe("Portfolio Studio content utilities", () => {
         level: "error",
         section: "hikes",
         recordSlug: "mount-tallac",
+      }),
+    );
+  });
+
+  it("blocks duplicate professional project slugs", () => {
+    const document = createSeedDocument();
+    document.developerProjects.push(
+      structuredClone(document.developerProjects[0]),
+    );
+
+    expect(validateStudioDocument(document)).toContainEqual(
+      expect.objectContaining({
+        level: "error",
+        section: "developer-projects",
+        recordSlug: document.developerProjects[0].slug,
       }),
     );
   });

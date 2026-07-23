@@ -59,7 +59,7 @@ export function ProjectVisual({ project }: ProjectVisualProps) {
 
       <div className="project-visual-footer" aria-hidden>
         <span>{project.slug}</span>
-        <span>MOCK / {project.category.toUpperCase()}</span>
+        <span>PLACEHOLDER / {project.category.toUpperCase()}</span>
       </div>
     </div>
   );

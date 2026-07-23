@@ -1,7 +1,7 @@
 import { ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Container } from "../ui/Container";
-import { MockBadge } from "../ui/MockBadge";
+import { PlaceholderBadge } from "../ui/PlaceholderBadge";
 
 interface CreativeSectionHeaderProps {
   eyebrow: string;
@@ -32,7 +32,7 @@ export function CreativeSectionHeader({
           <h1>{title}</h1>
           <p>{introduction}</p>
         </div>
-        <MockBadge />
+        <PlaceholderBadge />
       </Container>
     </header>
   );

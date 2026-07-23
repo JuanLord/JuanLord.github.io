@@ -11,7 +11,7 @@ export const photoTrips: PhotoTrip[] = [
     summary:
       "A folder for fog, headlands, working harbors, and the changing edge of the Pacific.",
     story:
-      "This mock trip record demonstrates how one travel folder can hold a large contact sheet, a short written note, and a soundtrack without turning the archive into a social feed.",
+      "This placeholder trip record demonstrates how one travel folder can hold a large contact sheet, a short written note, and a soundtrack without turning the archive into a social feed.",
     coordinates: [-122.851, 38.083],
     photoCount: 72,
     previewSlots: 8,
@@ -21,7 +21,7 @@ export const photoTrips: PhotoTrip[] = [
       title: "Pacific Coast trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "high-desert-spring",
@@ -43,7 +43,7 @@ export const photoTrips: PhotoTrip[] = [
       title: "High Desert trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "tahoe-alpine-summer",
@@ -65,7 +65,7 @@ export const photoTrips: PhotoTrip[] = [
       title: "Tahoe trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "iceland-south-coast",
@@ -75,7 +75,7 @@ export const photoTrips: PhotoTrip[] = [
     startDate: "2024-09",
     endDate: "2024-09",
     summary:
-      "A mock folder for coastal weather, black-sand shorelines, waterfalls, and long northern roads.",
+      "A placeholder folder for coastal weather, black-sand shorelines, waterfalls, and long northern roads.",
     story:
       "This placeholder demonstrates how an international trip can connect the world atlas, a full photography archive, and a trip-level listening companion.",
     coordinates: [-19.02, 64.15],
@@ -87,7 +87,7 @@ export const photoTrips: PhotoTrip[] = [
       title: "Iceland South Coast trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "kyoto-in-rain",
@@ -97,7 +97,7 @@ export const photoTrips: PhotoTrip[] = [
     startDate: "2024-05",
     endDate: "2024-05",
     summary:
-      "A mock city folder for rain, neighborhood streets, gardens, and quiet architectural details.",
+      "A placeholder city folder for rain, neighborhood streets, gardens, and quiet architectural details.",
     story:
       "The final record can combine street photography, architecture, and small daily observations without requiring a separate page template.",
     coordinates: [135.768, 35.011],
@@ -109,7 +109,7 @@ export const photoTrips: PhotoTrip[] = [
       title: "Kyoto trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "patagonia-wind",
@@ -119,7 +119,7 @@ export const photoTrips: PhotoTrip[] = [
     startDate: "2023-11",
     endDate: "2023-11",
     summary:
-      "A mock folder for open steppe, mountain weather, trail camps, and the scale of southern landscapes.",
+      "A placeholder folder for open steppe, mountain weather, trail camps, and the scale of southern landscapes.",
     story:
       "This collection tests the archive with a distant map point and a larger planned contact sheet while remaining a clearly fictional placeholder.",
     coordinates: [-72.987, -50.942],
@@ -131,6 +131,6 @@ export const photoTrips: PhotoTrip[] = [
       title: "Patagonia trip soundtrack",
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
 ];

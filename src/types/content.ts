@@ -1,4 +1,4 @@
-export type ContentStatus = "mock" | "draft" | "published";
+export type ContentStatus = "placeholder" | "draft" | "published";
 
 export type ProjectCategory = "engineering" | "software";
 

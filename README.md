@@ -8,13 +8,13 @@ The current milestone includes:
 - A Vite, React, and TypeScript foundation.
 - A responsive application shell and dark design system.
 - Hash-based navigation suitable for GitHub Pages.
-- Typed mock content for profile, experience, projects, photography, hiking,
+- Typed placeholder content for profile, experience, projects, photography, hiking,
   and music.
 - Complete data-driven Home, About, Experience, Education, Skills, and Contact
   views.
 - A filterable Engineering and Software project catalog with URL-backed filter
   state.
-- Slug-driven project case studies with mock diagrams, project facts, and
+- Slug-driven project case studies with placeholder diagrams, project facts, and
   invalid-route recovery.
 - A nature-forward Creative Field Notes module for real photography, hiking
   records, and placeholder music projects.
@@ -39,14 +39,15 @@ npm run dev
 
 ### Portfolio Studio
 
-Run the local creative content manager at `http://127.0.0.1:4174/`:
+Run the local portfolio content manager at `http://127.0.0.1:4174/`:
 
 ```bash
 npm run studio
 ```
 
-The Studio manages photo trips, R2 uploads, places, GPX hike routes, Spotify and
-Strava links, and film or music records. See
+The Studio manages the professional profile, resume PDF, engineering and
+software projects, photo trips, R2 uploads, places, GPX hike routes, Spotify
+and Strava links, and film or music records. See
 [`docs/portfolio-studio.md`](docs/portfolio-studio.md) for R2 setup and the
 publishing workflow.
 
@@ -66,7 +67,7 @@ src/
   components/
     layout/       Shared shell, navigation, and document metadata
     creative/     Photography, trail, and music presentation components
-    projects/     Reusable project cards and mock technical visuals
+    projects/     Reusable project cards and placeholder technical visuals
     ui/           Reusable interface primitives
   content/        Replaceable portfolio records, split by creative collection
   lib/            Content queries and validation

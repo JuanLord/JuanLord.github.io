@@ -39,7 +39,7 @@ export const projects = [
       outcome:
         "Produced a validated proof of concept and an improvement roadmap.",
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "telemetry-workbench",
@@ -84,7 +84,7 @@ export const projects = [
       outcome:
         "Created a focused prototype for faster test review and reporting.",
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "adaptive-energy-monitor",
@@ -124,7 +124,7 @@ export const projects = [
       outcome:
         "Defined a testable embedded architecture and enclosure prototype.",
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "field-notes-platform",
@@ -164,6 +164,6 @@ export const projects = [
       outcome:
         "Created a mobile prototype that keeps the core workflow available offline.",
     },
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies Project[];

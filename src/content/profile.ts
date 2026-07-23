@@ -36,7 +36,7 @@ export const profile = {
     href: "/resume/juan-varela-resume.pdf",
     placeholder: true,
   },
-  status: "mock",
+  status: "placeholder",
 } satisfies Profile;
 
 export const experience = [
@@ -53,7 +53,7 @@ export const experience = [
       "Reduced repetitive test setup through a Python-based data workflow.",
       "Documented hardware and software interfaces for faster team handoffs.",
     ],
-    status: "mock",
+    status: "placeholder",
   },
   {
     id: "forge-development",
@@ -68,7 +68,7 @@ export const experience = [
       "Defined the component architecture and content model.",
       "Coordinated reviews, testing, and iterative releases.",
     ],
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies Experience[];
 
@@ -80,7 +80,7 @@ export const education = [
     field: "Mechanical Engineering",
     startYear: 2022,
     endYear: 2026,
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies Education[];
 
@@ -90,14 +90,14 @@ export const certifications = [
     title: "Certified CAD Design Associate",
     issuer: "Example Engineering Institute",
     year: 2025,
-    status: "mock",
+    status: "placeholder",
   },
   {
     id: "cloud-foundations",
     title: "Cloud Development Foundations",
     issuer: "Example Technology Academy",
     year: 2024,
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies Certification[];
 

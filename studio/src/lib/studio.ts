@@ -5,6 +5,7 @@ import type {
 } from "../../../src/types/content";
 import type {
   ApiMessage,
+  StorageUsage,
   StudioBootstrap,
   StudioDocument,
   ValidationIssue,
@@ -88,6 +89,20 @@ export function deleteTripPhoto(keys: string[]): Promise<ApiMessage> {
     method: "DELETE",
     body: JSON.stringify({ keys }),
   });
+}
+
+export function uploadResume(
+  file: File,
+): Promise<ApiMessage & { href: string; size: number }> {
+  return requestJson("/api/studio/resume", {
+    method: "POST",
+    body: file,
+    headers: { "Content-Type": file.type || "application/pdf" },
+  });
+}
+
+export function refreshStorageUsage(): Promise<StorageUsage> {
+  return requestJson<StorageUsage>("/api/studio/r2/usage");
 }
 
 export function slugify(value: string): string {
@@ -206,8 +221,47 @@ export function validateStudioDocument(
 ): ValidationIssue[] {
   const issues: ValidationIssue[] = [];
   const add = (issue: ValidationIssue) => issues.push(issue);
-  const recordLevel = (status: "mock" | "draft" | "published") =>
+  const recordLevel = (status: "placeholder" | "draft" | "published") =>
     status === "draft" ? "warning" : "error";
+
+  if (
+    !document.profile.name ||
+    !document.profile.role ||
+    !document.profile.tagline ||
+    !document.profile.email.href
+  ) {
+    add({
+      level: recordLevel(document.profile.status),
+      section: "professional",
+      message: "Profile needs a name, role, tagline, and email address.",
+    });
+  }
+
+  for (const slug of duplicateSlugs(document.developerProjects)) {
+    add({
+      level: "error",
+      section: "developer-projects",
+      recordSlug: slug,
+      message: `Duplicate professional project slug: ${slug}.`,
+    });
+  }
+
+  for (const project of document.developerProjects) {
+    if (
+      !project.title ||
+      !project.slug ||
+      !project.summary ||
+      !project.details.problem
+    ) {
+      add({
+        level: recordLevel(project.status),
+        section: "developer-projects",
+        recordSlug: project.slug,
+        message:
+          "Professional project needs a title, slug, summary, and problem statement.",
+      });
+    }
+  }
 
   for (const slug of duplicateSlugs(document.photoTrips)) {
     add({

@@ -8,7 +8,7 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { profile } from "../content";
 import { Container } from "../components/ui/Container";
-import { MockBadge } from "../components/ui/MockBadge";
+import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { PageIntro } from "../components/ui/PageIntro";
 import type { ExternalLink } from "../types/content";
 
@@ -60,7 +60,7 @@ export function ContactPage() {
               Placeholder channels stay disabled until final contact details are
               supplied.
             </p>
-            <MockBadge />
+            <PlaceholderBadge />
           </div>
 
           <div className="contact-methods">

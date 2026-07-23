@@ -38,8 +38,8 @@ export function ProjectsPage() {
     <>
       <PageIntro eyebrow="Selected work" index="02" title="Projects">
         <p>
-          Mock case studies across engineering and software, organized around
-          the decisions, constraints, and implementation work behind each
+          Placeholder case studies across engineering and software, organized
+          around the decisions, constraints, and implementation work behind each
           system.
         </p>
         <div className="project-index-meta">

@@ -429,7 +429,7 @@ code {
 }
 
 .media-total,
-.status-mock {
+.status-placeholder {
   border-color: #3d4a43;
   color: var(--muted);
   background: var(--panel);
@@ -672,6 +672,17 @@ code {
   gap: 1rem;
 }
 
+.single-editor-page {
+  max-width: 70rem;
+}
+
+.single-editor-grid {
+  display: grid;
+  border: 1px solid var(--line);
+  background: var(--line);
+  gap: 1px;
+}
+
 .studio-field {
   display: grid;
   min-width: 0;
@@ -724,6 +735,105 @@ code {
 .studio-field textarea:hover,
 .studio-field select:hover {
   border-color: var(--line-strong);
+}
+
+.checkbox-field {
+  display: flex;
+  min-height: 2.55rem;
+  align-items: center;
+  gap: 0.65rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 0.75rem;
+  color: var(--muted);
+  background: var(--field);
+  font-size: 0.72rem;
+}
+
+.checkbox-field input {
+  width: 1rem;
+  height: 1rem;
+  margin: 0;
+  accent-color: var(--green);
+}
+
+.resume-upload {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  border-top: 1px solid var(--line);
+  padding-top: 1.25rem;
+}
+
+.resume-file {
+  display: flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.resume-file svg {
+  flex: 0 0 auto;
+  color: var(--green);
+}
+
+.resume-file div {
+  display: grid;
+  min-width: 0;
+  gap: 0.25rem;
+}
+
+.resume-file strong,
+.resume-file span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.resume-file strong {
+  font-size: 0.74rem;
+}
+
+.resume-file span {
+  color: var(--subtle);
+  font-size: 0.64rem;
+}
+
+.link-editor-list {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.link-editor-row {
+  display: grid;
+  align-items: center;
+  gap: 0.5rem;
+  grid-template-columns: minmax(8rem, 0.35fr) minmax(12rem, 1fr) 2.25rem;
+}
+
+.link-editor-row input {
+  width: 100%;
+  min-width: 0;
+  min-height: 2.55rem;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 0.7rem;
+  color: var(--ink);
+  background: var(--field);
+  font-size: 0.75rem;
+}
+
+.icon-button.danger {
+  color: var(--red);
+}
+
+.empty-inline {
+  margin: 0;
+  padding: 1rem 0;
+  color: var(--subtle);
+  font-size: 0.7rem;
 }
 
 .upload-zone {
@@ -987,6 +1097,91 @@ code {
   width: fit-content;
 }
 
+.usage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.usage-meter {
+  display: grid;
+  gap: 0.8rem;
+  border: 1px solid var(--line);
+  padding: 1rem;
+  background: var(--field);
+}
+
+.usage-meter > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.usage-meter strong {
+  font-size: 0.72rem;
+}
+
+.usage-meter span {
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+}
+
+.usage-meter progress {
+  width: 100%;
+  height: 0.45rem;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background: var(--line);
+}
+
+.usage-meter progress::-webkit-progress-bar {
+  background: var(--line);
+}
+
+.usage-meter progress::-webkit-progress-value {
+  background: var(--green);
+}
+
+.usage-meter progress::-moz-progress-bar {
+  background: var(--green);
+}
+
+.guardrail-note {
+  display: grid;
+  align-items: start;
+  gap: 0.8rem;
+  margin-top: 1rem;
+  border-left: 2px solid var(--green);
+  padding: 0.75rem 1rem;
+  color: #b8d8c1;
+  background: #0e1712;
+  grid-template-columns: 1.5rem minmax(0, 1fr);
+}
+
+.guardrail-note p,
+.settings-caveat,
+.usage-timestamp {
+  margin: 0.35rem 0 0;
+  color: var(--muted);
+  font-size: 0.68rem;
+  line-height: 1.55;
+}
+
+.guardrail-note strong {
+  font-size: 0.73rem;
+}
+
+.usage-timestamp {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.6rem;
+}
+
+.settings-caveat {
+  margin-top: 1rem;
+}
+
 .privacy-section {
   display: grid;
   grid-template-columns: 2rem minmax(0, 1fr);
@@ -1133,7 +1328,8 @@ code {
 
   .stats-grid,
   .form-grid,
-  .photo-editor-grid {
+  .photo-editor-grid,
+  .usage-grid {
     grid-template-columns: 1fr;
   }
 
@@ -1153,6 +1349,19 @@ code {
 
   .section-heading {
     align-items: center;
+  }
+
+  .resume-upload {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .link-editor-row {
+    grid-template-columns: minmax(0, 1fr) 2.25rem;
+  }
+
+  .link-editor-row input:first-child {
+    grid-column: 1 / -1;
   }
 }
 

@@ -1,5 +1,6 @@
 import {
   DeleteObjectsCommand,
+  ListObjectsV2Command,
   PutObjectCommand,
   S3Client,
 } from "@aws-sdk/client-s3";
@@ -15,8 +16,18 @@ const studioDirectory = dirname(fileURLToPath(import.meta.url));
 const repositoryRoot = resolve(studioDirectory, "..");
 const draftDirectory = resolve(repositoryRoot, ".portfolio-studio");
 const draftPath = resolve(draftDirectory, "content.json");
+const usagePath = resolve(draftDirectory, "r2-usage.json");
+const resumePath = resolve(
+  repositoryRoot,
+  "public/resume/juan-varela-resume.pdf",
+);
 const env = loadEnv("studio", repositoryRoot, "");
 const port = Number(env.STUDIO_PORT || 4174);
+
+function positiveNumber(value, fallback) {
+  const parsed = Number(value);
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback;
+}
 
 const r2Config = {
   accountId: env.R2_ACCOUNT_ID,
@@ -24,6 +35,11 @@ const r2Config = {
   secretAccessKey: env.R2_SECRET_ACCESS_KEY,
   bucketName: env.R2_BUCKET_NAME,
   publicBaseUrl: env.R2_PUBLIC_BASE_URL?.replace(/\/$/, ""),
+  maxStorageBytes:
+    positiveNumber(env.R2_MAX_STORAGE_GB, 9) * 1024 * 1024 * 1024,
+  maxClassAOperations: Math.floor(
+    positiveNumber(env.R2_MAX_CLASS_A_OPERATIONS, 900_000),
+  ),
 };
 
 const r2Fields = {
@@ -38,7 +54,11 @@ const missingR2Fields = Object.entries(r2Fields)
   .map(([key]) => key);
 if (r2Config.publicBaseUrl) {
   try {
-    if (new URL(r2Config.publicBaseUrl).protocol !== "https:") {
+    const publicUrl = new URL(r2Config.publicBaseUrl);
+    if (
+      publicUrl.protocol !== "https:" ||
+      publicUrl.hostname.endsWith(".r2.cloudflarestorage.com")
+    ) {
       missingR2Fields.push("R2_PUBLIC_BASE_URL");
     }
   } catch {
@@ -82,7 +102,7 @@ async function readJson(request) {
   return JSON.parse(body.toString("utf8"));
 }
 
-function assertStudioDocument(document) {
+function assertStudioDocument(document, allowLegacy = false) {
   if (
     !document ||
     document.schemaVersion !== 1 ||
@@ -90,7 +110,14 @@ function assertStudioDocument(document) {
     !Array.isArray(document.places) ||
     !Array.isArray(document.hikes) ||
     !Array.isArray(document.creativeProjects) ||
-    !document.creativeProfile
+    !document.creativeProfile ||
+    (!allowLegacy &&
+      (!document.profile ||
+        !Array.isArray(document.experience) ||
+        !Array.isArray(document.education) ||
+        !Array.isArray(document.certifications) ||
+        !Array.isArray(document.skills) ||
+        !Array.isArray(document.developerProjects)))
   ) {
     throw new Error("Studio document has an unsupported structure.");
   }
@@ -99,8 +126,94 @@ function assertStudioDocument(document) {
 async function atomicWrite(path, contents) {
   await mkdir(dirname(path), { recursive: true });
   const temporaryPath = `${path}.${randomUUID()}.tmp`;
-  await writeFile(temporaryPath, contents, "utf8");
+  await writeFile(temporaryPath, contents);
   await rename(temporaryPath, path);
+}
+
+function currentMonth() {
+  return new Date().toISOString().slice(0, 7);
+}
+
+async function readUsageRecord() {
+  let record;
+  try {
+    record = JSON.parse(await readFile(usagePath, "utf8"));
+  } catch (error) {
+    if (error?.code !== "ENOENT") throw error;
+  }
+
+  if (!record || record.month !== currentMonth()) {
+    return {
+      month: currentMonth(),
+      classAOperations: 0,
+      storageBytes: Number(record?.storageBytes) || 0,
+      measuredAt: record?.measuredAt,
+    };
+  }
+
+  return {
+    month: currentMonth(),
+    classAOperations: Number(record.classAOperations) || 0,
+    storageBytes: Number(record.storageBytes) || 0,
+    measuredAt: record.measuredAt,
+  };
+}
+
+async function writeUsageRecord(record) {
+  await atomicWrite(usagePath, `${JSON.stringify(record, null, 2)}\n`);
+}
+
+async function reserveClassAOperations(count) {
+  const record = await readUsageRecord();
+  if (record.classAOperations + count > r2Config.maxClassAOperations) {
+    throw new Error(
+      `R2 upload paused: the local ${r2Config.maxClassAOperations.toLocaleString()} Class A operation limit has been reached for ${record.month}.`,
+    );
+  }
+  record.classAOperations += count;
+  await writeUsageRecord(record);
+  return record;
+}
+
+async function measureBucketStorage() {
+  if (!s3) return readUsageRecord();
+  let continuationToken;
+  let storageBytes = 0;
+
+  do {
+    await reserveClassAOperations(1);
+    const page = await s3.send(
+      new ListObjectsV2Command({
+        Bucket: r2Config.bucketName,
+        ContinuationToken: continuationToken,
+      }),
+    );
+    storageBytes += (page.Contents || []).reduce(
+      (total, object) => total + (object.Size || 0),
+      0,
+    );
+    continuationToken = page.IsTruncated
+      ? page.NextContinuationToken
+      : undefined;
+  } while (continuationToken);
+
+  const record = await readUsageRecord();
+  record.storageBytes = storageBytes;
+  record.measuredAt = new Date().toISOString();
+  await writeUsageRecord(record);
+  return record;
+}
+
+function createStorageUsage(record) {
+  return {
+    storageBytes: record.storageBytes,
+    maxStorageBytes: r2Config.maxStorageBytes,
+    classAOperations: record.classAOperations,
+    maxClassAOperations: r2Config.maxClassAOperations,
+    month: record.month,
+    measuredAt: record.measuredAt,
+    classBHardLimitAvailable: false,
+  };
 }
 
 function typedModule(importLine, exportName, value, typeExpression) {
@@ -139,6 +252,16 @@ function createPublicDocument(document) {
 
   return {
     ...document,
+    experience: document.experience.filter(
+      (record) => record.status !== "draft",
+    ),
+    education: document.education.filter((record) => record.status !== "draft"),
+    certifications: document.certifications.filter(
+      (record) => record.status !== "draft",
+    ),
+    developerProjects: document.developerProjects.filter(
+      (project) => project.status !== "draft",
+    ),
     photoTrips,
     hikes: hikes.map((hike) => ({
       ...hike,
@@ -167,6 +290,32 @@ async function publishDocument(document) {
   const publicDocument = createPublicDocument(document);
   const creativeDirectory = resolve(repositoryRoot, "src/content/creative");
   const outputs = [
+    [
+      resolve(repositoryRoot, "src/content/profile.ts"),
+      [
+        'import type { Certification, Education, Experience, Profile, SkillGroup } from "../types/content";',
+        "",
+        `export const profile: Profile = ${JSON.stringify(publicDocument.profile, null, 2)};`,
+        "",
+        `export const experience: Experience[] = ${JSON.stringify(publicDocument.experience, null, 2)};`,
+        "",
+        `export const education: Education[] = ${JSON.stringify(publicDocument.education, null, 2)};`,
+        "",
+        `export const certifications: Certification[] = ${JSON.stringify(publicDocument.certifications, null, 2)};`,
+        "",
+        `export const skills: SkillGroup[] = ${JSON.stringify(publicDocument.skills, null, 2)};`,
+        "",
+      ].join("\n"),
+    ],
+    [
+      resolve(repositoryRoot, "src/content/projects.ts"),
+      typedModule(
+        'import type { Project } from "../types/content";',
+        "projects",
+        publicDocument.developerProjects,
+        "Project[]",
+      ),
+    ],
     [
       resolve(creativeDirectory, "photography.ts"),
       typedModule(
@@ -288,6 +437,16 @@ async function uploadPhoto(request, response, url) {
       .toBuffer({ resolveWithObject: true }),
   ]);
 
+  const usage = await measureBucketStorage();
+  const projectedStorage =
+    usage.storageBytes + display.data.length + thumbnail.data.length;
+  if (projectedStorage > r2Config.maxStorageBytes) {
+    throw new Error(
+      `R2 upload paused: this upload would exceed the local ${(r2Config.maxStorageBytes / 1024 ** 3).toFixed(1)} GB storage limit.`,
+    );
+  }
+  await reserveClassAOperations(2);
+
   const upload = (Key, Body) =>
     s3.send(
       new PutObjectCommand({
@@ -333,6 +492,32 @@ async function uploadPhoto(request, response, url) {
   });
 }
 
+async function uploadResume(request, response) {
+  const contentType = request.headers["content-type"]?.split(";")[0];
+  if (contentType !== "application/pdf") {
+    sendJson(response, 415, { message: "Choose a PDF resume." });
+    return;
+  }
+
+  const resume = await readBody(request, 10 * 1024 * 1024);
+  if (
+    resume.length < 5 ||
+    resume.subarray(0, 5).toString("ascii") !== "%PDF-"
+  ) {
+    sendJson(response, 415, {
+      message: "The selected file is not a valid PDF.",
+    });
+    return;
+  }
+
+  await atomicWrite(resumePath, resume);
+  sendJson(response, 201, {
+    message: "Resume uploaded to public/resume/juan-varela-resume.pdf.",
+    href: "/resume/juan-varela-resume.pdf",
+    size: resume.length,
+  });
+}
+
 async function handleApi(request, response) {
   const url = new URL(request.url, `http://127.0.0.1:${port}`);
   const host = request.headers.host?.split(":")[0];
@@ -356,11 +541,12 @@ async function handleApi(request, response) {
     let document = null;
     try {
       document = JSON.parse(await readFile(draftPath, "utf8"));
-      assertStudioDocument(document);
+      assertStudioDocument(document, true);
     } catch (error) {
       if (error?.code !== "ENOENT") throw error;
     }
 
+    const usage = await readUsageRecord();
     sendJson(response, 200, {
       document,
       draftPath: ".portfolio-studio/content.json",
@@ -369,6 +555,7 @@ async function handleApi(request, response) {
         bucketName: r2Config.bucketName || undefined,
         publicBaseUrl: r2Config.publicBaseUrl || undefined,
         missing: missingR2Fields,
+        usage: createStorageUsage(usage),
       },
     });
     return;
@@ -390,13 +577,28 @@ async function handleApi(request, response) {
     await publishDocument(document);
     await atomicWrite(draftPath, `${JSON.stringify(document, null, 2)}\n`);
     sendJson(response, 200, {
-      message: "Creative content published to src/content/creative.",
+      message: "Portfolio content published to src/content.",
     });
     return;
   }
 
   if (request.method === "POST" && url.pathname === "/api/studio/media") {
     await uploadPhoto(request, response, url);
+    return;
+  }
+
+  if (request.method === "POST" && url.pathname === "/api/studio/resume") {
+    await uploadResume(request, response);
+    return;
+  }
+
+  if (request.method === "GET" && url.pathname === "/api/studio/r2/usage") {
+    if (!s3) {
+      sendJson(response, 503, { message: "R2 is not configured." });
+      return;
+    }
+    const usage = await measureBucketStorage();
+    sendJson(response, 200, createStorageUsage(usage));
     return;
   }
 

@@ -1,11 +1,13 @@
 import {
   AlertTriangle,
   CheckCircle2,
+  Code2,
   Film,
   Footprints,
   Images,
   MapPin,
   Server,
+  UserRound,
 } from "lucide-react";
 import type {
   StorageStatus,
@@ -32,6 +34,20 @@ export function OverviewPage({
     0,
   );
   const stats = [
+    {
+      section: "professional" as const,
+      label: "Professional profile",
+      value: document.experience.length,
+      meta: "Experience records",
+      icon: UserRound,
+    },
+    {
+      section: "developer-projects" as const,
+      label: "Professional projects",
+      value: document.developerProjects.length,
+      meta: "Engineering and software",
+      icon: Code2,
+    },
     {
       section: "photography" as const,
       label: "Photo trips",
@@ -140,8 +156,8 @@ export function OverviewPage({
           </div>
           <dl>
             <div>
-              <dt>Mock</dt>
-              <dd>{countStatus(document, "mock")}</dd>
+              <dt>Placeholder</dt>
+              <dd>{countStatus(document, "placeholder")}</dd>
             </div>
             <div>
               <dt>Draft</dt>
@@ -164,9 +180,14 @@ export function OverviewPage({
 
 function countStatus(
   document: StudioDocument,
-  status: "mock" | "draft" | "published",
+  status: "placeholder" | "draft" | "published",
 ): number {
   return [
+    document.profile,
+    ...document.experience,
+    ...document.education,
+    ...document.certifications,
+    ...document.developerProjects,
     ...document.photoTrips,
     ...document.places,
     ...document.hikes,

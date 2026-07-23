@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 import { experience, profile, projects } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
-import { MockBadge } from "../components/ui/MockBadge";
+import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { formatDateRange } from "../lib/content";
 
 const systemProfile = [
@@ -61,7 +61,7 @@ export function HomePage() {
           >
             <div className="system-profile-heading">
               <span>profile.config</span>
-              <MockBadge />
+              <PlaceholderBadge />
             </div>
             <dl>
               {systemProfile.map((item, index) => (

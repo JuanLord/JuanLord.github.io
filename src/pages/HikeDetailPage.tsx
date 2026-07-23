@@ -18,7 +18,7 @@ export function HikeDetailPage() {
           backLabel="Travel & hiking"
           backTo="/creative/travel"
           eyebrow="Trail record / Missing route"
-          introduction="The requested trail record is not part of the current mock atlas."
+          introduction="The requested trail record is not part of the current placeholder atlas."
           title="Hike unavailable."
         />
         <CreativeSectionNav />
@@ -41,7 +41,7 @@ export function HikeDetailPage() {
         <Container className="hike-detail-grid">
           <div className="hike-detail-route">
             <RoutePreview label={hike.trail} route={hike.route} />
-            <span>Mock route geometry</span>
+            <span>Placeholder route geometry</span>
           </div>
           <dl className="hike-detail-facts">
             <div>

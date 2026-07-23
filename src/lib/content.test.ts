@@ -45,7 +45,7 @@ describe("content utilities", () => {
 
   it("identifies links that should not become live controls", () => {
     expect(isPlaceholderHref("https://example.com/demo")).toBe(true);
-    expect(isPlaceholderHref("/resume/mock.pdf")).toBe(true);
+    expect(isPlaceholderHref("/resume/placeholder.pdf")).toBe(true);
     expect(isPlaceholderHref("https://github.com/JuanLord")).toBe(false);
   });
 
@@ -54,7 +54,7 @@ describe("content utilities", () => {
     expect(formatDateRange("2024-09", "2025-04")).toBe("Sep 2024 - Apr 2025");
   });
 
-  it("keeps mock content internally consistent", () => {
+  it("keeps placeholder content internally consistent", () => {
     expect(validateContent()).toEqual([]);
   });
 });

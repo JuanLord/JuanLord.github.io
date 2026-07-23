@@ -1,7 +1,7 @@
 import { ArrowUpRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { Project } from "../../types/content";
-import { MockBadge } from "../ui/MockBadge";
+import { PlaceholderBadge } from "../ui/PlaceholderBadge";
 import { ProjectVisual } from "./ProjectVisual";
 
 interface ProjectCardProps {
@@ -33,7 +33,7 @@ export function ProjectCard({ index, project }: ProjectCardProps) {
           <h2>
             <Link to={`/projects/${project.slug}`}>{project.title}</Link>
           </h2>
-          <MockBadge />
+          <PlaceholderBadge />
         </div>
 
         <p className="project-card-summary">{project.summary}</p>

@@ -12,7 +12,7 @@ export const places = [
     summary:
       "Coastal trails, working ranches, fog, and long views across the Pacific.",
     relatedPhotoTripSlug: "pacific-coast-weekend",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "joshua-tree",
@@ -25,7 +25,7 @@ export const places = [
     summary:
       "High desert terrain studied through granite forms, plant life, and changing light.",
     relatedPhotoTripSlug: "high-desert-spring",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "lake-tahoe",
@@ -39,7 +39,7 @@ export const places = [
       "A high-elevation landscape connecting lake weather and long alpine routes.",
     relatedPhotoTripSlug: "tahoe-alpine-summer",
     relatedHikeSlug: "mount-tallac",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "yosemite-valley",
@@ -52,7 +52,7 @@ export const places = [
     summary:
       "Granite walls, river corridors, and the changing scale of the valley on foot.",
     relatedHikeSlug: "mist-trail",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "iceland-south-coast",
@@ -63,9 +63,9 @@ export const places = [
     coordinates: [-19.02, 64.15],
     visited: "2024-09",
     summary:
-      "A mock international record linking northern coastal weather to a complete photography folder.",
+      "A placeholder international record linking northern coastal weather to a complete photography folder.",
     relatedPhotoTripSlug: "iceland-south-coast",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "kyoto",
@@ -76,9 +76,9 @@ export const places = [
     coordinates: [135.768, 35.011],
     visited: "2024-05",
     summary:
-      "A mock city record built around neighborhood scale, rain, gardens, and architectural detail.",
+      "A placeholder city record built around neighborhood scale, rain, gardens, and architectural detail.",
     relatedPhotoTripSlug: "kyoto-in-rain",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "torres-del-paine",
@@ -89,9 +89,9 @@ export const places = [
     coordinates: [-72.987, -50.942],
     visited: "2023-11",
     summary:
-      "A mock southern landscape record for mountain weather, trail camps, and open steppe.",
+      "A placeholder southern landscape record for mountain weather, trail camps, and open steppe.",
     relatedPhotoTripSlug: "patagonia-wind",
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies TravelPlace[];
 
@@ -126,7 +126,7 @@ export const hikes = [
       placeholder: true,
     },
     relatedPhotoTripSlug: "tahoe-alpine-summer",
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "mist-trail",
@@ -156,7 +156,7 @@ export const hikes = [
       },
       placeholder: true,
     },
-    status: "mock",
+    status: "placeholder",
   },
   {
     slug: "coast-trail",
@@ -187,7 +187,7 @@ export const hikes = [
       placeholder: true,
     },
     relatedPhotoTripSlug: "pacific-coast-weekend",
-    status: "mock",
+    status: "placeholder",
   },
 ] satisfies Hike[];
 

@@ -5,10 +5,9 @@ import { App } from "./App";
 describe("App shell", () => {
   beforeEach(() => {
     window.location.hash = "#/";
-    vi.mocked(window.scrollTo).mockClear();
   });
 
-  it("renders the portfolio identity and mock content integration", () => {
+  it("renders the portfolio identity and placeholder content integration", () => {
     render(<App />);
 
     expect(
@@ -293,7 +292,7 @@ describe("App shell", () => {
     ).toBeInTheDocument();
   });
 
-  it("renders the complete professional profile from mock content", () => {
+  it("renders the complete professional profile from placeholder content", () => {
     window.location.hash = "#/about";
     render(<App />);
 

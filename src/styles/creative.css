@@ -132,7 +132,7 @@
   line-height: 1.75;
 }
 
-.creative-section-header .mock-badge {
+.creative-section-header .placeholder-badge {
   align-self: end;
   margin-bottom: 0.35rem;
 }
@@ -1293,7 +1293,7 @@
     font-size: 3.35rem;
   }
 
-  .creative-section-header .mock-badge {
+  .creative-section-header .placeholder-badge {
     justify-self: start;
     margin: 0;
   }
