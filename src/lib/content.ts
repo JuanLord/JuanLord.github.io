@@ -107,8 +107,8 @@ export function validateContent(): string[] {
       issues.push(`Photo trip ${trip.slug} must plan for 50-100 photos.`);
     }
 
-    if (trip.previewSlots < 1 || trip.previewSlots > 12) {
-      issues.push(`Photo trip ${trip.slug} needs 1-12 preview slots.`);
+    if (trip.previewSlots < 1) {
+      issues.push(`Photo trip ${trip.slug} needs at least one preview slot.`);
     }
 
     if (trip.soundtrack.provider !== "spotify") {
@@ -119,13 +119,9 @@ export function validateContent(): string[] {
       issues.push(`Photo trip ${trip.slug} has invalid coordinates.`);
     }
 
-    if (trip.photos.length > trip.photoCount) {
-      issues.push(`Photo trip ${trip.slug} exceeds its planned photo count.`);
-    }
-
     for (const photo of trip.photos) {
-      if (!photo.src || !photo.alt || !photo.caption) {
-        issues.push(`Photo ${photo.id} needs a real source and metadata.`);
+      if (!photo.src || !photo.alt) {
+        issues.push(`Photo ${photo.id} needs a real source and alt text.`);
       }
     }
   }

@@ -6,7 +6,7 @@ import type {
   SkillGroup,
 } from "../types/content";
 
-export const profile = {
+export const profile: Profile = {
   name: "Juan Varela",
   role: "Developer & Engineer",
   tagline:
@@ -37,9 +37,9 @@ export const profile = {
     placeholder: true,
   },
   status: "placeholder",
-} satisfies Profile;
+};
 
-export const experience = [
+export const experience: Experience[] = [
   {
     id: "northstar-systems",
     organization: "Northstar Systems Lab",
@@ -70,9 +70,9 @@ export const experience = [
     ],
     status: "placeholder",
   },
-] satisfies Experience[];
+];
 
-export const education = [
+export const education: Education[] = [
   {
     id: "pacific-tech",
     institution: "Pacific Institute of Technology",
@@ -82,9 +82,9 @@ export const education = [
     endYear: 2026,
     status: "placeholder",
   },
-] satisfies Education[];
+];
 
-export const certifications = [
+export const certifications: Certification[] = [
   {
     id: "solidworks-associate",
     title: "Certified CAD Design Associate",
@@ -99,9 +99,9 @@ export const certifications = [
     year: 2024,
     status: "placeholder",
   },
-] satisfies Certification[];
+];
 
-export const skills = [
+export const skills: SkillGroup[] = [
   {
     id: "software",
     label: "Software",
@@ -122,4 +122,4 @@ export const skills = [
       "Iterative Testing",
     ],
   },
-] satisfies SkillGroup[];
+];

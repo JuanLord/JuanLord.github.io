@@ -316,12 +316,12 @@ export function validateStudioDocument(
       });
     }
     for (const photo of trip.photos) {
-      if (!photo.alt.trim() || !photo.caption.trim()) {
+      if (!photo.alt.trim()) {
         add({
           level: "warning",
           section: "photography",
           recordSlug: trip.slug,
-          message: `${trip.title || "Trip"} has photos missing alt text or captions.`,
+          message: `${trip.title || "Trip"} has photos missing alt text.`,
         });
         break;
       }

@@ -1,18 +1,12 @@
 import { ArrowUpRight, Camera, Footprints, MapPin } from "lucide-react";
-import { lazy, Suspense } from "react";
 import { Link } from "react-router-dom";
 import { CreativeSectionHeader } from "../components/creative/CreativeSectionHeader";
 import { CreativeSectionNav } from "../components/creative/CreativeSectionNav";
 import { HikeCard } from "../components/creative/HikeCard";
+import { WorldMap } from "../components/creative/WorldMap";
 import { Container } from "../components/ui/Container";
 import { creativeMapPoints, hikes, places } from "../content";
 import { formatYearMonth } from "../lib/content";
-
-const WorldMap = lazy(() =>
-  import("../components/creative/WorldMap").then((module) => ({
-    default: module.WorldMap,
-  })),
-);
 
 export function TravelPage() {
   return (
@@ -27,15 +21,7 @@ export function TravelPage() {
 
       <section className="creative-map-section">
         <Container>
-          <Suspense
-            fallback={
-              <div className="creative-map-loading" role="status">
-                Preparing map
-              </div>
-            }
-          >
-            <WorldMap points={creativeMapPoints} />
-          </Suspense>
+          <WorldMap points={creativeMapPoints} />
         </Container>
       </section>
 

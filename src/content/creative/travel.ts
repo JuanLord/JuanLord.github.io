@@ -1,6 +1,6 @@
 import type { CreativeMapPoint, Hike, TravelPlace } from "../../types/content";
 
-export const places = [
+export const places: TravelPlace[] = [
   {
     slug: "point-reyes",
     title: "Point Reyes",
@@ -93,9 +93,9 @@ export const places = [
     relatedPhotoTripSlug: "patagonia-wind",
     status: "placeholder",
   },
-] satisfies TravelPlace[];
+];
 
-export const hikes = [
+export const hikes: Hike[] = [
   {
     slug: "mount-tallac",
     trail: "Mount Tallac",
@@ -189,9 +189,9 @@ export const hikes = [
     relatedPhotoTripSlug: "pacific-coast-weekend",
     status: "placeholder",
   },
-] satisfies Hike[];
+];
 
-export const creativeMapPoints = [
+export const creativeMapPoints: CreativeMapPoint[] = [
   {
     id: "map-photo-pacific-coast-weekend",
     label: "Pacific Coast Weekend photo folder",
@@ -235,6 +235,13 @@ export const creativeMapPoints = [
     to: "/creative/photography/patagonia-wind",
   },
   {
+    id: "map-photo-mt-rainier-camping",
+    label: "Mt. Rainier Camping photo folder",
+    coordinates: [-121.761, 46.8528],
+    kind: "photography",
+    to: "/creative/photography/mt-rainier-camping",
+  },
+  {
     id: "map-hike-mount-tallac",
     label: "Mount Tallac hike",
     coordinates: [-120.067, 38.921],
@@ -255,4 +262,4 @@ export const creativeMapPoints = [
     kind: "hike",
     to: "/creative/travel/hikes/coast-trail",
   },
-] satisfies CreativeMapPoint[];
+];

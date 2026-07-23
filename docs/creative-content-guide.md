@@ -44,6 +44,12 @@ Direct file editing is also supported. Run `npm run check` before pushing to
 
 ## Photography Storage
 
+Photos can be served from `public/media/` during local development, and files
+committed there are deployed with GitHub Pages. A live GitHub Pages site cannot
+read files directly from an owner's laptop or desktop. Serving from the device
+would require it to stay online as a public web server, so R2 is the preferred
+home for the full archive.
+
 Each `PhotoTrip` plans for 50-100 photos and includes:
 
 - A stable URL slug.

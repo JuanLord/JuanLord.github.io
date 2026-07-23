@@ -61,12 +61,18 @@ describe("Portfolio Studio content utilities", () => {
   });
 
   it("treats incomplete placeholder galleries as warnings, not publish blockers", () => {
-    const issues = validateStudioDocument(createSeedDocument());
+    const document = createSeedDocument();
+    const issues = validateStudioDocument(document);
 
     expect(issues.filter(({ level }) => level === "error")).toEqual([]);
     expect(
-      issues.filter(({ section }) => section === "photography"),
-    ).toHaveLength(6);
+      issues.filter(
+        ({ section, message }) =>
+          section === "photography" && message.includes("planned 50-100"),
+      ),
+    ).toHaveLength(
+      document.photoTrips.filter((trip) => trip.photos.length < 50).length,
+    );
   });
 
   it("blocks duplicate record slugs", () => {

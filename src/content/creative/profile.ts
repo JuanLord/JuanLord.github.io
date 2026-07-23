@@ -1,6 +1,6 @@
 import type { CreativeProfile } from "../../types/content";
 
-export const creativeProfile = {
+export const creativeProfile: CreativeProfile = {
   eyebrow: "Beyond the desk",
   title: "Creative Field Notes",
   introduction:
@@ -8,4 +8,4 @@ export const creativeProfile = {
   reflection:
     "This collection is less about accumulating destinations than learning to notice weather, distance, texture, and the character of ordinary light.",
   status: "placeholder",
-} satisfies CreativeProfile;
+};

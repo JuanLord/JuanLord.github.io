@@ -1,6 +1,6 @@
 import type { Project } from "../types/content";
 
-export const projects = [
+export const projects: Project[] = [
   {
     slug: "autonomous-sorting-system",
     title: "Autonomous Sorting System",
@@ -166,4 +166,4 @@ export const projects = [
     },
     status: "placeholder",
   },
-] satisfies Project[];
+];

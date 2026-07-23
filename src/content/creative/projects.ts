@@ -1,6 +1,6 @@
 import type { CreativeProject } from "../../types/content";
 
-export const creativeProjects = [
+export const creativeProjects: CreativeProject[] = [
   {
     slug: "light-between-trees",
     title: "Light Between Trees",
@@ -49,4 +49,4 @@ export const creativeProjects = [
     },
     status: "placeholder",
   },
-] satisfies CreativeProject[];
+];

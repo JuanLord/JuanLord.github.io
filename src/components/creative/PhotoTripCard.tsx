@@ -21,7 +21,7 @@ export function PhotoTripCard({ index, trip }: PhotoTripCardProps) {
         <PhotoContactSheet compact trip={trip} />
         <span className="photo-trip-folder-mark">
           <FolderOpen aria-hidden size={18} strokeWidth={1.5} />
-          {trip.photoCount} photos
+          {trip.photos.length || trip.photoCount} photos
         </span>
       </Link>
 

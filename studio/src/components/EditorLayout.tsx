@@ -12,6 +12,7 @@ interface EditorLayoutProps<T> {
   onSelect: (key: string) => void;
   onAdd: () => void;
   onDelete?: () => void;
+  headerActions?: ReactNode;
   children: ReactNode;
 }
 
@@ -26,6 +27,7 @@ export function EditorLayout<T>({
   onSelect,
   onAdd,
   onDelete,
+  headerActions,
   children,
 }: EditorLayoutProps<T>) {
   return (
@@ -35,10 +37,17 @@ export function EditorLayout<T>({
           <p>{eyebrow}</p>
           <h1>{title}</h1>
         </div>
-        <button className="button button-primary" type="button" onClick={onAdd}>
-          <Plus size={17} aria-hidden="true" />
-          New
-        </button>
+        <div className="page-heading-actions">
+          {headerActions}
+          <button
+            className="button button-primary"
+            type="button"
+            onClick={onAdd}
+          >
+            <Plus size={17} aria-hidden="true" />
+            New
+          </button>
+        </div>
       </header>
 
       <div className="editor-workspace">

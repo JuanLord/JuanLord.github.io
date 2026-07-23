@@ -370,15 +370,36 @@
   gap: 0.65rem;
 }
 
+.photo-contact-sheet:not(.photo-contact-sheet-compact):not(
+    .photo-contact-sheet-empty
+  ) {
+  display: block;
+  columns: 4 14rem;
+  column-gap: 0.75rem;
+}
+
 .photo-contact-sheet-compact {
   height: 100%;
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.photo-contact-item,
-.photo-contact-sheet-empty > span {
+.photo-contact-item {
   min-width: 0;
   margin: 0;
+  overflow: hidden;
+  border-radius: 3px;
+  background: #d8e2d4;
+}
+
+.photo-contact-sheet:not(.photo-contact-sheet-compact) .photo-contact-item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  break-inside: avoid;
+}
+
+.photo-contact-sheet-empty > span {
+  min-width: 0;
   overflow: hidden;
   border-radius: 3px;
   background: #d8e2d4;
@@ -387,13 +408,38 @@
 
 .photo-contact-sheet-compact .photo-contact-item,
 .photo-contact-sheet-compact > span {
-  aspect-ratio: auto;
+  aspect-ratio: 4 / 3;
 }
 
 .photo-contact-item img {
+  display: block;
   width: 100%;
+}
+
+.photo-contact-sheet-compact .photo-contact-item img {
   height: 100%;
   object-fit: cover;
+}
+
+.photo-contact-trigger {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  background: #d8e2d4;
+  cursor: zoom-in;
+}
+
+.photo-contact-trigger img {
+  height: auto;
+  object-fit: contain;
+  transition: transform 220ms ease;
+}
+
+.photo-contact-trigger:hover img,
+.photo-contact-trigger:focus-visible img {
+  transform: scale(1.018);
 }
 
 .photo-contact-item figcaption {
@@ -419,6 +465,93 @@
 .photo-contact-sheet-empty > span small {
   font-family: "JetBrains Mono", monospace;
   font-size: 0.58rem;
+}
+
+.photo-lightbox {
+  position: fixed;
+  z-index: 1000;
+  inset: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 4.5rem minmax(0, 1fr) 4.5rem;
+  padding: 1.25rem;
+  color: #f3f6ef;
+  background: rgba(6, 10, 8, 0.96);
+}
+
+.photo-lightbox > figure {
+  display: grid;
+  min-width: 0;
+  max-height: calc(100vh - 2.5rem);
+  justify-items: center;
+  margin: 0;
+}
+
+.photo-lightbox > figure img {
+  display: block;
+  max-width: 100%;
+  max-height: calc(100vh - 8rem);
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.photo-lightbox > figure figcaption {
+  display: flex;
+  width: min(100%, 68rem);
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.8rem;
+  color: #c7d2c4;
+}
+
+.photo-lightbox > figure figcaption span {
+  flex: 0 0 auto;
+  color: var(--field-clay);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+}
+
+.photo-lightbox > figure figcaption p {
+  margin: 0;
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.photo-lightbox-close,
+.photo-lightbox-control {
+  display: grid;
+  width: 2.75rem;
+  height: 2.75rem;
+  place-items: center;
+  border: 1px solid rgba(237, 243, 233, 0.35);
+  border-radius: 4px;
+  color: #f3f6ef;
+  background: rgba(16, 28, 20, 0.78);
+  cursor: pointer;
+}
+
+.photo-lightbox-close:hover,
+.photo-lightbox-control:hover:not(:disabled) {
+  border-color: var(--field-clay);
+  background: #17291c;
+}
+
+.photo-lightbox-close {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+}
+
+.photo-lightbox-control {
+  align-self: center;
+  justify-self: center;
+}
+
+.photo-lightbox-control:disabled {
+  opacity: 0.3;
+  cursor: default;
 }
 
 .photo-trip-folder-mark {
@@ -1371,6 +1504,12 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .photo-contact-sheet:not(.photo-contact-sheet-compact):not(
+      .photo-contact-sheet-empty
+    ) {
+    columns: 2 10rem;
+  }
+
   .creative-contact-sheet-section .photo-contact-sheet-empty > span {
     min-height: 7rem;
   }
@@ -1391,6 +1530,34 @@
 
   .creative-world-map-svg {
     min-height: 19rem;
+  }
+
+  .photo-lightbox {
+    grid-template-columns: 3rem minmax(0, 1fr) 3rem;
+    padding: 0.75rem;
+  }
+
+  .photo-lightbox-close {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+
+  .photo-lightbox-control {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  .photo-lightbox > figure img {
+    max-height: calc(100vh - 9rem);
+  }
+
+  .photo-lightbox > figure figcaption {
+    display: grid;
+    justify-content: start;
+  }
+
+  .photo-lightbox > figure figcaption p {
+    text-align: left;
   }
 
   .creative-place-card {

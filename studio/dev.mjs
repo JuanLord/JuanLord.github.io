@@ -577,7 +577,8 @@ async function handleApi(request, response) {
     await publishDocument(document);
     await atomicWrite(draftPath, `${JSON.stringify(document, null, 2)}\n`);
     sendJson(response, 200, {
-      message: "Portfolio content published to src/content.",
+      message:
+        "Portfolio source updated. Commit and push the generated files to deploy with GitHub Pages.",
     });
     return;
   }

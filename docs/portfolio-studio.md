@@ -182,7 +182,16 @@ warning.
 
 ## Publish And Deploy
 
-After selecting **Publish source**, review and test the generated source:
+**Publish source** writes the current Studio document into the typed files under
+`src/content/`. It does not send data directly to GitHub. The complete path is:
+
+1. Save or edit records in Portfolio Studio.
+2. Select **Publish source** to update the repository's content files.
+3. Run the checks, commit those changed files, and push `main` to GitHub.
+4. The GitHub Actions workflow builds the static site and deploys it to GitHub
+   Pages.
+
+Review and test the generated source before committing:
 
 ```bash
 npm run check

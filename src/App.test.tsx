@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { App } from "./App";
+import { photoTrips } from "./content/creative";
 
 describe("App shell", () => {
   beforeEach(() => {
@@ -208,7 +209,7 @@ describe("App shell", () => {
     expect(
       screen.getAllByRole("status", { name: "Spotify media pending" }),
     ).toHaveLength(6);
-    expect(document.querySelectorAll("img")).toHaveLength(0);
+    expect(document.querySelectorAll("img")).toHaveLength(4);
   });
 
   it("renders a photography trip folder and planned contact sheet", () => {
@@ -221,7 +222,7 @@ describe("App shell", () => {
         name: "Pacific Coast Weekend",
       }),
     ).toBeInTheDocument();
-    expect(screen.getByText("72 planned photographs")).toBeInTheDocument();
+    expect(screen.getByText("72 photographs")).toBeInTheDocument();
     expect(
       screen.getByRole("img", {
         name: "Pacific Coast Weekend photo collection pending real images",
@@ -233,6 +234,30 @@ describe("App shell", () => {
     expect(document.title).toBe(
       "Pacific Coast Weekend | Juan Varela Photography",
     );
+  });
+
+  it("renders every real trip photo and supports lightbox navigation", async () => {
+    const user = userEvent.setup();
+    const trip = photoTrips.find(({ slug }) => slug === "mt-rainier-camping");
+    expect(trip).toBeDefined();
+    const photoCount = trip?.photos.length ?? 0;
+    window.location.hash = "#/creative/photography/mt-rainier-camping";
+    render(<App />);
+
+    expect(screen.getAllByText(`${photoCount} photographs`)).toHaveLength(2);
+    const previewButtons = screen.getAllByRole("button", {
+      name: /Preview photo/,
+    });
+    expect(previewButtons).toHaveLength(photoCount);
+
+    await user.click(previewButtons[0]);
+    expect(
+      screen.getByRole("dialog", { name: "Mt. Rainier Camping photo preview" }),
+    ).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Next photo" }));
+    expect(
+      screen.getByText(`02 / ${String(photoCount).padStart(2, "0")}`),
+    ).toBeInTheDocument();
   });
 
   it("renders the travel map, places, and hike records", async () => {

@@ -34,14 +34,23 @@ describe("Portfolio Studio", () => {
   });
 
   it("loads the archive overview and record counts", async () => {
+    const document = createSeedDocument();
+    const photoCount = document.photoTrips.reduce(
+      (total, trip) => total + trip.photos.length,
+      0,
+    );
     render(<App />);
 
     expect(
       await screen.findByRole("heading", { name: "Portfolio Studio" }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByText("6", { selector: ".stat-panel strong" }),
-    ).toBeVisible();
+    const photoTripStat = screen
+      .getByText(`${photoCount} uploaded photos`)
+      .closest("button");
+    expect(photoTripStat).toBeVisible();
+    expect(photoTripStat).toHaveTextContent(
+      `${document.photoTrips.length}Photo trips`,
+    );
     expect(screen.getByText("R2 not configured")).toBeVisible();
     expect(
       screen.getByRole("button", { name: /publish source/i }),
@@ -50,6 +59,10 @@ describe("Portfolio Studio", () => {
 
   it("opens photography and storage management views", async () => {
     const user = userEvent.setup();
+    const photoCount = createSeedDocument().photoTrips.reduce(
+      (total, trip) => total + trip.photos.length,
+      0,
+    );
     render(<App />);
 
     await screen.findByRole("heading", { name: "Portfolio Studio" });
@@ -58,6 +71,14 @@ describe("Portfolio Studio", () => {
       screen.getByRole("heading", { level: 1, name: "Photography" }),
     ).toBeVisible();
     expect(screen.getByText("R2 setup required")).toBeVisible();
+    await user.click(
+      screen.getByRole("button", { name: "Publish all photos" }),
+    );
+    expect(
+      screen.getByText(
+        `${photoCount} photos marked published. Select Publish source to update the website files.`,
+      ),
+    ).toBeVisible();
 
     await user.click(screen.getByRole("button", { name: "Storage" }));
     expect(

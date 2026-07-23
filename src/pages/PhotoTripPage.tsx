@@ -26,6 +26,8 @@ export function PhotoTripPage() {
     );
   }
 
+  const collectionCount = trip.photos.length || trip.photoCount;
+
   return (
     <div className="creative-page">
       <CreativeSectionHeader
@@ -59,7 +61,7 @@ export function PhotoTripPage() {
                 <Images aria-hidden size={15} />
                 Collection
               </dt>
-              <dd>{trip.photoCount} planned photographs</dd>
+              <dd>{collectionCount} photographs</dd>
             </div>
           </dl>
           <p>{trip.story}</p>
@@ -77,8 +79,9 @@ export function PhotoTripPage() {
               <h2 id="trip-contact-sheet-title">{trip.title}</h2>
             </div>
             <p>
-              {trip.photos.length} real images loaded / {trip.photoCount}{" "}
-              planned
+              {trip.photos.length
+                ? `${trip.photos.length} photographs`
+                : `${trip.photoCount} planned photographs`}
             </p>
           </div>
           <PhotoContactSheet trip={trip} />

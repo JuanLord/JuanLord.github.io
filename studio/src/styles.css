@@ -366,6 +366,13 @@ code {
   margin-bottom: 1.75rem;
 }
 
+.page-heading-actions,
+.section-heading-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
 .page-heading p,
 .section-heading p {
   margin: 0 0 0.45rem;
@@ -908,7 +915,7 @@ code {
 .photo-preview img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .photo-preview > span:last-child {
@@ -1320,6 +1327,11 @@ code {
 
   .page-heading {
     align-items: center;
+  }
+
+  .page-heading-actions {
+    align-items: stretch;
+    flex-direction: column-reverse;
   }
 
   .overview-heading {

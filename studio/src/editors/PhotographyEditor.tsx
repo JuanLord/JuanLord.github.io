@@ -1,6 +1,7 @@
 import {
   ArrowLeft,
   ArrowRight,
+  CheckCheck,
   ImagePlus,
   LoaderCircle,
   Trash2,
@@ -129,11 +130,7 @@ export function PhotographyEditor({
       replaceTrip({
         ...selected,
         photos: [...selected.photos, ...uploaded],
-        photoCount: Math.max(
-          50,
-          selected.photoCount,
-          selected.photos.length + uploaded.length,
-        ),
+        photoCount: selected.photos.length + uploaded.length,
       });
       setUploadMessage(`${uploaded.length} photos uploaded and optimized.`);
     } catch (error) {
@@ -185,6 +182,34 @@ export function PhotographyEditor({
     }
   };
 
+  const publishAllPhotos = () => {
+    const photoTotal = document.photoTrips.reduce(
+      (total, trip) => total + trip.photos.length,
+      0,
+    );
+    if (!photoTotal) return;
+
+    onChange({
+      ...document,
+      photoTrips: document.photoTrips.map((trip) =>
+        trip.photos.length
+          ? {
+              ...trip,
+              photoCount: trip.photos.length,
+              status: "published",
+              photos: trip.photos.map((photo) => ({
+                ...photo,
+                status: "published",
+              })),
+            }
+          : trip,
+      ),
+    });
+    setUploadMessage(
+      `${photoTotal} photos marked published. Select Publish source to update the website files.`,
+    );
+  };
+
   return (
     <EditorLayout
       eyebrow="Creative archive"
@@ -197,6 +222,17 @@ export function PhotographyEditor({
       onSelect={setSelectedSlug}
       onAdd={addTrip}
       onDelete={() => void removeTrip()}
+      headerActions={
+        <button
+          className="button button-secondary"
+          type="button"
+          disabled={!document.photoTrips.some((trip) => trip.photos.length)}
+          onClick={publishAllPhotos}
+        >
+          <CheckCheck size={16} aria-hidden="true" />
+          Publish all photos
+        </button>
+      }
     >
       {selected ? (
         <>
@@ -261,7 +297,7 @@ export function PhotographyEditor({
                 }
               />
               <TextField
-                label="Preview slots"
+                label="Folder card previews"
                 type="number"
                 min={1}
                 value={selected.previewSlots}
