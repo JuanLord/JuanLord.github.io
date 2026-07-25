@@ -679,6 +679,56 @@ code {
   gap: 1rem;
 }
 
+.location-editor-list {
+  display: grid;
+  border: 1px solid var(--line);
+  background: var(--line);
+  gap: 1px;
+}
+
+.location-editor-row {
+  padding: 1rem;
+  background: var(--panel-strong);
+}
+
+.location-editor-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.location-editor-heading > span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--orange);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.62rem;
+  text-transform: uppercase;
+}
+
+.location-photo-total {
+  display: flex;
+  min-height: 2.55rem;
+  align-self: end;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 0 0.7rem;
+  color: var(--muted);
+  background: var(--field);
+  font-size: 0.67rem;
+}
+
+.location-photo-total strong {
+  color: var(--green);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+}
+
 .single-editor-page {
   max-width: 70rem;
 }

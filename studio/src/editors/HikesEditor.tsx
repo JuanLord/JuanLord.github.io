@@ -11,6 +11,7 @@ import {
   TextAreaField,
   TextField,
 } from "../components/Fields";
+import { inferDifficulty, parseGpx } from "../lib/gpx";
 import { slugify } from "../lib/studio";
 import type { StudioDocument } from "../types";
 
@@ -43,26 +44,6 @@ function newHike(index: number): Hike {
     },
     status: "draft",
   };
-}
-
-function parseGpx(source: string): Coordinates[] {
-  const xml = new DOMParser().parseFromString(source, "application/xml");
-  if (xml.querySelector("parsererror")) throw new Error("GPX file is invalid.");
-  const points = [...xml.querySelectorAll("trkpt, rtept")]
-    .map((point): Coordinates => [
-      Number(point.getAttribute("lon")),
-      Number(point.getAttribute("lat")),
-    ])
-    .filter(
-      ([longitude, latitude]) =>
-        Number.isFinite(longitude) && Number.isFinite(latitude),
-    );
-  if (points.length < 2)
-    throw new Error("GPX route needs at least two points.");
-  const stride = Math.max(1, Math.ceil(points.length / 500));
-  return points.filter(
-    (_, index) => index % stride === 0 || index === points.length - 1,
-  );
 }
 
 function RouteSketch({ points }: { points: Coordinates[] }) {
@@ -146,13 +127,37 @@ export function HikesEditor({ document, onChange }: HikesEditorProps) {
   const handleGpx = async (file?: File) => {
     if (!file || !selected) return;
     try {
-      const points = parseGpx(await file.text());
+      const imported = parseGpx(await file.text());
+      const trail = imported.name || selected.trail;
+      const distanceMiles = imported.distanceMiles || selected.distanceMiles;
+      const elevationFeet = imported.elevationFeet ?? selected.elevationFeet;
+      const movingHours = imported.movingHours || selected.movingHours;
       replaceHike({
         ...selected,
-        coordinates: points[0],
-        route: { ...selected.route, points, placeholder: false },
+        trail,
+        slug: imported.name
+          ? slugify(imported.name) || selected.slug
+          : selected.slug,
+        summary: imported.description || selected.summary,
+        date: imported.date || selected.date,
+        coordinates: imported.coordinates,
+        distanceMiles,
+        elevationFeet,
+        movingHours,
+        difficulty: inferDifficulty(distanceMiles, elevationFeet),
+        route: {
+          ...selected.route,
+          points: imported.points,
+          elevationProfileFeet: imported.elevationProfileFeet,
+          startedAt: imported.startedAt,
+          endedAt: imported.endedAt,
+          elapsedHours: imported.elapsedHours,
+          placeholder: false,
+        },
       });
-      setRouteMessage(`${points.length} route points imported.`);
+      setRouteMessage(
+        `${imported.points.length} map points imported · ${distanceMiles.toFixed(2)} mi · ${elevationFeet.toLocaleString()} ft gain${imported.movingHours ? ` · ${movingHours.toFixed(2)} hr moving` : ""}.`,
+      );
     } catch (error) {
       setRouteMessage(
         error instanceof Error ? error.message : "GPX import failed.",

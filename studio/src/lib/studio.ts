@@ -307,6 +307,30 @@ export function validateStudioDocument(
         message: "Trip coordinates must be valid longitude and latitude.",
       });
     }
+    const locationIds = (trip.locations ?? []).map(({ id }) => id);
+    if (new Set(locationIds).size !== locationIds.length) {
+      add({
+        level: recordLevel(trip.status),
+        section: "photography",
+        recordSlug: trip.slug,
+        message: "Trip location IDs must be unique.",
+      });
+    }
+    for (const location of trip.locations ?? []) {
+      if (
+        !location.id.trim() ||
+        !location.name.trim() ||
+        !isValidCoordinates(location.coordinates)
+      ) {
+        add({
+          level: recordLevel(trip.status),
+          section: "photography",
+          recordSlug: trip.slug,
+          message: "Each trip location needs a name and valid coordinates.",
+        });
+        break;
+      }
+    }
     if (trip.photos.length < 50) {
       add({
         level: "warning",
@@ -315,16 +339,25 @@ export function validateStudioDocument(
         message: `${trip.title || "Trip"} currently has ${trip.photos.length} of its planned 50-100 photos.`,
       });
     }
-    for (const photo of trip.photos) {
-      if (!photo.alt.trim()) {
-        add({
-          level: "warning",
-          section: "photography",
-          recordSlug: trip.slug,
-          message: `${trip.title || "Trip"} has photos missing alt text.`,
-        });
-        break;
-      }
+    if (trip.photos.some((photo) => !photo.alt.trim())) {
+      add({
+        level: "warning",
+        section: "photography",
+        recordSlug: trip.slug,
+        message: `${trip.title || "Trip"} has photos missing alt text.`,
+      });
+    }
+    if (
+      trip.photos.some(
+        (photo) => photo.locationId && !locationIds.includes(photo.locationId),
+      )
+    ) {
+      add({
+        level: recordLevel(trip.status),
+        section: "photography",
+        recordSlug: trip.slug,
+        message: "A photo links to a missing trip location.",
+      });
     }
     if (trip.soundtrack.sourceUrl && trip.soundtrack.placeholder) {
       add({

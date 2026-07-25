@@ -13,7 +13,7 @@ import type {
 } from "../../src/types/content";
 
 export interface StudioDocument {
-  schemaVersion: 1;
+  schemaVersion: 2;
   updatedAt: string;
   profile: Profile;
   experience: Experience[];

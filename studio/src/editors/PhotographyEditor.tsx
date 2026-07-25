@@ -4,10 +4,16 @@ import {
   CheckCheck,
   ImagePlus,
   LoaderCircle,
+  MapPinned,
+  Plus,
   Trash2,
 } from "lucide-react";
 import { useState } from "react";
-import type { PhotoTrip, TripPhoto } from "../../../src/types/content";
+import type {
+  PhotoTrip,
+  PhotoTripLocation,
+  TripPhoto,
+} from "../../../src/types/content";
 import { EditorLayout } from "../components/EditorLayout";
 import {
   CoordinateFields,
@@ -37,6 +43,7 @@ function newTrip(index: number): PhotoTrip {
     summary: "",
     story: "",
     coordinates: [0, 0],
+    locations: [],
     photoCount: 50,
     previewSlots: 8,
     photos: [],
@@ -59,12 +66,21 @@ export function PhotographyEditor({
   );
   const [uploading, setUploading] = useState(false);
   const [uploadMessage, setUploadMessage] = useState("");
+  const [uploadLocationId, setUploadLocationId] = useState("");
   const activeSlug = document.photoTrips.some(
     (trip) => trip.slug === selectedSlug,
   )
     ? selectedSlug
     : document.photoTrips[0]?.slug;
   const selected = document.photoTrips.find((trip) => trip.slug === activeSlug);
+  const locations = selected?.locations ?? [];
+  const activeUploadLocationId = locations.some(
+    ({ id }) => id === uploadLocationId,
+  )
+    ? uploadLocationId
+    : locations.length === 1
+      ? locations[0].id
+      : "";
 
   const replaceTrip = (trip: PhotoTrip) => {
     onChange({
@@ -123,7 +139,10 @@ export function PhotographyEditor({
     try {
       for (const file of Array.from(files)) {
         const photo = await uploadTripPhoto(selected.slug, file);
-        uploaded.push(photo);
+        uploaded.push({
+          ...photo,
+          locationId: activeUploadLocationId || undefined,
+        });
         completed += 1;
         setUploadMessage(`Uploading ${completed} of ${files.length}`);
       }
@@ -180,6 +199,72 @@ export function PhotographyEditor({
         error instanceof Error ? error.message : "Photo deletion failed.",
       );
     }
+  };
+
+  const addLocation = () => {
+    if (!selected) return;
+    let number = locations.length + 1;
+    let id = `location-${number}`;
+    while (locations.some((location) => location.id === id)) {
+      number += 1;
+      id = `location-${number}`;
+    }
+    const location: PhotoTripLocation = {
+      id,
+      name: `Location ${number}`,
+      coordinates: selected.coordinates,
+    };
+    updateTrip({
+      locations: [...locations, location],
+      location: locations.length ? selected.location : location.name,
+      coordinates: locations.length
+        ? selected.coordinates
+        : location.coordinates,
+    });
+    setUploadLocationId(id);
+  };
+
+  const updateLocation = (id: string, patch: Partial<PhotoTripLocation>) => {
+    if (!selected) return;
+    const locationIndex = locations.findIndex((location) => location.id === id);
+    const nextLocations = locations.map((location) =>
+      location.id === id ? { ...location, ...patch } : location,
+    );
+    const primary = nextLocations[0];
+    updateTrip({
+      locations: nextLocations,
+      location:
+        locationIndex === 0 && patch.name !== undefined
+          ? patch.name
+          : selected.location,
+      coordinates:
+        locationIndex === 0 && patch.coordinates
+          ? patch.coordinates
+          : (primary?.coordinates ?? selected.coordinates),
+    });
+  };
+
+  const removeLocation = (location: PhotoTripLocation) => {
+    if (
+      !selected ||
+      !window.confirm(
+        `Remove ${location.name}? Its photos will remain in the trip-wide gallery.`,
+      )
+    ) {
+      return;
+    }
+    const nextLocations = locations.filter(({ id }) => id !== location.id);
+    updateTrip({
+      locations: nextLocations,
+      photos: selected.photos.map((photo) =>
+        photo.locationId === location.id
+          ? { ...photo, locationId: undefined }
+          : photo,
+      ),
+      location: nextLocations[0]?.name || selected.location,
+      coordinates: nextLocations[0]?.coordinates || selected.coordinates,
+    });
+    if (uploadLocationId === location.id) setUploadLocationId("");
   };
 
   const publishAllPhotos = () => {
@@ -262,11 +347,6 @@ export function PhotographyEditor({
                 required
               />
               <TextField
-                label="Location"
-                value={selected.location}
-                onChange={(location) => updateTrip({ location })}
-              />
-              <TextField
                 label="Country"
                 value={selected.country}
                 onChange={(country) => updateTrip({ country })}
@@ -282,10 +362,6 @@ export function PhotographyEditor({
                 type="month"
                 value={selected.endDate}
                 onChange={(endDate) => updateTrip({ endDate })}
-              />
-              <CoordinateFields
-                value={selected.coordinates}
-                onChange={(coordinates) => updateTrip({ coordinates })}
               />
               <TextField
                 label="Planned photos"
@@ -333,11 +409,97 @@ export function PhotographyEditor({
           <div className="form-section">
             <div className="section-heading">
               <div>
+                <p>Gallery organization</p>
+                <h2>Trip locations</h2>
+              </div>
+              <button
+                className="button button-secondary"
+                type="button"
+                onClick={addLocation}
+              >
+                <Plus size={16} aria-hidden="true" />
+                Add location
+              </button>
+            </div>
+            {locations.length ? (
+              <div className="location-editor-list">
+                {locations.map((location, index) => (
+                  <section className="location-editor-row" key={location.id}>
+                    <div className="location-editor-heading">
+                      <span>
+                        <MapPinned size={16} aria-hidden="true" />
+                        Location {String(index + 1).padStart(2, "0")}
+                      </span>
+                      <button
+                        aria-label={`Remove ${location.name}`}
+                        className="icon-button danger-icon"
+                        title="Remove location"
+                        type="button"
+                        onClick={() => removeLocation(location)}
+                      >
+                        <Trash2 size={16} aria-hidden="true" />
+                      </button>
+                    </div>
+                    <div className="form-grid">
+                      <TextField
+                        label="Location name"
+                        value={location.name}
+                        onChange={(name) =>
+                          updateLocation(location.id, { name })
+                        }
+                      />
+                      <div className="location-photo-total">
+                        <span>Assigned photos</span>
+                        <strong>
+                          {
+                            selected.photos.filter(
+                              (photo) => photo.locationId === location.id,
+                            ).length
+                          }
+                        </strong>
+                      </div>
+                      <CoordinateFields
+                        value={location.coordinates}
+                        onChange={(coordinates) =>
+                          updateLocation(location.id, { coordinates })
+                        }
+                      />
+                    </div>
+                  </section>
+                ))}
+              </div>
+            ) : (
+              <div className="empty-media">
+                <MapPinned size={22} aria-hidden="true" />
+                <span>Add a location to create gallery sections.</span>
+              </div>
+            )}
+          </div>
+
+          <div className="form-section">
+            <div className="section-heading">
+              <div>
                 <p>R2 media</p>
                 <h2>Photographs</h2>
               </div>
               <span className="media-total">{selected.photos.length}</span>
             </div>
+
+            {locations.length ? (
+              <Field label="Upload into location">
+                <select
+                  value={activeUploadLocationId}
+                  onChange={(event) => setUploadLocationId(event.target.value)}
+                >
+                  <option value="">Trip-wide gallery</option>
+                  {locations.map((location) => (
+                    <option value={location.id} key={location.id}>
+                      {location.name}
+                    </option>
+                  ))}
+                </select>
+              </Field>
+            ) : null}
 
             <label
               className={
@@ -408,6 +570,25 @@ export function PhotographyEditor({
                       value={photo.date}
                       onChange={(date) => updatePhoto(photo.id, { date })}
                     />
+                    {locations.length ? (
+                      <Field label="Location section">
+                        <select
+                          value={photo.locationId || ""}
+                          onChange={(event) =>
+                            updatePhoto(photo.id, {
+                              locationId: event.target.value || undefined,
+                            })
+                          }
+                        >
+                          <option value="">Trip-wide gallery</option>
+                          {locations.map((location) => (
+                            <option value={location.id} key={location.id}>
+                              {location.name}
+                            </option>
+                          ))}
+                        </select>
+                      </Field>
+                    ) : null}
                     <StatusField
                       value={photo.status}
                       onChange={(status) => updatePhoto(photo.id, { status })}

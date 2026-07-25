@@ -141,12 +141,19 @@ operation so it does not overwrite those direct edits.
 ## Photography Workflow
 
 1. Create or select a trip.
-2. Enter the title, location, country, dates, coordinates, summary, and story.
-3. Paste a public Spotify track, album, or playlist URL.
-4. Select photographs in the R2 media section.
-5. Add meaningful alt text, captions, and dates.
-6. Reorder the contact sheet and change the content status.
-7. Resolve validation errors, preview the public site, and publish the source.
+2. Enter the title, country, dates, summary, and story.
+3. Add each named trip location and its coordinates. The first location is used
+   as the trip's primary card and world-map position.
+4. Choose a location in **Upload into location**, then select photographs in
+   the R2 media section. Existing photographs can be reassigned individually.
+5. Paste a public Spotify track, album, or playlist URL.
+6. Add meaningful alt text, captions, and dates.
+7. Reorder the contact sheet and change the content status.
+8. Resolve validation errors, preview the public site, and publish the source.
+
+The public trip page creates one gallery section per location. Photographs that
+are not assigned to a named location remain available in an **Across the trip**
+section. Camera filenames are not displayed in the public gallery or lightbox.
 
 The upload endpoint accepts JPEG, PNG, WebP, HEIC, and HEIF files up to 35 MB.
 Sharp rotates from source orientation, removes embedded metadata, and creates:
@@ -165,10 +172,18 @@ The world map is regenerated from photography and hike records during source
 publication.
 
 Hike records support manual distance, elevation, time, difficulty, and location
-data. A GPX file can be imported locally; long tracks are reduced to at most 500
-route points for the public bundle. The Studio does not upload the original GPX
-file. Review its starting point before publication to avoid revealing a home or
-other sensitive location.
+data. Importing a GPX file fills the route name, description, date, start
+coordinate, distance, elevation gain, moving time, elapsed time, difficulty,
+route geometry, and elevation profile when those values can be derived from the
+file. Missing optional GPX values do not replace manually entered fields. Long
+tracks are reduced to at most 1,000 map points after metrics are calculated from
+the full route. The Studio does not upload the original GPX file.
+
+The public hike page renders the imported route on an interactive OpenStreetMap
+map. Review the starting and ending points before publication to avoid revealing
+a home or other sensitive location. GPX files do not normally contain a
+human-readable park or region, so the public location label still needs to be
+entered in the Studio.
 
 Paste a public Strava activity or route URL when an embed is wanted. Private
 activities cannot be displayed publicly.

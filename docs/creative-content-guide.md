@@ -53,11 +53,12 @@ home for the full archive.
 Each `PhotoTrip` plans for 50-100 photos and includes:
 
 - A stable URL slug.
-- Location and date range.
+- A primary location and date range.
+- Any number of named locations with coordinates.
 - Summary and longer story.
 - Planned photo count and preview count.
 - Map coordinates in `[longitude, latitude]` order.
-- An optional list of real photos.
+- An optional list of real photos assigned to location IDs.
 - One Spotify soundtrack embed.
 
 Optimized web files are stored in Cloudflare R2 by Portfolio Studio. The
@@ -94,6 +95,7 @@ Example photo record:
   date: "2025-07",
   width: 2400,
   height: 1600,
+  locationId: "point-reyes",
   status: "published",
 }
 ```
@@ -131,14 +133,17 @@ Place and hike records live in `travel.ts`.
 
 - Coordinates always use `[longitude, latitude]`.
 - A place can link to a photography folder, a hike, or both.
+- Every named photography location becomes a world-map point linked to its trip.
 - World-map points link directly to the most specific related page.
 - Hikes store distance, elevation gain, moving time, difficulty, and route
   points.
-- The inline route preview is rendered from the stored coordinates.
+- The hike detail route is rendered as an interactive Leaflet map using standard
+  OpenStreetMap tiles and visible attribution.
 
-For a real hike, export a GPX or GeoJSON route, simplify it for the web, and
-replace the placeholder `route.points`. Remove the beginning or end of a route when it
-could reveal a home address or another sensitive location.
+For a real hike, import a GPX route through Portfolio Studio. The importer
+calculates metrics from the full track and stores up to 1,000 sampled map points.
+Remove the beginning or end of a route when it could reveal a home address or
+another sensitive location.
 
 Strava supports embeds for public activities and public routes. Use Strava's
 own **Share > Embed** or route **Embed** flow, copy the current iframe URL into

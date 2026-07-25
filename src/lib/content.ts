@@ -8,10 +8,19 @@ import {
 import type {
   Coordinates,
   Hike,
+  PhotoTripLocation,
   PhotoTrip,
   Project,
   ProjectCategory,
+  TripPhoto,
 } from "../types/content";
+
+export interface PhotoLocationSection {
+  id: string;
+  name: string;
+  coordinates: Coordinates;
+  photos: TripPhoto[];
+}
 
 export function getProjectsByCategory(
   category: ProjectCategory | "all",
@@ -32,6 +41,43 @@ export function getNextProject(slug: string): Project {
 
 export function getPhotoTripBySlug(slug: string): PhotoTrip | undefined {
   return photoTrips.find((trip) => trip.slug === slug);
+}
+
+export function getPhotoLocationSections(
+  trip: PhotoTrip,
+): PhotoLocationSection[] {
+  const locations: PhotoTripLocation[] = trip.locations?.length
+    ? trip.locations
+    : [
+        {
+          id: "primary",
+          name: trip.location,
+          coordinates: trip.coordinates,
+        },
+      ];
+  const locationIds = new Set(locations.map(({ id }) => id));
+  const unassigned = trip.photos.filter(
+    ({ locationId }) => !locationId || !locationIds.has(locationId),
+  );
+
+  const sections = locations.map((location, index) => ({
+    ...location,
+    photos: [
+      ...trip.photos.filter(({ locationId }) => locationId === location.id),
+      ...(locations.length === 1 && index === 0 ? unassigned : []),
+    ],
+  }));
+
+  if (locations.length > 1 && unassigned.length) {
+    sections.push({
+      id: "trip-wide",
+      name: "Across the trip",
+      coordinates: trip.coordinates,
+      photos: unassigned,
+    });
+  }
+
+  return sections;
 }
 
 export function getHikeBySlug(slug: string): Hike | undefined {
@@ -119,9 +165,26 @@ export function validateContent(): string[] {
       issues.push(`Photo trip ${trip.slug} has invalid coordinates.`);
     }
 
+    const locationIds = (trip.locations ?? []).map(({ id }) => id);
+    if (new Set(locationIds).size !== locationIds.length) {
+      issues.push(`Photo trip ${trip.slug} location IDs must be unique.`);
+    }
+    for (const location of trip.locations ?? []) {
+      if (
+        !location.id ||
+        !location.name ||
+        !hasValidCoordinates(location.coordinates)
+      ) {
+        issues.push(`Photo trip ${trip.slug} has an incomplete location.`);
+      }
+    }
+
     for (const photo of trip.photos) {
       if (!photo.src || !photo.alt) {
         issues.push(`Photo ${photo.id} needs a real source and alt text.`);
+      }
+      if (photo.locationId && !locationIds.includes(photo.locationId)) {
+        issues.push(`Photo ${photo.id} links to a missing trip location.`);
       }
     }
   }

@@ -5,7 +5,11 @@ import { CreativeSectionNav } from "../components/creative/CreativeSectionNav";
 import { EmbedPanel } from "../components/creative/EmbedPanel";
 import { PhotoContactSheet } from "../components/creative/PhotoContactSheet";
 import { Container } from "../components/ui/Container";
-import { formatDateRange, getPhotoTripBySlug } from "../lib/content";
+import {
+  formatDateRange,
+  getPhotoLocationSections,
+  getPhotoTripBySlug,
+} from "../lib/content";
 
 export function PhotoTripPage() {
   const { tripSlug = "" } = useParams();
@@ -27,6 +31,8 @@ export function PhotoTripPage() {
   }
 
   const collectionCount = trip.photos.length || trip.photoCount;
+  const locationSections = getPhotoLocationSections(trip);
+  const locationCount = trip.locations?.length || 1;
 
   return (
     <div className="creative-page">
@@ -47,7 +53,11 @@ export function PhotoTripPage() {
                 <MapPin aria-hidden size={15} />
                 Place
               </dt>
-              <dd>{trip.location}</dd>
+              <dd>
+                {locationCount > 1
+                  ? `${locationCount} locations across ${trip.location}`
+                  : trip.location}
+              </dd>
             </div>
             <div>
               <dt>
@@ -84,7 +94,39 @@ export function PhotoTripPage() {
                 : `${trip.photoCount} planned photographs`}
             </p>
           </div>
-          <PhotoContactSheet trip={trip} />
+          <div className="photo-location-sections">
+            {locationSections.map((location, index) => {
+              const titleId = `photo-location-${location.id}`;
+              return (
+                <section
+                  aria-labelledby={`${titleId}-title`}
+                  className="photo-location-section"
+                  id={titleId}
+                  key={location.id}
+                >
+                  <header className="photo-location-heading">
+                    <div>
+                      <p>Location {String(index + 1).padStart(2, "0")}</p>
+                      <h3 id={`${titleId}-title`}>{location.name}</h3>
+                    </div>
+                    <div className="photo-location-meta">
+                      <span>
+                        <MapPin aria-hidden size={14} />
+                        {location.coordinates[1].toFixed(4)},{" "}
+                        {location.coordinates[0].toFixed(4)}
+                      </span>
+                      <span>{location.photos.length} photographs</span>
+                    </div>
+                  </header>
+                  <PhotoContactSheet
+                    collectionLabel={`${trip.title}, ${location.name} photo collection`}
+                    photos={location.photos}
+                    trip={trip}
+                  />
+                </section>
+              );
+            })}
+          </div>
         </Container>
       </section>
 

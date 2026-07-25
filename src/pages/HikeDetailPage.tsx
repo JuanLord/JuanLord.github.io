@@ -3,7 +3,7 @@ import { Link, useParams } from "react-router-dom";
 import { CreativeSectionHeader } from "../components/creative/CreativeSectionHeader";
 import { CreativeSectionNav } from "../components/creative/CreativeSectionNav";
 import { EmbedPanel } from "../components/creative/EmbedPanel";
-import { RoutePreview } from "../components/creative/RoutePreview";
+import { HikeRouteMap } from "../components/creative/HikeRouteMap";
 import { Container } from "../components/ui/Container";
 import { formatYearMonth, getHikeBySlug } from "../lib/content";
 
@@ -40,8 +40,10 @@ export function HikeDetailPage() {
       <section className="hike-detail-section">
         <Container className="hike-detail-grid">
           <div className="hike-detail-route">
-            <RoutePreview label={hike.trail} route={hike.route} />
-            <span>Placeholder route geometry</span>
+            <HikeRouteMap label={hike.trail} route={hike.route} />
+            <span>
+              {hike.route.placeholder ? "Sample route" : "Imported GPX route"}
+            </span>
           </div>
           <dl className="hike-detail-facts">
             <div>

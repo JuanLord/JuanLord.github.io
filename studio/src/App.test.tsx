@@ -71,6 +71,11 @@ describe("Portfolio Studio", () => {
       screen.getByRole("heading", { level: 1, name: "Photography" }),
     ).toBeVisible();
     expect(screen.getByText("R2 setup required")).toBeVisible();
+    expect(
+      screen.getByRole("heading", { name: "Trip locations" }),
+    ).toBeVisible();
+    await user.click(screen.getByRole("button", { name: "Add location" }));
+    expect(screen.getByText("Location 02")).toBeVisible();
     await user.click(
       screen.getByRole("button", { name: "Publish all photos" }),
     );
@@ -109,5 +114,33 @@ describe("Portfolio Studio", () => {
       }),
     ).toBeVisible();
     expect(screen.getByLabelText("Technology stack")).toBeVisible();
+  });
+
+  it("imports GPX metadata into the hike editor", async () => {
+    const user = userEvent.setup();
+    const gpx = `<?xml version="1.0"?>
+      <gpx xmlns="http://www.topografix.com/GPX/1/1" version="1.1">
+        <trk><name>Imported Ridge Trail</name><desc>Imported description</desc><trkseg>
+          <trkpt lat="48.0000" lon="-121.0000"><ele>1000</ele><time>2026-07-20T16:00:00Z</time></trkpt>
+          <trkpt lat="48.0010" lon="-120.9990"><ele>1020</ele><time>2026-07-20T16:10:00Z</time></trkpt>
+          <trkpt lat="48.0020" lon="-120.9980"><ele>1018</ele><time>2026-07-20T16:20:00Z</time></trkpt>
+        </trkseg></trk>
+      </gpx>`;
+    render(<App />);
+
+    await screen.findByRole("heading", { name: "Portfolio Studio" });
+    await user.click(screen.getByRole("button", { name: "Hikes" }));
+    await user.upload(
+      screen.getByLabelText("Import GPX"),
+      new File([gpx], "ridge-trail.gpx", { type: "application/gpx+xml" }),
+    );
+
+    expect(
+      await screen.findByDisplayValue("Imported Ridge Trail"),
+    ).toBeVisible();
+    expect(screen.getByDisplayValue("Imported description")).toBeVisible();
+    expect(screen.getByText(/3 map points imported/)).toBeVisible();
+    expect(screen.getByLabelText("Distance (miles)")).not.toHaveValue(1);
+    expect(screen.getByLabelText("Elevation gain (feet)")).toHaveValue(66);
   });
 });

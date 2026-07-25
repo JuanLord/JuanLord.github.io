@@ -1,7 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { App } from "./App";
-import { photoTrips } from "./content/creative";
+import { hikes, photoTrips, profile } from "./content";
 
 describe("App shell", () => {
   beforeEach(() => {
@@ -190,61 +190,57 @@ describe("App shell", () => {
     expect(document.querySelectorAll("img")).toHaveLength(0);
   });
 
-  it("renders scalable photography folders with Spotify placeholders", () => {
+  it("renders every published photography folder", () => {
     window.location.hash = "#/creative/photography";
     render(<App />);
 
     expect(
       screen.getByRole("heading", { level: 1, name: "Trip folders" }),
     ).toBeInTheDocument();
+    for (const trip of photoTrips) {
+      expect(
+        screen.getByRole("heading", { name: trip.title }),
+      ).toBeInTheDocument();
+    }
     expect(
-      screen.getByRole("heading", { name: "Pacific Coast Weekend" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "High Desert in Spring" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "Tahoe Alpine Summer" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getAllByRole("status", { name: "Spotify media pending" }),
-    ).toHaveLength(6);
-    expect(document.querySelectorAll("img")).toHaveLength(4);
+      screen.getAllByRole("link", { name: /Open .* photo folder/ }),
+    ).toHaveLength(photoTrips.length);
   });
 
-  it("renders a photography trip folder and planned contact sheet", () => {
-    window.location.hash = "#/creative/photography/pacific-coast-weekend";
+  it("renders a photography trip with a named location section", () => {
+    const trip = photoTrips[0];
+    window.location.hash = `#/creative/photography/${trip.slug}`;
     render(<App />);
 
     expect(
       screen.getByRole("heading", {
         level: 1,
-        name: "Pacific Coast Weekend",
-      }),
-    ).toBeInTheDocument();
-    expect(screen.getByText("72 photographs")).toBeInTheDocument();
-    expect(
-      screen.getByRole("img", {
-        name: "Pacific Coast Weekend photo collection pending real images",
+        name: trip.title,
       }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("status", { name: "Spotify media pending" }),
+      screen.getByRole("heading", {
+        level: 3,
+        name: trip.locations?.[0]?.name || trip.location,
+      }),
     ).toBeInTheDocument();
-    expect(document.title).toBe(
-      "Pacific Coast Weekend | Juan Varela Photography",
-    );
+    expect(
+      screen.getAllByText(`${trip.photos.length} photographs`).length,
+    ).toBeGreaterThan(0);
+    expect(document.title).toBe(`${trip.title} | Juan Varela Photography`);
   });
 
   it("renders every real trip photo and supports lightbox navigation", async () => {
     const user = userEvent.setup();
-    const trip = photoTrips.find(({ slug }) => slug === "mt-rainier-camping");
+    const trip = photoTrips.find(({ photos }) => photos.length > 1);
     expect(trip).toBeDefined();
     const photoCount = trip?.photos.length ?? 0;
-    window.location.hash = "#/creative/photography/mt-rainier-camping";
+    window.location.hash = `#/creative/photography/${trip?.slug}`;
     render(<App />);
 
-    expect(screen.getAllByText(`${photoCount} photographs`)).toHaveLength(2);
+    expect(
+      screen.getAllByText(`${photoCount} photographs`).length,
+    ).toBeGreaterThan(1);
     const previewButtons = screen.getAllByRole("button", {
       name: /Preview photo/,
     });
@@ -252,8 +248,12 @@ describe("App shell", () => {
 
     await user.click(previewButtons[0]);
     expect(
-      screen.getByRole("dialog", { name: "Mt. Rainier Camping photo preview" }),
+      screen.getByRole("dialog", { name: `${trip?.title} photo preview` }),
     ).toBeInTheDocument();
+    expect(screen.queryByText(trip!.photos[0].alt)).not.toBeInTheDocument();
+    expect(
+      screen.queryByRole("img", { name: trip!.photos[0].alt }),
+    ).not.toBeInTheDocument();
     await user.click(screen.getByRole("button", { name: "Next photo" }));
     expect(
       screen.getByText(`02 / ${String(photoCount).padStart(2, "0")}`),
@@ -280,19 +280,21 @@ describe("App shell", () => {
     ).toBeInTheDocument();
   });
 
-  it("renders hike route data and an optional Strava embed state", () => {
-    window.location.hash = "#/creative/travel/hikes/mount-tallac";
+  it("renders hike route data on an interactive map", () => {
+    const hike = hikes.find(({ route }) => route.points.length > 1) ?? hikes[0];
+    window.location.hash = `#/creative/travel/hikes/${hike.slug}`;
     render(<App />);
 
     expect(
-      screen.getByRole("heading", { level: 1, name: "Mount Tallac" }),
+      screen.getByRole("heading", { level: 1, name: hike.trail }),
     ).toBeInTheDocument();
     expect(
-      screen.getByRole("img", { name: "Mount Tallac route preview" }),
+      screen.getByRole("region", {
+        name: `${hike.trail} interactive route map`,
+      }),
     ).toBeInTheDocument();
-    expect(screen.getByText("3,260 feet")).toBeInTheDocument();
     expect(
-      screen.getByRole("status", { name: "Strava media pending" }),
+      screen.getByText(`${hike.elevationFeet.toLocaleString()} feet`),
     ).toBeInTheDocument();
   });
 
@@ -356,6 +358,13 @@ describe("App shell", () => {
       "href",
       "https://github.com/JuanLord",
     );
-    expect(screen.getAllByText("Placeholder")).toHaveLength(2);
+    expect(screen.getByRole("link", { name: "LinkedIn" })).toHaveAttribute(
+      "href",
+      profile.linkedin.href,
+    );
+    expect(screen.getByRole("link", { name: "Email" })).toHaveAttribute(
+      "href",
+      profile.email.href,
+    );
   });
 });

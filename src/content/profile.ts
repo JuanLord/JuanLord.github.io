@@ -15,12 +15,12 @@ export const profile: Profile = {
     "I am an engineering-minded developer interested in the full path from an early idea to a system people can understand and use.",
     "My work moves between software, physical prototyping, data, and technical communication. I care about making complex systems reliable, maintainable, and clear to the people working with them.",
   ],
-  location: "California, USA",
+  location: "Miami, USA",
   availability: "Open to opportunities",
   email: {
     label: "Email",
-    href: "mailto:hello@example.com",
-    placeholder: true,
+    href: "mailto:juanmartinvarela2006@gmail.com",
+    placeholder: false,
   },
   github: {
     label: "GitHub",
@@ -28,8 +28,8 @@ export const profile: Profile = {
   },
   linkedin: {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/placeholder",
-    placeholder: true,
+    href: "https://www.linkedin.com/in/juanvarela",
+    placeholder: false,
   },
   resume: {
     label: "Resume",

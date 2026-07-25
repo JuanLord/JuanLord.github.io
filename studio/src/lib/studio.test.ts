@@ -60,6 +60,31 @@ describe("Portfolio Studio content utilities", () => {
     expect(isValidCoordinates([-122.4, -91])).toBe(false);
   });
 
+  it("migrates legacy trips into named location sections", () => {
+    const legacy = createSeedDocument();
+    const trip = legacy.photoTrips[0];
+    delete trip.locations;
+    trip.photos = trip.photos.map((photo) => {
+      const legacyPhoto = { ...photo };
+      delete legacyPhoto.locationId;
+      return legacyPhoto;
+    });
+
+    const migratedTrip = createSeedDocument(legacy).photoTrips[0];
+
+    expect(migratedTrip.locations).toEqual([
+      expect.objectContaining({
+        name: trip.location,
+        coordinates: trip.coordinates,
+      }),
+    ]);
+    expect(
+      migratedTrip.photos.every(
+        ({ locationId }) => locationId === migratedTrip.locations?.[0].id,
+      ),
+    ).toBe(true);
+  });
+
   it("treats incomplete placeholder galleries as warnings, not publish blockers", () => {
     const document = createSeedDocument();
     const issues = validateStudioDocument(document);
@@ -83,7 +108,7 @@ describe("Portfolio Studio content utilities", () => {
       expect.objectContaining({
         level: "error",
         section: "hikes",
-        recordSlug: "mount-tallac",
+        recordSlug: document.hikes[0].slug,
       }),
     );
   });

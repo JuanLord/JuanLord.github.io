@@ -3,12 +3,14 @@ import {
   formatYearMonth,
   getHikeBySlug,
   getNextProject,
+  getPhotoLocationSections,
   getPhotoTripBySlug,
   getProjectBySlug,
   getProjectsByCategory,
   isPlaceholderHref,
   validateContent,
 } from "./content";
+import { hikes, photoTrips } from "../content";
 
 describe("content utilities", () => {
   it("filters projects by category", () => {
@@ -37,10 +39,37 @@ describe("content utilities", () => {
   });
 
   it("looks up creative trip and hike records by slug", () => {
-    expect(getPhotoTripBySlug("pacific-coast-weekend")?.photoCount).toBe(72);
+    expect(getPhotoTripBySlug(photoTrips[0].slug)?.title).toBe(
+      photoTrips[0].title,
+    );
     expect(getPhotoTripBySlug("missing-trip")).toBeUndefined();
-    expect(getHikeBySlug("mount-tallac")?.distanceMiles).toBe(10.2);
+    expect(getHikeBySlug(hikes[0].slug)?.trail).toBe(hikes[0].trail);
     expect(getHikeBySlug("missing-hike")).toBeUndefined();
+  });
+
+  it("groups trip photos into named locations and a trip-wide fallback", () => {
+    const photos = photoTrips[0].photos.slice(0, 3);
+    const sections = getPhotoLocationSections({
+      ...photoTrips[0],
+      locations: [
+        { id: "trailhead", name: "Trailhead", coordinates: [-121, 48] },
+        { id: "camp", name: "Camp", coordinates: [-121.1, 48.1] },
+      ],
+      photos: [
+        { ...photos[0], locationId: "trailhead" },
+        { ...photos[1], locationId: "camp" },
+        { ...photos[2], locationId: undefined },
+      ],
+    });
+
+    expect(sections.map(({ name }) => name)).toEqual([
+      "Trailhead",
+      "Camp",
+      "Across the trip",
+    ]);
+    expect(
+      sections.map(({ photos: sectionPhotos }) => sectionPhotos.length),
+    ).toEqual([1, 1, 1]);
   });
 
   it("identifies links that should not become live controls", () => {

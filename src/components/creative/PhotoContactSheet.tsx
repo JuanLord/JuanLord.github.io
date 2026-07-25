@@ -1,15 +1,32 @@
 import { ChevronLeft, ChevronRight, Image, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
-import type { PhotoTrip } from "../../types/content";
+import type { PhotoTrip, TripPhoto } from "../../types/content";
 
 interface PhotoContactSheetProps {
   trip: PhotoTrip;
+  photos?: TripPhoto[];
+  collectionLabel?: string;
   compact?: boolean;
+}
+
+function displayAlt(photo: TripPhoto, trip: PhotoTrip, index: number): string {
+  const alt = photo.alt.trim();
+  const looksLikeFilename =
+    /\.(?:heic|heif|jpe?g|png|webp)$/i.test(alt) ||
+    /\b(?:dscn?|img|image|photo|pxl)[-_ ]?\d+\b/i.test(alt) ||
+    /\b\d{6,}\b/.test(alt);
+
+  if (alt && !looksLikeFilename) return alt;
+  if (photo.caption.trim()) return photo.caption.trim();
+  const tripIndex = trip.photos.findIndex(({ id }) => id === photo.id);
+  return `Photograph ${(tripIndex >= 0 ? tripIndex : index) + 1} from ${trip.title}`;
 }
 
 export function PhotoContactSheet({
   compact = false,
   trip,
+  photos = trip.photos,
+  collectionLabel = `${trip.title} photo collection`,
 }: PhotoContactSheetProps) {
   const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const closeButtonRef = useRef<HTMLButtonElement>(null);
@@ -17,8 +34,8 @@ export function PhotoContactSheet({
     ? Math.min(trip.previewSlots, 4)
     : Math.min(trip.previewSlots, 12);
   const visiblePhotos = compact
-    ? trip.photos.slice(0, Math.min(trip.previewSlots, 4))
-    : trip.photos;
+    ? photos.slice(0, Math.min(trip.previewSlots, 4))
+    : photos;
   const selectedPhoto =
     selectedIndex === null ? undefined : visiblePhotos[selectedIndex];
 
@@ -65,18 +82,18 @@ export function PhotoContactSheet({
     );
   };
 
-  if (trip.photos.length > 0) {
+  if (photos.length > 0) {
     return (
       <>
         <div
-          aria-label={`${trip.title} photo collection`}
+          aria-label={collectionLabel}
           className={`photo-contact-sheet${compact ? " photo-contact-sheet-compact" : ""}`}
         >
           {visiblePhotos.map((photo, index) => (
             <figure className="photo-contact-item" key={photo.id}>
               {compact ? (
                 <img
-                  alt={photo.alt}
+                  alt={displayAlt(photo, trip, index)}
                   decoding="async"
                   height={photo.height}
                   loading="lazy"
@@ -85,7 +102,7 @@ export function PhotoContactSheet({
                 />
               ) : (
                 <button
-                  aria-label={`Preview photo ${index + 1}: ${photo.alt}`}
+                  aria-label={`Preview photo ${index + 1}: ${displayAlt(photo, trip, index)}`}
                   className="photo-contact-trigger"
                   style={
                     photo.width && photo.height
@@ -96,7 +113,7 @@ export function PhotoContactSheet({
                   onClick={() => setSelectedIndex(index)}
                 >
                   <img
-                    alt={photo.alt}
+                    alt={displayAlt(photo, trip, index)}
                     decoding="async"
                     height={photo.height}
                     loading="lazy"
@@ -108,7 +125,7 @@ export function PhotoContactSheet({
               {!compact ? (
                 <figcaption>
                   <span>{String(index + 1).padStart(2, "0")}</span>
-                  {photo.caption || photo.alt}
+                  {photo.caption ? <p>{photo.caption}</p> : null}
                 </figcaption>
               ) : null}
             </figure>
@@ -147,7 +164,7 @@ export function PhotoContactSheet({
             </button>
             <figure>
               <img
-                alt={selectedPhoto.alt}
+                alt={displayAlt(selectedPhoto, trip, selectedIndex ?? 0)}
                 height={selectedPhoto.height}
                 src={selectedPhoto.src ?? selectedPhoto.thumbnailSrc}
                 width={selectedPhoto.width}
@@ -157,7 +174,7 @@ export function PhotoContactSheet({
                   {String((selectedIndex ?? 0) + 1).padStart(2, "0")} /{" "}
                   {String(visiblePhotos.length).padStart(2, "0")}
                 </span>
-                <p>{selectedPhoto.caption || selectedPhoto.alt}</p>
+                {selectedPhoto.caption ? <p>{selectedPhoto.caption}</p> : null}
               </figcaption>
             </figure>
             <button
@@ -178,7 +195,7 @@ export function PhotoContactSheet({
 
   return (
     <div
-      aria-label={`${trip.title} photo collection pending real images`}
+      aria-label={`${collectionLabel} pending real images`}
       className={`photo-contact-sheet photo-contact-sheet-empty${compact ? " photo-contact-sheet-compact" : ""}`}
       role="img"
     >

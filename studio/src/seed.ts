@@ -19,11 +19,20 @@ const validStatuses = new Set(["placeholder", "draft", "published"]);
 const legacyContentLabel = String.fromCharCode(109, 111, 99, 107);
 const legacyContentPattern = new RegExp(`\\b${legacyContentLabel}\\b`, "gi");
 
+function locationId(value: string, fallback: string): string {
+  return (
+    value
+      .toLowerCase()
+      .trim()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "") || fallback
+  );
+}
+
 export function createSeedDocument(
   existing?: Partial<StudioDocument>,
 ): StudioDocument {
   const document = {
-    schemaVersion: 1,
     updatedAt: new Date().toISOString(),
     profile,
     experience,
@@ -37,13 +46,45 @@ export function createSeedDocument(
     hikes,
     creativeProjects,
     ...existing,
+    schemaVersion: 2,
   };
 
-  return JSON.parse(JSON.stringify(document), (key, value) =>
+  const normalized = JSON.parse(JSON.stringify(document), (key, value) =>
     key === "status" && !validStatuses.has(value)
       ? "placeholder"
       : typeof value === "string"
         ? value.replace(legacyContentPattern, "placeholder")
         : value,
   ) as StudioDocument;
+
+  normalized.photoTrips = normalized.photoTrips.map((trip) => {
+    const locations = trip.locations?.length
+      ? trip.locations
+      : trip.location.trim()
+        ? [
+            {
+              id: locationId(trip.location, "primary-location"),
+              name: trip.location,
+              coordinates: trip.coordinates,
+            },
+          ]
+        : [];
+    const locationIds = new Set(locations.map(({ id }) => id));
+    const defaultLocationId =
+      locations.length === 1 ? locations[0].id : undefined;
+
+    return {
+      ...trip,
+      locations,
+      photos: trip.photos.map((photo) => ({
+        ...photo,
+        locationId:
+          photo.locationId && locationIds.has(photo.locationId)
+            ? photo.locationId
+            : defaultLocationId,
+      })),
+    };
+  });
+
+  return normalized;
 }

@@ -105,7 +105,8 @@ async function readJson(request) {
 function assertStudioDocument(document, allowLegacy = false) {
   if (
     !document ||
-    document.schemaVersion !== 1 ||
+    ![1, 2].includes(document.schemaVersion) ||
+    (!allowLegacy && document.schemaVersion !== 2) ||
     !Array.isArray(document.photoTrips) ||
     !Array.isArray(document.places) ||
     !Array.isArray(document.hikes) ||
@@ -222,13 +223,24 @@ function typedModule(importLine, exportName, value, typeExpression) {
 
 function createMapPoints(document) {
   return [
-    ...document.photoTrips.map((trip) => ({
-      id: `map-photo-${trip.slug}`,
-      label: `${trip.title} photo folder`,
-      coordinates: trip.coordinates,
-      kind: "photography",
-      to: `/creative/photography/${trip.slug}`,
-    })),
+    ...document.photoTrips.flatMap((trip) => {
+      const locations = trip.locations?.length
+        ? trip.locations
+        : [
+            {
+              id: "primary",
+              name: trip.location,
+              coordinates: trip.coordinates,
+            },
+          ];
+      return locations.map((location) => ({
+        id: `map-photo-${trip.slug}-${location.id}`,
+        label: `${trip.title}: ${location.name}`,
+        coordinates: location.coordinates,
+        kind: "photography",
+        to: `/creative/photography/${trip.slug}`,
+      }));
+    }),
     ...document.hikes.map((hike) => ({
       id: `map-hike-${hike.slug}`,
       label: `${hike.trail} hike`,
@@ -483,7 +495,7 @@ async function uploadPhoto(request, response, url) {
     thumbnailSrc: `${r2Config.publicBaseUrl}/${thumbnailStorageKey}`,
     storageKey,
     thumbnailStorageKey,
-    alt: stem.replace(/-/g, " "),
+    alt: `Photograph from ${tripSlug.replace(/-/g, " ")}`,
     caption: "",
     date: new Date().toISOString().slice(0, 10),
     width: display.info.width,

@@ -26,8 +26,8 @@ export function PhotographyPage() {
               <h2 id="photo-folders-title">Collections by journey.</h2>
             </div>
             <p>
-              The placeholder counts demonstrate the intended scale. Real images
-              will appear only after owner-provided files are added.
+              Each folder keeps its photographs, named locations, field notes,
+              and listening companion together as one journey.
             </p>
           </div>
 

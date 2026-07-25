@@ -2,140 +2,8 @@ import type { PhotoTrip } from "../../types/content";
 
 export const photoTrips: PhotoTrip[] = [
   {
-    slug: "pacific-coast-weekend",
-    title: "Pacific Coast Weekend",
-    location: "Point Reyes, California",
-    country: "United States",
-    startDate: "2025-07",
-    endDate: "2025-07",
-    summary:
-      "A folder for fog, headlands, working harbors, and the changing edge of the Pacific.",
-    story:
-      "This placeholder trip record demonstrates how one travel folder can hold a large contact sheet, a short written note, and a soundtrack without turning the archive into a social feed.",
-    coordinates: [-122.851, 38.083],
-    photoCount: 72,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "Pacific Coast trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "high-desert-spring",
-    title: "High Desert in Spring",
-    location: "Joshua Tree, California",
-    country: "United States",
-    startDate: "2025-03",
-    endDate: "2025-03",
-    summary:
-      "Granite, desert plants, small roads, and late light gathered over a long weekend.",
-    story:
-      "The final folder can mix landscape, detail, and documentary photographs while preserving one consistent trip-level story and listening companion.",
-    coordinates: [-116.319, 33.873],
-    photoCount: 58,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "High Desert trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "tahoe-alpine-summer",
-    title: "Tahoe Alpine Summer",
-    location: "Lake Tahoe, California",
-    country: "United States",
-    startDate: "2025-08",
-    endDate: "2025-08",
-    summary:
-      "An alpine folder connecting lake weather, trail details, and a long day above tree line.",
-    story:
-      "This collection is linked to the Mount Tallac hike record so visitors can move between photographs and trail data without duplicating content.",
-    coordinates: [-120.043, 38.939],
-    photoCount: 84,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "Tahoe trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "iceland-south-coast",
-    title: "Iceland South Coast",
-    location: "South Coast, Iceland",
-    country: "Iceland",
-    startDate: "2024-09",
-    endDate: "2024-09",
-    summary:
-      "A placeholder folder for coastal weather, black-sand shorelines, waterfalls, and long northern roads.",
-    story:
-      "This placeholder demonstrates how an international trip can connect the world atlas, a full photography archive, and a trip-level listening companion.",
-    coordinates: [-19.02, 64.15],
-    photoCount: 64,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "Iceland South Coast trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "kyoto-in-rain",
-    title: "Kyoto in Rain",
-    location: "Kyoto, Japan",
-    country: "Japan",
-    startDate: "2024-05",
-    endDate: "2024-05",
-    summary:
-      "A placeholder city folder for rain, neighborhood streets, gardens, and quiet architectural details.",
-    story:
-      "The final record can combine street photography, architecture, and small daily observations without requiring a separate page template.",
-    coordinates: [135.768, 35.011],
-    photoCount: 69,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "Kyoto trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "patagonia-wind",
-    title: "Patagonia Wind",
-    location: "Torres del Paine, Chile",
-    country: "Chile",
-    startDate: "2023-11",
-    endDate: "2023-11",
-    summary:
-      "A placeholder folder for open steppe, mountain weather, trail camps, and the scale of southern landscapes.",
-    story:
-      "This collection tests the archive with a distant map point and a larger planned contact sheet while remaining a clearly fictional placeholder.",
-    coordinates: [-72.987, -50.942],
-    photoCount: 91,
-    previewSlots: 8,
-    photos: [],
-    soundtrack: {
-      provider: "spotify",
-      title: "Patagonia trip soundtrack",
-      placeholder: true,
-    },
-    status: "placeholder",
-  },
-  {
-    slug: "mt-rainier-camping",
-    title: "Mt. Rainier Camping",
+    slug: "mt-rainier-national-park",
+    title: "Mt. Rainier National Park",
     location: "Mt. Rainier National Park",
     country: "United States",
     startDate: "2026-07",
@@ -1561,6 +1429,1166 @@ export const photoTrips: PhotoTrip[] = [
       title: "Mt. Rainier Camping trip soundtrack",
       sourceUrl: "https://open.spotify.com/track/2RWFncSWZEhSRRifqiDNVV",
       embedUrl: "https://open.spotify.com/embed/track/2RWFncSWZEhSRRifqiDNVV",
+      placeholder: false,
+    },
+    status: "published",
+  },
+  {
+    slug: "north-cascades-national-park",
+    title: "North Cascades National Park",
+    location: "Washington",
+    country: "United States",
+    startDate: "2026-07",
+    endDate: "2026-07",
+    summary: "Backcountry Camping at 7000ft",
+    story:
+      "Went to Cascade Pass trail, continued to Sahale Arm trail all the way to the campground.",
+    coordinates: [-121.64, 48.37],
+    photoCount: 71,
+    previewSlots: 8,
+    photos: [
+      {
+        id: "1784866647104-2e63f7b5",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-thumb.webp",
+        alt: "north cascades 00000001",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866648898-54ba6955",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-thumb.webp",
+        alt: "north cascades 00000071",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866650338-686702f2",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-thumb.webp",
+        alt: "north cascades 00000070",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866651416-0f08b54f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-thumb.webp",
+        alt: "north cascades 00000069",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866652292-1196a125",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-thumb.webp",
+        alt: "north cascades 00000068",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866653624-4c9e9cab",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-thumb.webp",
+        alt: "north cascades 00000067",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866655160-2b2758a8",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-thumb.webp",
+        alt: "north cascades 00000066",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866656152-4530f324",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-thumb.webp",
+        alt: "north cascades 00000065",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866657512-77c496cc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-thumb.webp",
+        alt: "north cascades 00000064",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866658987-dc65f021",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-thumb.webp",
+        alt: "north cascades 00000063",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866660599-4d7b0625",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-thumb.webp",
+        alt: "north cascades 00000062",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866661590-f4edd116",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-thumb.webp",
+        alt: "north cascades 00000061",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866662647-b2f3f26d",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-thumb.webp",
+        alt: "north cascades 00000060",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866663892-7d67a9d0",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-thumb.webp",
+        alt: "north cascades 00000059",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866665005-f446ed9b",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-thumb.webp",
+        alt: "north cascades 00000058",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866666354-a88e12cc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-thumb.webp",
+        alt: "north cascades 00000057",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866667358-a40f07d3",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-thumb.webp",
+        alt: "north cascades 00000056",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866668262-12efaafc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-thumb.webp",
+        alt: "north cascades 00000055",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866669191-8d6741dc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-thumb.webp",
+        alt: "north cascades 00000054",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866670311-5fa1ae92",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-thumb.webp",
+        alt: "north cascades 00000053",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866671296-5adedbe4",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-thumb.webp",
+        alt: "north cascades 00000052",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866672157-844d2192",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-thumb.webp",
+        alt: "north cascades 00000051",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866673034-6b678ced",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-thumb.webp",
+        alt: "north cascades 00000050",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866674178-fa909663",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-thumb.webp",
+        alt: "north cascades 00000049",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866675479-ccf4aa35",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-thumb.webp",
+        alt: "north cascades 00000048",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866676508-f5b19e22",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-thumb.webp",
+        alt: "north cascades 00000047",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866678202-3893e2d4",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-thumb.webp",
+        alt: "north cascades 00000046",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866679147-003612be",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-thumb.webp",
+        alt: "north cascades 00000045",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866680210-1f47b8a2",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-thumb.webp",
+        alt: "north cascades 00000044",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866681571-826ac2fd",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-thumb.webp",
+        alt: "north cascades 00000043",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866682574-ec59b37d",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-thumb.webp",
+        alt: "north cascades 00000042",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866683940-8f915e7a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-thumb.webp",
+        alt: "north cascades 00000041",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866684913-997e5986",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-thumb.webp",
+        alt: "north cascades 00000040",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866686075-c8180eb2",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-thumb.webp",
+        alt: "north cascades 00000039",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866687306-fcf5e468",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-thumb.webp",
+        alt: "north cascades 00000038",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866688430-5b1d6918",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-thumb.webp",
+        alt: "north cascades 00000037",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866689746-3d1aaece",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-thumb.webp",
+        alt: "north cascades 00000036",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866691040-9f45cca1",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-thumb.webp",
+        alt: "north cascades 00000035",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866692296-57eb421f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-thumb.webp",
+        alt: "north cascades 00000034",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866693580-9b8f746d",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-thumb.webp",
+        alt: "north cascades 00000033",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866694937-b3d19993",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-thumb.webp",
+        alt: "north cascades 00000032",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866695977-b4f1e2d8",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-thumb.webp",
+        alt: "north cascades 00000031",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866697349-f616cf09",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-thumb.webp",
+        alt: "north cascades 00000030",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866698371-e779b13f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-thumb.webp",
+        alt: "north cascades 00000029",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866699343-a49adf35",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-thumb.webp",
+        alt: "north cascades 00000028",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866700394-0054df7d",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-thumb.webp",
+        alt: "north cascades 00000027",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866701459-e91eaa05",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-thumb.webp",
+        alt: "north cascades 00000026",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866702576-ed486166",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-thumb.webp",
+        alt: "north cascades 00000025",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866703829-1ee61252",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-thumb.webp",
+        alt: "north cascades 00000024",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866705013-649f732c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-thumb.webp",
+        alt: "north cascades 00000023",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866706163-0566740e",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-thumb.webp",
+        alt: "north cascades 00000022",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866707537-7d0408fc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-thumb.webp",
+        alt: "north cascades 00000021",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866708668-4420a995",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-thumb.webp",
+        alt: "north cascades 00000020",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866709614-81e57d76",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-thumb.webp",
+        alt: "north cascades 00000019",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866710698-5f46bdab",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-thumb.webp",
+        alt: "north cascades 00000018",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866711643-98a83a0b",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-thumb.webp",
+        alt: "north cascades 00000017",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866712822-816ca7c0",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-thumb.webp",
+        alt: "north cascades 00000016",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866714028-cf9dee40",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-thumb.webp",
+        alt: "north cascades 00000015",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866715114-a799fe7c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-thumb.webp",
+        alt: "north cascades 00000014",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866716179-e784c8a8",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-thumb.webp",
+        alt: "north cascades 00000013",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866717301-d44f7eb9",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-thumb.webp",
+        alt: "north cascades 00000012",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866719788-fbead842",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-thumb.webp",
+        alt: "north cascades 00000011",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866721016-164b339a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-thumb.webp",
+        alt: "north cascades 00000010",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866722829-e08e3413",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-thumb.webp",
+        alt: "north cascades 00000009",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866725450-644bdd90",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-thumb.webp",
+        alt: "north cascades 00000008",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866728142-699e1c4e",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-thumb.webp",
+        alt: "north cascades 00000007",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866729828-67e28e40",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-thumb.webp",
+        alt: "north cascades 00000006",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866731033-061f6cba",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-thumb.webp",
+        alt: "north cascades 00000005",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866732393-2a943268",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-thumb.webp",
+        alt: "north cascades 00000004",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1784866733423-75c5bac4",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-thumb.webp",
+        alt: "north cascades 00000003",
+        caption: "",
+        date: "2026-07-24",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1784866734938-19a1543c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-thumb.webp",
+        storageKey:
+          "photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-display.webp",
+        thumbnailStorageKey:
+          "photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-thumb.webp",
+        alt: "north cascades 00000002",
+        caption: "",
+        date: "2026-07-24",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+    ],
+    soundtrack: {
+      provider: "spotify",
+      title: "North Cascades National Park trip soundtrack",
+      sourceUrl: "https://open.spotify.com/track/1Fwj0wThn3kTg8D7KgWdsU",
+      embedUrl: "https://open.spotify.com/embed/track/1Fwj0wThn3kTg8D7KgWdsU",
       placeholder: false,
     },
     status: "published",

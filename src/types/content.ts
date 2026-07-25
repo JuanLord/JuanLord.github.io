@@ -111,7 +111,14 @@ export interface TripPhoto {
   date: string;
   width?: number;
   height?: number;
+  locationId?: string;
   status: ContentStatus;
+}
+
+export interface PhotoTripLocation {
+  id: string;
+  name: string;
+  coordinates: Coordinates;
 }
 
 export interface PhotoTrip {
@@ -124,6 +131,7 @@ export interface PhotoTrip {
   summary: string;
   story: string;
   coordinates: Coordinates;
+  locations?: PhotoTripLocation[];
   photoCount: number;
   previewSlots: number;
   photos: TripPhoto[];
@@ -147,6 +155,10 @@ export interface TravelPlace {
 
 export interface HikeRoute {
   points: Coordinates[];
+  elevationProfileFeet?: number[];
+  startedAt?: string;
+  endedAt?: string;
+  elapsedHours?: number;
   strava: CreativeEmbed;
   placeholder: boolean;
 }
