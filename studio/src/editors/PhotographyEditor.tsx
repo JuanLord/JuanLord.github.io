@@ -291,7 +291,7 @@ export function PhotographyEditor({
       ),
     });
     setUploadMessage(
-      `${photoTotal} photos marked published. Select Publish source to update the website files.`,
+      `${photoTotal} photos marked published. Select Prepare site update to write the website files.`,
     );
   };
 
@@ -364,9 +364,9 @@ export function PhotographyEditor({
                 onChange={(endDate) => updateTrip({ endDate })}
               />
               <TextField
-                label="Planned photos"
+                label="Photo count"
                 type="number"
-                min={50}
+                min={0}
                 value={selected.photoCount}
                 onChange={(photoCount) =>
                   updateTrip({ photoCount: Number(photoCount) })

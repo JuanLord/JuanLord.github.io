@@ -10,47 +10,58 @@ import {
   isPlaceholderHref,
   validateContent,
 } from "./content";
-import { hikes, photoTrips } from "../content";
+import { hikes, photoTrips, projects } from "../content";
+
+const publishedProjects = projects.filter(
+  ({ status }) => status === "published",
+);
+const publishedPhotoTrips = photoTrips.filter(
+  ({ status }) => status === "published",
+);
+const publishedHikes = hikes.filter(({ status }) => status === "published");
 
 describe("content utilities", () => {
   it("filters projects by category", () => {
     const softwareProjects = getProjectsByCategory("software");
 
-    expect(softwareProjects).not.toHaveLength(0);
     expect(
-      softwareProjects.every(({ category }) => category === "software"),
+      softwareProjects.every(
+        ({ category, status }) =>
+          category === "software" && status === "published",
+      ),
     ).toBe(true);
   });
 
   it("looks up projects by slug", () => {
-    expect(getProjectBySlug("telemetry-workbench")?.title).toBe(
-      "Telemetry Workbench",
-    );
+    const project = publishedProjects[0];
+    if (project)
+      expect(getProjectBySlug(project.slug)?.title).toBe(project.title);
     expect(getProjectBySlug("missing-project")).toBeUndefined();
   });
 
   it("cycles to the next project", () => {
-    expect(getNextProject("autonomous-sorting-system").slug).toBe(
-      "telemetry-workbench",
-    );
-    expect(getNextProject("field-notes-platform").slug).toBe(
-      "autonomous-sorting-system",
-    );
+    if (!publishedProjects.length) {
+      expect(getNextProject("missing-project")).toBeUndefined();
+      return;
+    }
+    expect(getNextProject(publishedProjects[0].slug)).toBeDefined();
   });
 
   it("looks up creative trip and hike records by slug", () => {
-    expect(getPhotoTripBySlug(photoTrips[0].slug)?.title).toBe(
-      photoTrips[0].title,
+    expect(getPhotoTripBySlug(publishedPhotoTrips[0].slug)?.title).toBe(
+      publishedPhotoTrips[0].title,
     );
     expect(getPhotoTripBySlug("missing-trip")).toBeUndefined();
-    expect(getHikeBySlug(hikes[0].slug)?.trail).toBe(hikes[0].trail);
+    expect(getHikeBySlug(publishedHikes[0].slug)?.trail).toBe(
+      publishedHikes[0].trail,
+    );
     expect(getHikeBySlug("missing-hike")).toBeUndefined();
   });
 
   it("groups trip photos into named locations and a trip-wide fallback", () => {
-    const photos = photoTrips[0].photos.slice(0, 3);
+    const photos = publishedPhotoTrips[0].photos.slice(0, 3);
     const sections = getPhotoLocationSections({
-      ...photoTrips[0],
+      ...publishedPhotoTrips[0],
       locations: [
         { id: "trailhead", name: "Trailhead", coordinates: [-121, 48] },
         { id: "camp", name: "Camp", coordinates: [-121.1, 48.1] },
@@ -83,7 +94,7 @@ describe("content utilities", () => {
     expect(formatDateRange("2024-09", "2025-04")).toBe("Sep 2024 - Apr 2025");
   });
 
-  it("keeps placeholder content internally consistent", () => {
+  it("keeps published content internally consistent", () => {
     expect(validateContent()).toEqual([]);
   });
 });

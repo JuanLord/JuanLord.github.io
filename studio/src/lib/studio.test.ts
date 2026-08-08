@@ -85,19 +85,23 @@ describe("Portfolio Studio content utilities", () => {
     ).toBe(true);
   });
 
-  it("treats incomplete placeholder galleries as warnings, not publish blockers", () => {
+  it("normalizes profile links that begin with www", () => {
+    const document = createSeedDocument();
+    document.profile.linkedin.href = "www.linkedin.com/in/juanvar";
+
+    expect(createSeedDocument(document).profile.linkedin.href).toBe(
+      "https://www.linkedin.com/in/juanvar",
+    );
+  });
+
+  it("does not impose a minimum album size", () => {
     const document = createSeedDocument();
     const issues = validateStudioDocument(document);
 
     expect(issues.filter(({ level }) => level === "error")).toEqual([]);
     expect(
-      issues.filter(
-        ({ section, message }) =>
-          section === "photography" && message.includes("planned 50-100"),
-      ),
-    ).toHaveLength(
-      document.photoTrips.filter((trip) => trip.photos.length < 50).length,
-    );
+      issues.some(({ message }) => message.includes("planned 50-100")),
+    ).toBe(false);
   });
 
   it("blocks duplicate record slugs", () => {
@@ -115,6 +119,31 @@ describe("Portfolio Studio content utilities", () => {
 
   it("blocks duplicate professional project slugs", () => {
     const document = createSeedDocument();
+    document.developerProjects = [
+      {
+        slug: "duplicate-project",
+        title: "Duplicate project",
+        category: "software",
+        year: 2026,
+        summary: "Project summary",
+        techStack: ["TypeScript"],
+        featured: false,
+        media: {
+          alt: "Project system view",
+          aspectRatio: "16/10",
+          placeholder: true,
+        },
+        links: [],
+        details: {
+          problem: "Problem",
+          role: "Developer",
+          constraints: [],
+          approach: [],
+          outcome: "Outcome",
+        },
+        status: "draft",
+      },
+    ];
     document.developerProjects.push(
       structuredClone(document.developerProjects[0]),
     );

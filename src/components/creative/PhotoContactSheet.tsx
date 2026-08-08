@@ -195,7 +195,7 @@ export function PhotoContactSheet({
 
   return (
     <div
-      aria-label={`${collectionLabel} pending real images`}
+      aria-label={`${collectionLabel} without photographs`}
       className={`photo-contact-sheet photo-contact-sheet-empty${compact ? " photo-contact-sheet-compact" : ""}`}
       role="img"
     >

@@ -1,6 +1,7 @@
 import { ArrowUpRight, FolderOpen, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import { formatDateRange } from "../../lib/content";
+import { hasTrustedEmbed } from "../../lib/embeds";
 import type { PhotoTrip } from "../../types/content";
 import { EmbedPanel } from "./EmbedPanel";
 import { PhotoContactSheet } from "./PhotoContactSheet";
@@ -11,8 +12,12 @@ interface PhotoTripCardProps {
 }
 
 export function PhotoTripCard({ index, trip }: PhotoTripCardProps) {
+  const hasSoundtrack = hasTrustedEmbed(trip.soundtrack);
+
   return (
-    <article className="photo-trip-card">
+    <article
+      className={`photo-trip-card${hasSoundtrack ? "" : " photo-trip-card-without-embed"}`}
+    >
       <Link
         aria-label={`Open ${trip.title} photo folder`}
         className="photo-trip-preview"
@@ -47,7 +52,7 @@ export function PhotoTripCard({ index, trip }: PhotoTripCardProps) {
         </Link>
       </div>
 
-      <EmbedPanel compact embed={trip.soundtrack} />
+      {hasSoundtrack ? <EmbedPanel compact embed={trip.soundtrack} /> : null}
     </article>
   );
 }

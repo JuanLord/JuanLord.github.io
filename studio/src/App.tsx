@@ -242,12 +242,12 @@ export function App() {
               title={
                 errorCount
                   ? "Resolve validation errors before publishing"
-                  : undefined
+                  : "Writes local website files; a Git commit and push deploys them"
               }
               onClick={() => void publish()}
             >
               <CloudUpload size={16} aria-hidden="true" />
-              Publish source
+              Prepare site update
             </button>
           </div>
         </header>

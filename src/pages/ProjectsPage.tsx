@@ -38,13 +38,12 @@ export function ProjectsPage() {
     <>
       <PageIntro eyebrow="Selected work" index="02" title="Projects">
         <p>
-          Placeholder case studies across engineering and software, organized
-          around the decisions, constraints, and implementation work behind each
-          system.
+          Engineering and software case studies organized around the decisions,
+          constraints, and implementation work behind each system.
         </p>
         <div className="project-index-meta">
           <span>{String(visibleProjects.length).padStart(2, "0")} visible</span>
-          <span>All records are placeholders</span>
+          <span>Engineering + software</span>
         </div>
       </PageIntro>
 
@@ -81,9 +80,19 @@ export function ProjectsPage() {
           </div>
 
           <div className="projects-grid" aria-live="polite">
-            {visibleProjects.map((project, index) => (
-              <ProjectCard index={index} key={project.slug} project={project} />
-            ))}
+            {visibleProjects.length ? (
+              visibleProjects.map((project, index) => (
+                <ProjectCard
+                  index={index}
+                  key={project.slug}
+                  project={project}
+                />
+              ))
+            ) : (
+              <p className="content-empty-state">
+                Project archive in progress.
+              </p>
+            )}
           </div>
         </Container>
       </section>

@@ -1,23 +1,43 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { App } from "./App";
-import { hikes, photoTrips, profile } from "./content";
+import {
+  creativeProjects,
+  experience,
+  hikes,
+  photoTrips,
+  places,
+  profile,
+  projects,
+} from "./content";
+
+const publishedProjects = projects.filter(
+  ({ status }) => status === "published",
+);
+const publishedTrips = photoTrips.filter(
+  ({ status }) => status === "published",
+);
+const publishedHikes = hikes.filter(({ status }) => status === "published");
+const publishedPlaces = places.filter(({ status }) => status === "published");
+const publishedCreativeProjects = creativeProjects.filter(
+  ({ status }) => status === "published",
+);
 
 describe("App shell", () => {
   beforeEach(() => {
     window.location.hash = "#/";
   });
 
-  it("renders the portfolio identity and placeholder content integration", () => {
+  it("renders the portfolio identity without draft labels", () => {
     render(<App />);
 
     expect(
       screen.getByRole("heading", { level: 1, name: "Juan Varela" }),
     ).toBeInTheDocument();
-    expect(screen.getByText("Telemetry Workbench")).toBeInTheDocument();
     expect(
       screen.getByRole("link", { name: "Juan Varela, home" }),
     ).toBeInTheDocument();
+    expect(screen.queryByText(/placeholder/i)).not.toBeInTheDocument();
   });
 
   it("opens and closes the mobile navigation", async () => {
@@ -79,7 +99,7 @@ describe("App shell", () => {
     expect(screen.getByRole("main")).toHaveFocus();
   });
 
-  it("updates document metadata for routes and project case studies", async () => {
+  it("updates document metadata for routes", async () => {
     const user = userEvent.setup();
     render(<App />);
 
@@ -87,13 +107,6 @@ describe("App shell", () => {
 
     await user.click(screen.getByRole("link", { name: "View projects" }));
     expect(document.title).toBe("Projects | Juan Varela");
-
-    await user.click(
-      screen.getByRole("link", {
-        name: "View Telemetry Workbench case study",
-      }),
-    );
-    expect(document.title).toBe("Telemetry Workbench | Juan Varela");
   });
 
   it("filters the project archive and keeps the filter in the URL", async () => {
@@ -101,53 +114,36 @@ describe("App shell", () => {
     window.location.hash = "#/projects";
     render(<App />);
 
-    expect(screen.getAllByRole("article")).toHaveLength(4);
+    expect(screen.queryAllByRole("article")).toHaveLength(
+      publishedProjects.length,
+    );
 
     await user.click(screen.getByRole("button", { name: "Software" }));
 
     expect(window.location.hash).toContain("category=software");
-    expect(screen.getAllByRole("article")).toHaveLength(2);
-    expect(
-      screen.getByRole("heading", { name: "Telemetry Workbench" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.queryByRole("heading", { name: "Autonomous Sorting System" }),
-    ).not.toBeInTheDocument();
+    expect(screen.queryAllByRole("article")).toHaveLength(
+      publishedProjects.filter(({ category }) => category === "software")
+        .length,
+    );
   });
 
-  it("renders a complete project case study", () => {
-    window.location.hash = "#/projects/telemetry-workbench";
+  it("renders a published case study or the honest empty archive", () => {
+    const project = publishedProjects[0];
+    window.location.hash = project
+      ? `#/projects/${project.slug}`
+      : "#/projects";
     render(<App />);
 
-    expect(
-      screen.getByRole("heading", { level: 1, name: "Telemetry Workbench" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByText(
-        "Product definition, interface architecture, data modeling, and frontend implementation.",
-      ),
-    ).toBeInTheDocument();
-    expect(screen.getByText("Mixed test-file formats")).toBeInTheDocument();
-    expect(
-      screen.getByRole("link", {
-        name: "View Adaptive Energy Monitor case study",
-      }),
-    ).toBeInTheDocument();
-
-    const placeholderLinks = screen.getAllByRole("button", {
-      name: /GitHub|Live demo/,
-    });
-    expect(placeholderLinks).toHaveLength(2);
-    expect(
-      placeholderLinks.every((button) => button.hasAttribute("disabled")),
-    ).toBe(true);
-    expect(
-      placeholderLinks.every(
-        (button) =>
-          button.getAttribute("aria-describedby") ===
-          "project-link-placeholder-note",
-      ),
-    ).toBe(true);
+    if (project) {
+      expect(
+        screen.getByRole("heading", { level: 1, name: project.title }),
+      ).toBeInTheDocument();
+      expect(screen.getByText(project.details.problem)).toBeInTheDocument();
+    } else {
+      expect(
+        screen.getByText("Project archive in progress."),
+      ).toBeInTheDocument();
+    }
   });
 
   it("handles an invalid project slug", () => {
@@ -197,18 +193,18 @@ describe("App shell", () => {
     expect(
       screen.getByRole("heading", { level: 1, name: "Trip folders" }),
     ).toBeInTheDocument();
-    for (const trip of photoTrips) {
+    for (const trip of publishedTrips) {
       expect(
         screen.getByRole("heading", { name: trip.title }),
       ).toBeInTheDocument();
     }
     expect(
       screen.getAllByRole("link", { name: /Open .* photo folder/ }),
-    ).toHaveLength(photoTrips.length);
+    ).toHaveLength(publishedTrips.length);
   });
 
   it("renders a photography trip with a named location section", () => {
-    const trip = photoTrips[0];
+    const trip = publishedTrips[0];
     window.location.hash = `#/creative/photography/${trip.slug}`;
     render(<App />);
 
@@ -232,7 +228,7 @@ describe("App shell", () => {
 
   it("renders every real trip photo and supports lightbox navigation", async () => {
     const user = userEvent.setup();
-    const trip = photoTrips.find(({ photos }) => photos.length > 1);
+    const trip = publishedTrips.find(({ photos }) => photos.length > 1);
     expect(trip).toBeDefined();
     const photoCount = trip?.photos.length ?? 0;
     window.location.hash = `#/creative/photography/${trip?.slug}`;
@@ -268,20 +264,21 @@ describe("App shell", () => {
       screen.getByRole("heading", { level: 1, name: "Field atlas" }),
     ).toBeInTheDocument();
     expect(
-      await screen.findByRole("img", {
-        name: "World map of photography folders and hikes",
+      await screen.findByRole("region", {
+        name: "Interactive world map of photography folders and hikes",
       }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "Point Reyes" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "Mount Tallac" }),
-    ).toBeInTheDocument();
+    for (const place of publishedPlaces) {
+      expect(
+        screen.getByRole("heading", { name: place.title }),
+      ).toBeInTheDocument();
+    }
   });
 
   it("renders hike route data on an interactive map", () => {
-    const hike = hikes.find(({ route }) => route.points.length > 1) ?? hikes[0];
+    const hike =
+      publishedHikes.find(({ route }) => route.points.length > 1) ??
+      publishedHikes[0];
     window.location.hash = `#/creative/travel/hikes/${hike.slug}`;
     render(<App />);
 
@@ -298,7 +295,7 @@ describe("App shell", () => {
     ).toBeInTheDocument();
   });
 
-  it("renders separate short-film and music project collections", () => {
+  it("renders only published film and music projects", () => {
     window.location.hash = "#/creative/projects";
     render(<App />);
 
@@ -311,43 +308,31 @@ describe("App shell", () => {
     expect(
       screen.getByRole("heading", { name: "Music projects." }),
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: "Light Between Trees" }),
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("status", { name: "Spotify media pending" }),
-    ).toBeInTheDocument();
+    for (const project of publishedCreativeProjects) {
+      expect(
+        screen.getByRole("heading", { name: project.title }),
+      ).toBeInTheDocument();
+    }
+    expect(screen.queryByText(/placeholder/i)).not.toBeInTheDocument();
   });
 
-  it("renders the complete professional profile from placeholder content", () => {
+  it("renders the professional profile without unpublished experience", () => {
     window.location.hash = "#/about";
     render(<App />);
 
     expect(
       screen.getByRole("heading", { level: 1, name: "About & Experience" }),
     ).toBeInTheDocument();
-    expect(screen.getByText("Northstar Systems Lab")).toBeInTheDocument();
-    expect(
-      screen.getByText("Pacific Institute of Technology"),
-    ).toBeInTheDocument();
     expect(screen.getByText("Technical Writing")).toBeInTheDocument();
-
-    const resumeButtons = screen.getAllByRole("button", {
-      name: "Download resume",
-    });
-    expect(resumeButtons).toHaveLength(2);
-    expect(
-      resumeButtons.every((button) => button.hasAttribute("disabled")),
-    ).toBe(true);
-    expect(
-      resumeButtons.every(
-        (button) =>
-          button.getAttribute("aria-describedby") === "placeholder-action-note",
-      ),
-    ).toBe(true);
+    for (const item of experience.filter(
+      ({ status }) => status !== "published",
+    )) {
+      expect(screen.queryByText(item.organization)).not.toBeInTheDocument();
+    }
+    expect(screen.queryByText(/placeholder/i)).not.toBeInTheDocument();
   });
 
-  it("keeps live and placeholder contact methods distinct", () => {
+  it("renders live contact methods", () => {
     window.location.hash = "#/contact";
     render(<App />);
 

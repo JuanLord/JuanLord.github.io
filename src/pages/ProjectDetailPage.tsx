@@ -2,8 +2,6 @@ import { ArrowLeft, ArrowRight, Braces, ExternalLink } from "lucide-react";
 import { Link, useParams } from "react-router-dom";
 import { ProjectVisual } from "../components/projects/ProjectVisual";
 import { Container } from "../components/ui/Container";
-import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
-import { PlaceholderAction } from "../components/ui/PlaceholderAction";
 import { getNextProject, getProjectBySlug } from "../lib/content";
 
 export function ProjectDetailPage() {
@@ -16,10 +14,7 @@ export function ProjectDetailPage() {
         <Container className="not-found">
           <p className="section-index">Error / Project not found</p>
           <h1>Case study unavailable.</h1>
-          <p>
-            The requested project does not exist in the placeholder content
-            index.
-          </p>
+          <p>The requested project is not available in the project index.</p>
           <Link className="action-link action-link-primary" to="/projects">
             <ArrowLeft aria-hidden size={18} />
             Back to projects
@@ -30,7 +25,7 @@ export function ProjectDetailPage() {
   }
 
   const nextProject = getNextProject(project.slug);
-  const hasPlaceholderLinks = project.links.some((link) => link.placeholder);
+  const publicLinks = project.links.filter((link) => !link.placeholder);
 
   return (
     <>
@@ -52,7 +47,6 @@ export function ProjectDetailPage() {
             <div className="project-detail-summary">
               <p>{project.summary}</p>
               <div className="project-detail-status">
-                <PlaceholderBadge />
                 <span>{project.year}</span>
               </div>
             </div>
@@ -86,7 +80,7 @@ export function ProjectDetailPage() {
               </div>
               <div>
                 <dt>Status</dt>
-                <dd>Placeholder case study</dd>
+                <dd>Published case study</dd>
               </div>
             </dl>
 
@@ -97,34 +91,18 @@ export function ProjectDetailPage() {
             </ul>
 
             <div className="project-links">
-              {project.links.map((link) =>
-                link.placeholder ? (
-                  <PlaceholderAction
-                    describedBy="project-link-placeholder-note"
-                    icon={ExternalLink}
-                    key={link.label}
-                  >
-                    {link.label}
-                  </PlaceholderAction>
-                ) : (
-                  <a
-                    className="action-link action-link-secondary"
-                    href={link.href}
-                    key={link.label}
-                    rel="noreferrer"
-                    target="_blank"
-                  >
-                    {link.label}
-                    <ExternalLink aria-hidden size={18} strokeWidth={1.8} />
-                  </a>
-                ),
-              )}
-              {hasPlaceholderLinks && (
-                <p id="project-link-placeholder-note">
-                  Source and demo links activate when real project URLs are
-                  supplied.
-                </p>
-              )}
+              {publicLinks.map((link) => (
+                <a
+                  className="action-link action-link-secondary"
+                  href={link.href}
+                  key={link.label}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  {link.label}
+                  <ExternalLink aria-hidden size={18} strokeWidth={1.8} />
+                </a>
+              ))}
             </div>
           </aside>
 
@@ -199,22 +177,24 @@ export function ProjectDetailPage() {
         </Container>
       </section>
 
-      <section className="next-project">
-        <Container className="next-project-inner">
-          <div>
-            <p className="section-index">Next case study</p>
-            <h2>{nextProject.title}</h2>
-          </div>
-          <Link
-            aria-label={`View ${nextProject.title} case study`}
-            className="action-link action-link-primary"
-            to={`/projects/${nextProject.slug}`}
-          >
-            Continue
-            <ArrowRight aria-hidden size={18} />
-          </Link>
-        </Container>
-      </section>
+      {nextProject ? (
+        <section className="next-project">
+          <Container className="next-project-inner">
+            <div>
+              <p className="section-index">Next case study</p>
+              <h2>{nextProject.title}</h2>
+            </div>
+            <Link
+              aria-label={`View ${nextProject.title} case study`}
+              className="action-link action-link-primary"
+              to={`/projects/${nextProject.slug}`}
+            >
+              Continue
+              <ArrowRight aria-hidden size={18} />
+            </Link>
+          </Container>
+        </section>
+      ) : null}
     </>
   );
 }

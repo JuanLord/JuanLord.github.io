@@ -28,78 +28,22 @@ export const profile: Profile = {
   },
   linkedin: {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/juanvarela",
+    href: "https://www.linkedin.com/in/juanvar",
     placeholder: false,
   },
   resume: {
     label: "Resume",
     href: "/resume/juan-varela-resume.pdf",
-    placeholder: true,
+    placeholder: false,
   },
-  status: "placeholder",
+  status: "published",
 };
 
-export const experience: Experience[] = [
-  {
-    id: "northstar-systems",
-    organization: "Northstar Systems Lab",
-    role: "Engineering Intern",
-    startDate: "2025-05",
-    endDate: "2025-08",
-    location: "San Diego, CA",
-    summary:
-      "Built instrumentation and automation tools for a multidisciplinary prototype team.",
-    highlights: [
-      "Reduced repetitive test setup through a Python-based data workflow.",
-      "Documented hardware and software interfaces for faster team handoffs.",
-    ],
-    status: "placeholder",
-  },
-  {
-    id: "forge-development",
-    organization: "Forge Development Collective",
-    role: "Software Project Lead",
-    startDate: "2024-09",
-    endDate: "2025-04",
-    location: "Remote",
-    summary:
-      "Led a small team building internal tools for project tracking and technical reporting.",
-    highlights: [
-      "Defined the component architecture and content model.",
-      "Coordinated reviews, testing, and iterative releases.",
-    ],
-    status: "placeholder",
-  },
-];
+export const experience: Experience[] = [];
 
-export const education: Education[] = [
-  {
-    id: "pacific-tech",
-    institution: "Pacific Institute of Technology",
-    credential: "Bachelor of Science",
-    field: "Mechanical Engineering",
-    startYear: 2022,
-    endYear: 2026,
-    status: "placeholder",
-  },
-];
+export const education: Education[] = [];
 
-export const certifications: Certification[] = [
-  {
-    id: "solidworks-associate",
-    title: "Certified CAD Design Associate",
-    issuer: "Example Engineering Institute",
-    year: 2025,
-    status: "placeholder",
-  },
-  {
-    id: "cloud-foundations",
-    title: "Cloud Development Foundations",
-    issuer: "Example Technology Academy",
-    year: 2024,
-    status: "placeholder",
-  },
-];
+export const certifications: Certification[] = [];
 
 export const skills: SkillGroup[] = [
   {

@@ -8,16 +8,16 @@ The current milestone includes:
 - A Vite, React, and TypeScript foundation.
 - A responsive application shell and dark design system.
 - Hash-based navigation suitable for GitHub Pages.
-- Typed placeholder content for profile, experience, projects, photography, hiking,
-  and music.
+- Typed content for profile, experience, projects, photography, hiking, and
+  music.
 - Complete data-driven Home, About, Experience, Education, Skills, and Contact
   views.
 - A filterable Engineering and Software project catalog with URL-backed filter
   state.
-- Slug-driven project case studies with placeholder diagrams, project facts, and
+- Slug-driven project case studies with technical diagrams, project facts, and
   invalid-route recovery.
 - A nature-forward Creative Field Notes module for real photography, hiking
-  records, and placeholder music projects.
+  records, film, and music projects.
 - Separate Creative routes for trip folders, a world travel atlas, hike
   details, short films, and music projects.
 - Route-aware document titles, social sharing metadata, and search discovery
@@ -25,10 +25,10 @@ The current milestone includes:
 - A quality-gated GitHub Pages deployment workflow.
 - Content integrity, navigation, and component tests.
 
-All professional and creative records are placeholders unless explicitly marked
-otherwise. Replace records in `src/content/` without changing page components.
-The project does not use AI-generated images. Empty media states remain visible
-until real, user-owned photography or artwork is added.
+Only records marked `published` appear on the public website. Replace records in
+`src/content/` without changing page components. The project does not use
+AI-generated images. Empty media states use interface-only treatments until
+real, user-owned photography or artwork is added.
 
 ## Local Development
 
@@ -67,7 +67,7 @@ src/
   components/
     layout/       Shared shell, navigation, and document metadata
     creative/     Photography, trail, and music presentation components
-    projects/     Reusable project cards and placeholder technical visuals
+    projects/     Reusable project cards and technical visuals
     ui/           Reusable interface primitives
   content/        Replaceable portfolio records, split by creative collection
   lib/            Content queries and validation

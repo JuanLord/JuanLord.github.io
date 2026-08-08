@@ -8,10 +8,19 @@ import {
 } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
-import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { PageIntro } from "../components/ui/PageIntro";
 import { PlaceholderAction } from "../components/ui/PlaceholderAction";
 import { formatDateRange } from "../lib/content";
+
+const publishedExperience = experience.filter(
+  ({ status }) => status === "published",
+);
+const publishedEducation = education.filter(
+  ({ status }) => status === "published",
+);
+const publishedCertifications = certifications.filter(
+  ({ status }) => status === "published",
+);
 
 function ResumeAction() {
   if (profile.resume.placeholder) {
@@ -66,7 +75,7 @@ export function AboutPage() {
         </div>
         {profile.resume.placeholder ? (
           <p className="placeholder-action-note" id="placeholder-action-note">
-            A public resume will be available here after it is uploaded.
+            Resume download is not available yet.
           </p>
         ) : null}
       </PageIntro>
@@ -76,11 +85,10 @@ export function AboutPage() {
           <div className="profile-section-heading">
             <p className="section-index">01.1 / Timeline</p>
             <h2 id="experience-title">Experience</h2>
-            <PlaceholderBadge />
           </div>
 
           <ol className="experience-list">
-            {experience.map((item, index) => (
+            {publishedExperience.map((item, index) => (
               <li className="experience-item" key={item.id}>
                 <div className="experience-rail" aria-hidden>
                   <span>{String(index + 1).padStart(2, "0")}</span>
@@ -101,6 +109,9 @@ export function AboutPage() {
                 </article>
               </li>
             ))}
+            {!publishedExperience.length ? (
+              <li className="content-empty-state">Timeline in progress.</li>
+            ) : null}
           </ol>
         </Container>
       </section>
@@ -113,7 +124,7 @@ export function AboutPage() {
               <h2 id="education-title">Education</h2>
             </div>
             <div className="credential-list">
-              {education.map((item) => (
+              {publishedEducation.map((item) => (
                 <article className="credential-row" key={item.id}>
                   <div>
                     <h3>
@@ -126,6 +137,11 @@ export function AboutPage() {
                   </span>
                 </article>
               ))}
+              {!publishedEducation.length ? (
+                <p className="content-empty-state">
+                  Education details in progress.
+                </p>
+              ) : null}
             </div>
           </div>
 
@@ -138,7 +154,7 @@ export function AboutPage() {
               <h2 id="certifications-title">Certifications</h2>
             </div>
             <div className="credential-list">
-              {certifications.map((item) => (
+              {publishedCertifications.map((item) => (
                 <article className="credential-row" key={item.id}>
                   <div>
                     <h3>{item.title}</h3>
@@ -147,6 +163,11 @@ export function AboutPage() {
                   <span>{item.year}</span>
                 </article>
               ))}
+              {!publishedCertifications.length ? (
+                <p className="content-empty-state">
+                  Certification details in progress.
+                </p>
+              ) : null}
             </div>
           </div>
         </Container>

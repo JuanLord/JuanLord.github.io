@@ -25,22 +25,30 @@ export interface PhotoLocationSection {
 export function getProjectsByCategory(
   category: ProjectCategory | "all",
 ): Project[] {
-  if (category === "all") return projects;
-  return projects.filter((project) => project.category === category);
+  const published = projects.filter(({ status }) => status === "published");
+  if (category === "all") return published;
+  return published.filter((project) => project.category === category);
 }
 
 export function getProjectBySlug(slug: string): Project | undefined {
-  return projects.find((project) => project.slug === slug);
+  return projects.find(
+    (project) => project.status === "published" && project.slug === slug,
+  );
 }
 
-export function getNextProject(slug: string): Project {
-  const currentIndex = projects.findIndex((project) => project.slug === slug);
-  const nextIndex = currentIndex < 0 ? 0 : (currentIndex + 1) % projects.length;
-  return projects[nextIndex];
+export function getNextProject(slug: string): Project | undefined {
+  const published = projects.filter(({ status }) => status === "published");
+  if (!published.length) return undefined;
+  const currentIndex = published.findIndex((project) => project.slug === slug);
+  const nextIndex =
+    currentIndex < 0 ? 0 : (currentIndex + 1) % published.length;
+  return published[nextIndex];
 }
 
 export function getPhotoTripBySlug(slug: string): PhotoTrip | undefined {
-  return photoTrips.find((trip) => trip.slug === slug);
+  return photoTrips.find(
+    (trip) => trip.status === "published" && trip.slug === slug,
+  );
 }
 
 export function getPhotoLocationSections(
@@ -81,7 +89,9 @@ export function getPhotoLocationSections(
 }
 
 export function getHikeBySlug(slug: string): Hike | undefined {
-  return hikes.find((hike) => hike.slug === slug);
+  return hikes.find(
+    (hike) => hike.status === "published" && hike.slug === slug,
+  );
 }
 
 export function isPlaceholderHref(href: string): boolean {
@@ -116,9 +126,20 @@ function hasValidCoordinates([longitude, latitude]: Coordinates): boolean {
 
 export function validateContent(): string[] {
   const issues: string[] = [];
-  const projectSlugs = projects.map((project) => project.slug);
-  const photoTripSlugs = photoTrips.map((trip) => trip.slug);
-  const hikeSlugs = hikes.map((hike) => hike.slug);
+  const publishedProjects = projects.filter(
+    ({ status }) => status === "published",
+  );
+  const publishedPhotoTrips = photoTrips.filter(
+    ({ status }) => status === "published",
+  );
+  const publishedHikes = hikes.filter(({ status }) => status === "published");
+  const publishedPlaces = places.filter(({ status }) => status === "published");
+  const publishedCreativeProjects = creativeProjects.filter(
+    ({ status }) => status === "published",
+  );
+  const projectSlugs = publishedProjects.map((project) => project.slug);
+  const photoTripSlugs = publishedPhotoTrips.map((trip) => trip.slug);
+  const hikeSlugs = publishedHikes.map((hike) => hike.slug);
 
   if (new Set(projectSlugs).size !== projectSlugs.length) {
     issues.push("Project slugs must be unique.");
@@ -132,7 +153,7 @@ export function validateContent(): string[] {
     issues.push("Hike slugs must be unique.");
   }
 
-  for (const project of projects) {
+  for (const project of publishedProjects) {
     if (!project.media.alt || !project.media.aspectRatio) {
       issues.push(`Project ${project.slug} needs complete media metadata.`);
     }
@@ -148,9 +169,9 @@ export function validateContent(): string[] {
     }
   }
 
-  for (const trip of photoTrips) {
-    if (trip.photoCount < 50 || trip.photoCount > 100) {
-      issues.push(`Photo trip ${trip.slug} must plan for 50-100 photos.`);
+  for (const trip of publishedPhotoTrips) {
+    if (trip.photoCount < 1) {
+      issues.push(`Photo trip ${trip.slug} needs at least one photograph.`);
     }
 
     if (trip.previewSlots < 1) {
@@ -189,7 +210,7 @@ export function validateContent(): string[] {
     }
   }
 
-  for (const hike of hikes) {
+  for (const hike of publishedHikes) {
     if (
       hike.distanceMiles <= 0 ||
       hike.elevationFeet <= 0 ||
@@ -205,7 +226,7 @@ export function validateContent(): string[] {
     }
   }
 
-  for (const place of places) {
+  for (const place of publishedPlaces) {
     if (!hasValidCoordinates(place.coordinates)) {
       issues.push(`Place ${place.slug} has invalid coordinates.`);
     }
@@ -222,7 +243,7 @@ export function validateContent(): string[] {
     }
   }
 
-  for (const creativeProject of creativeProjects) {
+  for (const creativeProject of publishedCreativeProjects) {
     if (
       !creativeProject.role ||
       creativeProject.tools.length === 0 ||

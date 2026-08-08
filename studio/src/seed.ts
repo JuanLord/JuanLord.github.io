@@ -29,6 +29,11 @@ function locationId(value: string, fallback: string): string {
   );
 }
 
+function publicUrl(value: string): string {
+  const trimmed = value.trim();
+  return /^www\./i.test(trimmed) ? `https://${trimmed}` : trimmed;
+}
+
 export function createSeedDocument(
   existing?: Partial<StudioDocument>,
 ): StudioDocument {
@@ -56,6 +61,11 @@ export function createSeedDocument(
         ? value.replace(legacyContentPattern, "placeholder")
         : value,
   ) as StudioDocument;
+
+  normalized.profile.github.href = publicUrl(normalized.profile.github.href);
+  normalized.profile.linkedin.href = publicUrl(
+    normalized.profile.linkedin.href,
+  );
 
   normalized.photoTrips = normalized.photoTrips.map((trip) => {
     const locations = trip.locations?.length

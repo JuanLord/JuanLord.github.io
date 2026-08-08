@@ -253,26 +253,28 @@ function createMapPoints(document) {
 
 function createPublicDocument(document) {
   const photoTrips = document.photoTrips
-    .filter((trip) => trip.status !== "draft")
+    .filter((trip) => trip.status === "published")
     .map((trip) => ({
       ...trip,
-      photos: trip.photos.filter((photo) => photo.status !== "draft"),
+      photos: trip.photos.filter((photo) => photo.status === "published"),
     }));
-  const hikes = document.hikes.filter((hike) => hike.status !== "draft");
+  const hikes = document.hikes.filter((hike) => hike.status === "published");
   const photoTripSlugs = new Set(photoTrips.map((trip) => trip.slug));
   const hikeSlugs = new Set(hikes.map((hike) => hike.slug));
 
   return {
     ...document,
     experience: document.experience.filter(
-      (record) => record.status !== "draft",
+      (record) => record.status === "published",
     ),
-    education: document.education.filter((record) => record.status !== "draft"),
+    education: document.education.filter(
+      (record) => record.status === "published",
+    ),
     certifications: document.certifications.filter(
-      (record) => record.status !== "draft",
+      (record) => record.status === "published",
     ),
     developerProjects: document.developerProjects.filter(
-      (project) => project.status !== "draft",
+      (project) => project.status === "published",
     ),
     photoTrips,
     hikes: hikes.map((hike) => ({
@@ -282,7 +284,7 @@ function createPublicDocument(document) {
         : undefined,
     })),
     places: document.places
-      .filter((place) => place.status !== "draft")
+      .filter((place) => place.status === "published")
       .map((place) => ({
         ...place,
         relatedPhotoTripSlug: photoTripSlugs.has(place.relatedPhotoTripSlug)
@@ -293,7 +295,7 @@ function createPublicDocument(document) {
           : undefined,
       })),
     creativeProjects: document.creativeProjects.filter(
-      (project) => project.status !== "draft",
+      (project) => project.status === "published",
     ),
   };
 }
@@ -590,7 +592,7 @@ async function handleApi(request, response) {
     await atomicWrite(draftPath, `${JSON.stringify(document, null, 2)}\n`);
     sendJson(response, 200, {
       message:
-        "Portfolio source updated. Commit and push the generated files to deploy with GitHub Pages.",
+        "Local website files are ready. Commit and push them to main to update GitHub Pages.",
     });
     return;
   }

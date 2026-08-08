@@ -8,7 +8,6 @@ import {
 import type { LucideIcon } from "lucide-react";
 import { profile } from "../content";
 import { Container } from "../components/ui/Container";
-import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { PageIntro } from "../components/ui/PageIntro";
 import type { ExternalLink } from "../types/content";
 
@@ -32,7 +31,7 @@ const contactMethods: {
     icon: Mail,
     link: profile.email,
   },
-];
+].filter(({ link }) => !link.placeholder);
 
 export function ContactPage() {
   return (
@@ -56,55 +55,31 @@ export function ContactPage() {
           <div className="contact-heading">
             <p className="section-index">04.1 / Channels</p>
             <h2 id="contact-title">Find me online</h2>
-            <p>
-              Placeholder channels stay disabled until final contact details are
-              supplied.
-            </p>
-            <PlaceholderBadge />
+            <p>Professional profiles and direct contact channels.</p>
           </div>
 
           <div className="contact-methods">
-            {contactMethods.map(({ description, icon: Icon, link }, index) =>
-              link.placeholder ? (
-                <div
-                  aria-disabled="true"
-                  className="contact-method contact-method-disabled"
-                  key={link.label}
-                >
-                  <div className="contact-method-icon" aria-hidden>
-                    <Icon size={20} />
-                  </div>
-                  <div>
-                    <span className="contact-method-index">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3>{link.label}</h3>
-                    <p>{description}</p>
-                  </div>
-                  <span className="contact-method-state">Placeholder</span>
+            {contactMethods.map(({ description, icon: Icon, link }, index) => (
+              <a
+                className="contact-method"
+                href={link.href}
+                key={link.label}
+                rel="noreferrer"
+                target="_blank"
+              >
+                <div className="contact-method-icon" aria-hidden>
+                  <Icon size={20} />
                 </div>
-              ) : (
-                <a
-                  className="contact-method"
-                  href={link.href}
-                  key={link.label}
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  <div className="contact-method-icon" aria-hidden>
-                    <Icon size={20} />
-                  </div>
-                  <div>
-                    <span className="contact-method-index">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <h3>{link.label}</h3>
-                    <p>{description}</p>
-                  </div>
-                  <ArrowUpRight aria-hidden size={19} />
-                </a>
-              ),
-            )}
+                <div>
+                  <span className="contact-method-index">
+                    {String(index + 1).padStart(2, "0")}
+                  </span>
+                  <h3>{link.label}</h3>
+                  <p>{description}</p>
+                </div>
+                <ArrowUpRight aria-hidden size={19} />
+              </a>
+            ))}
           </div>
         </Container>
       </section>

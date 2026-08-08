@@ -50,7 +50,7 @@ read files directly from an owner's laptop or desktop. Serving from the device
 would require it to stay online as a public web server, so R2 is the preferred
 home for the full archive.
 
-Each `PhotoTrip` plans for 50-100 photos and includes:
+Each `PhotoTrip` can contain any number of published photographs and includes:
 
 - A stable URL slug.
 - A primary location and date range.

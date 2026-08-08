@@ -11,15 +11,24 @@ import {
   places,
 } from "../content";
 
+const publishedPhotoTrips = photoTrips.filter(
+  ({ status }) => status === "published",
+);
+const publishedPlaces = places.filter(({ status }) => status === "published");
+const publishedHikes = hikes.filter(({ status }) => status === "published");
+const publishedCreativeProjects = creativeProjects.filter(
+  ({ status }) => status === "published",
+);
+
 const creativeChapters = [
   {
     index: "01",
     title: "Photography",
     description:
-      "Trip folders built for complete 50-100 image collections, captions, stories, and one listening companion.",
+      "Trip folders built for complete image collections, captions, stories, named locations, and listening companions.",
     to: "/creative/photography",
     icon: Camera,
-    detail: `${photoTrips.length} placeholder folders`,
+    detail: `${publishedPhotoTrips.length} trip folders`,
   },
   {
     index: "02",
@@ -28,7 +37,7 @@ const creativeChapters = [
       "A connected atlas of places, trail records, route geometry, and optional public Strava embeds.",
     to: "/creative/travel",
     icon: Map,
-    detail: `${places.length} places / ${hikes.length} hikes`,
+    detail: `${publishedPlaces.length} places / ${publishedHikes.length} hikes`,
   },
   {
     index: "03",
@@ -37,7 +46,7 @@ const creativeChapters = [
       "Short films, sound studies, and music projects with room for their original media players.",
     to: "/creative/projects",
     icon: Film,
-    detail: `${creativeProjects.length} placeholder projects`,
+    detail: `${publishedCreativeProjects.length} projects`,
   },
 ] as const;
 
@@ -85,7 +94,7 @@ export function CreativePage() {
         <Container className="creative-reflection-inner">
           <Leaf aria-hidden size={28} strokeWidth={1.25} />
           <p>{creativeProfile.reflection}</p>
-          <span>Placeholder field journal / real media only</span>
+          <span>Field journal / owner-created media</span>
         </Container>
       </section>
     </div>

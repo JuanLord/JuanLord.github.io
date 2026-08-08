@@ -10,6 +10,7 @@ import {
   getPhotoLocationSections,
   getPhotoTripBySlug,
 } from "../lib/content";
+import { hasTrustedEmbed } from "../lib/embeds";
 
 export function PhotoTripPage() {
   const { tripSlug = "" } = useParams();
@@ -22,7 +23,7 @@ export function PhotoTripPage() {
           backLabel="Photography folders"
           backTo="/creative/photography"
           eyebrow="Photography / Missing folder"
-          introduction="The requested trip folder is not part of the current placeholder archive."
+          introduction="The requested trip folder is not available in the current photography archive."
           title="Photo folder unavailable."
         />
         <CreativeSectionNav />
@@ -130,18 +131,20 @@ export function PhotoTripPage() {
         </Container>
       </section>
 
-      <section
-        aria-labelledby="trip-soundtrack-title"
-        className="creative-soundtrack-section"
-      >
-        <Container className="creative-soundtrack-inner">
-          <div>
-            <p>Listening companion</p>
-            <h2 id="trip-soundtrack-title">Soundtrack for the folder.</h2>
-          </div>
-          <EmbedPanel embed={trip.soundtrack} />
-        </Container>
-      </section>
+      {hasTrustedEmbed(trip.soundtrack) ? (
+        <section
+          aria-labelledby="trip-soundtrack-title"
+          className="creative-soundtrack-section"
+        >
+          <Container className="creative-soundtrack-inner">
+            <div>
+              <p>Listening companion</p>
+              <h2 id="trip-soundtrack-title">Soundtrack for the folder.</h2>
+            </div>
+            <EmbedPanel embed={trip.soundtrack} />
+          </Container>
+        </section>
+      ) : null}
 
       <Container className="creative-page-return">
         <Link to="/creative/photography">

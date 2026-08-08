@@ -475,6 +475,19 @@ button {
   text-transform: uppercase;
 }
 
+.content-empty-state {
+  width: 100%;
+  margin: 0;
+  padding: 2rem 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--muted);
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
 .project-signal-heading h2 {
   margin: 0;
   color: #e6edf3;

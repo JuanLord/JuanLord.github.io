@@ -126,6 +126,14 @@ export function isValidCoordinates(coordinates: Coordinates): boolean {
   );
 }
 
+function isHttpsUrl(value: string): boolean {
+  try {
+    return new URL(value).protocol === "https:";
+  } catch {
+    return false;
+  }
+}
+
 export function normalizeEmbed(
   provider: CreativeEmbedProvider,
   sourceValue: string,
@@ -237,6 +245,17 @@ export function validateStudioDocument(
     });
   }
 
+  if (
+    !isHttpsUrl(document.profile.github.href) ||
+    !isHttpsUrl(document.profile.linkedin.href)
+  ) {
+    add({
+      level: recordLevel(document.profile.status),
+      section: "professional",
+      message: "GitHub and LinkedIn links need complete HTTPS URLs.",
+    });
+  }
+
   for (const slug of duplicateSlugs(document.developerProjects)) {
     add({
       level: "error",
@@ -330,14 +349,6 @@ export function validateStudioDocument(
         });
         break;
       }
-    }
-    if (trip.photos.length < 50) {
-      add({
-        level: "warning",
-        section: "photography",
-        recordSlug: trip.slug,
-        message: `${trip.title || "Trip"} currently has ${trip.photos.length} of its planned 50-100 photos.`,
-      });
     }
     if (trip.photos.some((photo) => !photo.alt.trim())) {
       add({

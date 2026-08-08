@@ -17,7 +17,7 @@ export function SiteFooter() {
         <div>
           <p className="footer-name">{profile.name}</p>
           <p className="footer-note">
-            Built with care. Content marked as placeholder will be replaced.
+            Engineering, software, and field notes built with care.
           </p>
         </div>
 
@@ -28,10 +28,10 @@ export function SiteFooter() {
                 aria-disabled="true"
                 className="footer-link footer-link-disabled"
                 key={link.label}
-                title={`${link.label} placeholder`}
+                title={`${link.label} is not available yet`}
               >
                 <Icon aria-hidden size={18} />
-                <span className="sr-only">{link.label} placeholder</span>
+                <span className="sr-only">{link.label} unavailable</span>
               </span>
             ) : (
               <a

@@ -53,7 +53,7 @@ describe("Portfolio Studio", () => {
     );
     expect(screen.getByText("R2 not configured")).toBeVisible();
     expect(
-      screen.getByRole("button", { name: /publish source/i }),
+      screen.getByRole("button", { name: /prepare site update/i }),
     ).toBeEnabled();
   });
 
@@ -81,7 +81,7 @@ describe("Portfolio Studio", () => {
     );
     expect(
       screen.getByText(
-        `${photoCount} photos marked published. Select Publish source to update the website files.`,
+        `${photoCount} photos marked published. Select Prepare site update to write the website files.`,
       ),
     ).toBeVisible();
 
@@ -113,6 +113,7 @@ describe("Portfolio Studio", () => {
         name: "Professional Projects",
       }),
     ).toBeVisible();
+    await user.click(screen.getByRole("button", { name: "New" }));
     expect(screen.getByLabelText("Technology stack")).toBeVisible();
   });
 

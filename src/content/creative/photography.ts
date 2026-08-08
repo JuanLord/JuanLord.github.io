@@ -30,6 +30,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784250735-b7ade57e",
@@ -46,6 +47,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784251699-466d80ce",
@@ -62,6 +64,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784252459-d89d8d99",
@@ -78,6 +81,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784253339-5ebc12f2",
@@ -94,6 +98,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784254871-3c9029dd",
@@ -110,6 +115,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784255903-096b4989",
@@ -126,6 +132,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784256930-139d330b",
@@ -142,6 +149,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784257857-09295ee1",
@@ -158,6 +166,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784259136-40bbfa65",
@@ -174,6 +183,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784260223-a6cb15e6",
@@ -190,6 +200,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784261194-c8d81be0",
@@ -206,6 +217,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784262302-ded8391b",
@@ -222,6 +234,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784263220-36567825",
@@ -238,6 +251,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784264285-e8e64633",
@@ -254,6 +268,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784265362-39eb0750",
@@ -270,6 +285,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784266594-6d3010c6",
@@ -286,6 +302,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784267824-4b57c00f",
@@ -302,6 +319,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784268620-8a1b7a59",
@@ -318,6 +336,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784269552-5d2d7e19",
@@ -334,6 +353,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784270771-06d06033",
@@ -350,6 +370,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784272134-2f7368ff",
@@ -366,6 +387,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784273207-2c4c02c4",
@@ -382,6 +404,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784274319-dd7b94eb",
@@ -398,6 +421,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784275380-52392dba",
@@ -414,6 +438,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784276330-52efce12",
@@ -430,6 +455,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784277419-c29ab57b",
@@ -446,6 +472,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784278520-5d66412a",
@@ -462,6 +489,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784279474-5ec1af47",
@@ -478,6 +506,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784281059-d942d2ee",
@@ -494,6 +523,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784282131-e966c8a3",
@@ -510,6 +540,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784283358-49481ea2",
@@ -526,6 +557,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784284334-b7a59e42",
@@ -542,6 +574,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784285233-c30a43fc",
@@ -558,6 +591,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784286062-5bb670f7",
@@ -574,6 +608,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784287145-56f5b591",
@@ -590,6 +625,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784288105-8f28dd0f",
@@ -606,6 +642,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784288926-43d1239f",
@@ -622,6 +659,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784290013-3925ddd4",
@@ -638,6 +676,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784291259-b48c4745",
@@ -654,6 +693,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784293326-b282f41c",
@@ -670,6 +710,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784295266-fc52132c",
@@ -686,6 +727,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784296474-8b230e12",
@@ -702,6 +744,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784297532-25ccdccc",
@@ -718,6 +761,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784298895-7ed65585",
@@ -734,6 +778,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784299924-be6b3884",
@@ -750,6 +795,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784300990-e93a30f3",
@@ -766,6 +812,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784302270-b7d8264e",
@@ -782,6 +829,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784303426-f0ce1935",
@@ -798,6 +846,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784304433-1b415b1b",
@@ -814,6 +863,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784305497-cce321fc",
@@ -830,6 +880,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784306756-452bdd6a",
@@ -846,6 +897,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784308044-4cafbf58",
@@ -862,6 +914,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784309244-078a0009",
@@ -878,6 +931,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784310223-484f927d",
@@ -894,6 +948,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784311521-378c9806",
@@ -910,6 +965,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784312521-6448fcdb",
@@ -926,6 +982,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784313467-e1e04c59",
@@ -942,6 +999,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784314462-a5dd68a2",
@@ -958,6 +1016,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784315527-7798b8cf",
@@ -974,6 +1033,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784316589-52120f8c",
@@ -990,6 +1050,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784317518-1202ae1f",
@@ -1006,6 +1067,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784318279-eec84786",
@@ -1022,6 +1084,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784319318-5d9790ba",
@@ -1038,6 +1101,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784320375-fe3aef4e",
@@ -1054,6 +1118,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784321215-54530223",
@@ -1070,6 +1135,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784321952-f3f0d765",
@@ -1086,6 +1152,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784323002-1497fdd3",
@@ -1102,6 +1169,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784324395-23ffef45",
@@ -1118,6 +1186,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784325487-289c8315",
@@ -1134,6 +1203,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784326496-56622511",
@@ -1150,6 +1220,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784327924-b7569e6a",
@@ -1166,6 +1237,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784329540-625b8877",
@@ -1182,6 +1254,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784330910-2de1697c",
@@ -1198,6 +1271,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784333078-6969459e",
@@ -1214,6 +1288,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784334868-b7730cc4",
@@ -1230,6 +1305,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784337315-4aeaf789",
@@ -1246,6 +1322,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784338604-f5ad043e",
@@ -1262,6 +1339,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784340025-a2ec26d9",
@@ -1278,6 +1356,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784340819-b88006ea",
@@ -1294,6 +1373,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784341868-ad3d02e4",
@@ -1310,6 +1390,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784343009-083f55b3",
@@ -1326,6 +1407,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784344489-37b8306b",
@@ -1342,6 +1424,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784345813-d46927d7",
@@ -1358,6 +1441,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784346824-c13dd9bc",
@@ -1374,6 +1458,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784347653-e6976ae5",
@@ -1390,6 +1475,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784348697-9917376a",
@@ -1406,6 +1492,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
       {
         id: "1784784349725-9dbeac7f",
@@ -1422,6 +1509,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "mt-rainier-national-park",
       },
     ],
     soundtrack: {
@@ -1432,6 +1520,13 @@ export const photoTrips: PhotoTrip[] = [
       placeholder: false,
     },
     status: "published",
+    locations: [
+      {
+        id: "mt-rainier-national-park",
+        name: "Mt. Rainier National Park",
+        coordinates: [-121.761, 46.8528],
+      },
+    ],
   },
   {
     slug: "north-cascades-national-park",
@@ -1462,6 +1557,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866648898-54ba6955",
@@ -1478,6 +1574,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866650338-686702f2",
@@ -1494,6 +1591,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866651416-0f08b54f",
@@ -1510,6 +1608,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866652292-1196a125",
@@ -1526,6 +1625,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866653624-4c9e9cab",
@@ -1542,6 +1642,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866655160-2b2758a8",
@@ -1558,6 +1659,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866656152-4530f324",
@@ -1574,6 +1676,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866657512-77c496cc",
@@ -1590,6 +1693,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866658987-dc65f021",
@@ -1606,6 +1710,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866660599-4d7b0625",
@@ -1622,6 +1727,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866661590-f4edd116",
@@ -1638,6 +1744,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866662647-b2f3f26d",
@@ -1654,6 +1761,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866663892-7d67a9d0",
@@ -1670,6 +1778,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866665005-f446ed9b",
@@ -1686,6 +1795,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866666354-a88e12cc",
@@ -1702,6 +1812,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866667358-a40f07d3",
@@ -1718,6 +1829,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866668262-12efaafc",
@@ -1734,6 +1846,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866669191-8d6741dc",
@@ -1750,6 +1863,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866670311-5fa1ae92",
@@ -1766,6 +1880,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866671296-5adedbe4",
@@ -1782,6 +1897,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866672157-844d2192",
@@ -1798,6 +1914,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866673034-6b678ced",
@@ -1814,6 +1931,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866674178-fa909663",
@@ -1830,6 +1948,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866675479-ccf4aa35",
@@ -1846,6 +1965,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866676508-f5b19e22",
@@ -1862,6 +1982,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866678202-3893e2d4",
@@ -1878,6 +1999,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866679147-003612be",
@@ -1894,6 +2016,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866680210-1f47b8a2",
@@ -1910,6 +2033,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866681571-826ac2fd",
@@ -1926,6 +2050,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866682574-ec59b37d",
@@ -1942,6 +2067,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866683940-8f915e7a",
@@ -1958,6 +2084,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866684913-997e5986",
@@ -1974,6 +2101,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866686075-c8180eb2",
@@ -1990,6 +2118,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866687306-fcf5e468",
@@ -2006,6 +2135,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866688430-5b1d6918",
@@ -2022,6 +2152,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866689746-3d1aaece",
@@ -2038,6 +2169,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866691040-9f45cca1",
@@ -2054,6 +2186,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866692296-57eb421f",
@@ -2070,6 +2203,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866693580-9b8f746d",
@@ -2086,6 +2220,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866694937-b3d19993",
@@ -2102,6 +2237,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866695977-b4f1e2d8",
@@ -2118,6 +2254,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866697349-f616cf09",
@@ -2134,6 +2271,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866698371-e779b13f",
@@ -2150,6 +2288,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866699343-a49adf35",
@@ -2166,6 +2305,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866700394-0054df7d",
@@ -2182,6 +2322,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866701459-e91eaa05",
@@ -2198,6 +2339,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866702576-ed486166",
@@ -2214,6 +2356,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866703829-1ee61252",
@@ -2230,6 +2373,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866705013-649f732c",
@@ -2246,6 +2390,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866706163-0566740e",
@@ -2262,6 +2407,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866707537-7d0408fc",
@@ -2278,6 +2424,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866708668-4420a995",
@@ -2294,6 +2441,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866709614-81e57d76",
@@ -2310,6 +2458,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866710698-5f46bdab",
@@ -2326,6 +2475,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866711643-98a83a0b",
@@ -2342,6 +2492,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866712822-816ca7c0",
@@ -2358,6 +2509,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866714028-cf9dee40",
@@ -2374,6 +2526,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866715114-a799fe7c",
@@ -2390,6 +2543,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866716179-e784c8a8",
@@ -2406,6 +2560,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866717301-d44f7eb9",
@@ -2422,6 +2577,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866719788-fbead842",
@@ -2438,6 +2594,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866721016-164b339a",
@@ -2454,6 +2611,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866722829-e08e3413",
@@ -2470,6 +2628,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866725450-644bdd90",
@@ -2486,6 +2645,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866728142-699e1c4e",
@@ -2502,6 +2662,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866729828-67e28e40",
@@ -2518,6 +2679,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866731033-061f6cba",
@@ -2534,6 +2696,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866732393-2a943268",
@@ -2550,6 +2713,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866733423-75c5bac4",
@@ -2566,6 +2730,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 2200,
         height: 1467,
         status: "published",
+        locationId: "washington",
       },
       {
         id: "1784866734938-19a1543c",
@@ -2582,6 +2747,7 @@ export const photoTrips: PhotoTrip[] = [
         width: 1467,
         height: 2200,
         status: "published",
+        locationId: "washington",
       },
     ],
     soundtrack: {
@@ -2590,6 +2756,1436 @@ export const photoTrips: PhotoTrip[] = [
       sourceUrl: "https://open.spotify.com/track/1Fwj0wThn3kTg8D7KgWdsU",
       embedUrl: "https://open.spotify.com/embed/track/1Fwj0wThn3kTg8D7KgWdsU",
       placeholder: false,
+    },
+    status: "published",
+    locations: [
+      {
+        id: "washington",
+        name: "Washington",
+        coordinates: [-121.64, 48.37],
+      },
+    ],
+  },
+  {
+    slug: "egypt",
+    title: "Egypt",
+    location: "Cairo",
+    country: "Egypt",
+    startDate: "2026-05",
+    endDate: "2026-05",
+    summary: "",
+    story:
+      "2 week trip through the nile river and roadtrip through different cities across Egypt. Great food. ",
+    coordinates: [31.2357, 30.0444],
+    locations: [
+      {
+        id: "location-1",
+        name: "Cairo",
+        coordinates: [31.2357, 30.0444],
+      },
+      {
+        id: "location-2",
+        name: "Aswan",
+        coordinates: [32.8998, 24.0889],
+      },
+      {
+        id: "location-3",
+        name: "Alexandria",
+        coordinates: [32.2001, 29.918698],
+      },
+    ],
+    photoCount: 28,
+    previewSlots: 8,
+    photos: [
+      {
+        id: "1785028946270-9c9a8c12",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785028951914-3cf0fd5f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785028954253-67984f1f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028954253-67984f1f-egypt26-00000003-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028954253-67984f1f-egypt26-00000003-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028956204-a270d667",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028956204-a270d667-egypt26-00000004-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028956204-a270d667-egypt26-00000004-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028958473-a8fe0a31",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028960426-68c9ea40",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028960426-68c9ea40-egypt26-00000006-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028960426-68c9ea40-egypt26-00000006-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028962749-89552600",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028962749-89552600-egypt26-00000007-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028962749-89552600-egypt26-00000007-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028964785-b0c8b857",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028964785-b0c8b857-egypt26-00000008-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028964785-b0c8b857-egypt26-00000008-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028968435-ce20d77c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028968435-ce20d77c-egypt26-00000009-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028968435-ce20d77c-egypt26-00000009-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028972057-165a5dcc",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028972057-165a5dcc-egypt26-00000010-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028972057-165a5dcc-egypt26-00000010-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028974088-ee86371b",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028974088-ee86371b-egypt26-00000011-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028974088-ee86371b-egypt26-00000011-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785028975722-ef9cda35",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028975722-ef9cda35-egypt26-00000012-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028975722-ef9cda35-egypt26-00000012-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028977696-8f5d7763",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028977696-8f5d7763-egypt26-00000013-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028977696-8f5d7763-egypt26-00000013-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028979869-7aa04582",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028979869-7aa04582-egypt26-00000014-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028979869-7aa04582-egypt26-00000014-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028981626-4953be89",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028981626-4953be89-egypt26-00000015-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028981626-4953be89-egypt26-00000015-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028983840-7b84ef00",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028983840-7b84ef00-egypt26-00000016-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028983840-7b84ef00-egypt26-00000016-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028986132-1de831d3",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028986132-1de831d3-egypt26-00000017-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028986132-1de831d3-egypt26-00000017-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028988243-017a32f5",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028988243-017a32f5-egypt26-00000018-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028988243-017a32f5-egypt26-00000018-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028990183-2b9429a9",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028990183-2b9429a9-egypt26-00000019-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028990183-2b9429a9-egypt26-00000019-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-3",
+      },
+      {
+        id: "1785028992096-bd4fd3ca",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-2",
+      },
+      {
+        id: "1785028994257-0f9ecd65",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-2",
+      },
+      {
+        id: "1785028996088-4b9917f2",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028996088-4b9917f2-egypt26-00000022-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028996088-4b9917f2-egypt26-00000022-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-2",
+      },
+      {
+        id: "1785028998207-cf4fd4b8",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-thumb.webp",
+        storageKey:
+          "photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-2",
+      },
+      {
+        id: "1785029001071-80664454",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-thumb.webp",
+        storageKey:
+          "photography/egypt/1785029001071-80664454-egypt26-00000024-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785029001071-80664454-egypt26-00000024-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-2",
+      },
+      {
+        id: "1785029006063-7964aa04",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-thumb.webp",
+        storageKey:
+          "photography/egypt/1785029006063-7964aa04-egypt26-00000025-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785029006063-7964aa04-egypt26-00000025-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785029008901-090bca34",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-thumb.webp",
+        storageKey:
+          "photography/egypt/1785029008901-090bca34-egypt26-00000026-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785029008901-090bca34-egypt26-00000026-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785029011937-35876349",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-thumb.webp",
+        storageKey:
+          "photography/egypt/1785029011937-35876349-egypt26-00000027-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785029011937-35876349-egypt26-00000027-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785029014793-bbb950a7",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-thumb.webp",
+        storageKey:
+          "photography/egypt/1785029014793-bbb950a7-egypt26-00000028-display.webp",
+        thumbnailStorageKey:
+          "photography/egypt/1785029014793-bbb950a7-egypt26-00000028-thumb.webp",
+        alt: "Photograph from egypt",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+    ],
+    soundtrack: {
+      provider: "spotify",
+      title: "Egypt trip soundtrack",
+      sourceUrl: "https://open.spotify.com/track/2Senxmx6GnCNkRMaXWXm1y",
+      embedUrl: "https://open.spotify.com/embed/track/2Senxmx6GnCNkRMaXWXm1y",
+      placeholder: false,
+    },
+    status: "published",
+  },
+  {
+    slug: "croatia",
+    title: "Croatia",
+    location: "Dubrovnik",
+    country: "Croatia",
+    startDate: "2026-05",
+    endDate: "2026-05",
+    summary: "Trip through Southern Croatia.",
+    story:
+      "Trip going through Cavtat, Mlini, Dubrovnik, Ston, Korčula, and Split. ",
+    coordinates: [18.108334, 42.640278],
+    locations: [
+      {
+        id: "location-1",
+        name: "Dubrovnik",
+        coordinates: [18.108334, 42.640278],
+      },
+      {
+        id: "location-2",
+        name: "Korčula",
+        coordinates: [17.1352, 42.9609],
+      },
+      {
+        id: "location-3",
+        name: "Split",
+        coordinates: [16.44, 43.508],
+      },
+    ],
+    photoCount: 25,
+    previewSlots: 8,
+    photos: [
+      {
+        id: "1785030519325-57650ffd",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030519325-57650ffd-dsc01497-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030519325-57650ffd-dsc01497-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030519325-57650ffd-dsc01497-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030519325-57650ffd-dsc01497-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030521424-1e319208",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030521424-1e319208-dsc01475-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030521424-1e319208-dsc01475-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030521424-1e319208-dsc01475-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030521424-1e319208-dsc01475-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030523438-02330dee",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030523438-02330dee-dsc01476-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030523438-02330dee-dsc01476-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030523438-02330dee-dsc01476-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030523438-02330dee-dsc01476-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030527098-6d943d2a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030527098-6d943d2a-dsc01520-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030527098-6d943d2a-dsc01520-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030529028-de6e358c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030529028-de6e358c-dsc01521-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030529028-de6e358c-dsc01521-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030529028-de6e358c-dsc01521-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030529028-de6e358c-dsc01521-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030531366-6ae4680c",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030531366-6ae4680c-dsc01527-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030531366-6ae4680c-dsc01527-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030537426-0ee7312b",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030537426-0ee7312b-dsc01532-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030537426-0ee7312b-dsc01532-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030541436-2cfd23ef",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030541436-2cfd23ef-dsc01534-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030541436-2cfd23ef-dsc01534-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030544177-7d93394b",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030544177-7d93394b-dsc01550-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030544177-7d93394b-dsc01550-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030544177-7d93394b-dsc01550-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030544177-7d93394b-dsc01550-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030546606-901e8940",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030546606-901e8940-dsc01552-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030546606-901e8940-dsc01552-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030546606-901e8940-dsc01552-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030546606-901e8940-dsc01552-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030548797-92d100d8",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030548797-92d100d8-dsc01563-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030548797-92d100d8-dsc01563-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030548797-92d100d8-dsc01563-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030548797-92d100d8-dsc01563-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030638246-0f3a2e3a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030638246-0f3a2e3a-dsc01578-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030638246-0f3a2e3a-dsc01578-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030643018-cf103872",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030643018-cf103872-dsc01585-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030643018-cf103872-dsc01585-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030643018-cf103872-dsc01585-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030643018-cf103872-dsc01585-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030646020-7c0af566",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030646020-7c0af566-dsc01591-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030646020-7c0af566-dsc01591-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030646020-7c0af566-dsc01591-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030646020-7c0af566-dsc01591-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030651809-fef2f78a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030651809-fef2f78a-dsc01600-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030651809-fef2f78a-dsc01600-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030654831-927dc028",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030654831-927dc028-dsc01602-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030654831-927dc028-dsc01602-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030654831-927dc028-dsc01602-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030654831-927dc028-dsc01602-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030730369-e2d17bfe",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030730369-e2d17bfe-dsc01610-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030730369-e2d17bfe-dsc01610-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030732560-63013482",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030732560-63013482-dsc01616-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030732560-63013482-dsc01616-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030732560-63013482-dsc01616-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030732560-63013482-dsc01616-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030734545-cd9fbe75",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030734545-cd9fbe75-dsc01624-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030734545-cd9fbe75-dsc01624-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030736838-8cdecdeb",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030736838-8cdecdeb-dsc01636-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030736838-8cdecdeb-dsc01636-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030739309-bc9cccd4",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030739309-bc9cccd4-dsc01650-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030739309-bc9cccd4-dsc01650-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030742330-6ba4f3e5",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030742330-6ba4f3e5-dsc01659-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030742330-6ba4f3e5-dsc01659-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030745180-a6bc0863",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030745180-a6bc0863-dsc01669-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030745180-a6bc0863-dsc01669-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+      },
+      {
+        id: "1785030747385-54c105a0",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030747385-54c105a0-dsc01678-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030747385-54c105a0-dsc01678-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030747385-54c105a0-dsc01678-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030747385-54c105a0-dsc01678-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+      {
+        id: "1785030749388-3c326a6a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-thumb.webp",
+        storageKey:
+          "photography/croatia/1785030749388-3c326a6a-dsc01691-display.webp",
+        thumbnailStorageKey:
+          "photography/croatia/1785030749388-3c326a6a-dsc01691-thumb.webp",
+        alt: "Photograph from croatia",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+      },
+    ],
+    soundtrack: {
+      provider: "spotify",
+      title: "Croatia trip soundtrack",
+      sourceUrl: "https://open.spotify.com/track/3XHtGQBlfMHfKcXdTX7Mt0",
+      embedUrl: "https://open.spotify.com/embed/track/3XHtGQBlfMHfKcXdTX7Mt0",
+      placeholder: false,
+    },
+    status: "published",
+  },
+  {
+    slug: "turkey-2025",
+    title: "Turkey 2025",
+    location: "Istambul",
+    country: "Turkey",
+    startDate: "2025-07",
+    endDate: "2025-07",
+    summary: "Roadtrip through cities.",
+    story:
+      "Going through Istambul, Ankara, Kapadokya, Konya, Izmir, and Bursa.",
+    coordinates: [28.9795, 41.0151],
+    locations: [
+      {
+        id: "location-1",
+        name: "Istambul",
+        coordinates: [28.9795, 41.0151],
+      },
+    ],
+    photoCount: 26,
+    previewSlots: 8,
+    photos: [
+      {
+        id: "1785034959996-72ac5dda",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034959996-72ac5dda-img-8221-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034959996-72ac5dda-img-8221-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034966449-b9e8bd6d",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034970631-e752d7ba",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034970631-e752d7ba-img-7768-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034970631-e752d7ba-img-7768-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034972956-b82fca95",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034972956-b82fca95-img-7775-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034972956-b82fca95-img-7775-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034975220-6000a268",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034975220-6000a268-img-7781-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034975220-6000a268-img-7781-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034977493-62a73268",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034977493-62a73268-img-7829-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034977493-62a73268-img-7829-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034979472-c4af2845",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034979472-c4af2845-img-7833-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034979472-c4af2845-img-7833-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034981794-8a12f82f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034981794-8a12f82f-img-7859-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034981794-8a12f82f-img-7859-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034984321-aaf5665e",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034984321-aaf5665e-img-7863-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034984321-aaf5665e-img-7863-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034986382-9b136f8f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034986382-9b136f8f-img-7878-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034986382-9b136f8f-img-7878-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034988627-e5f34a40",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034988627-e5f34a40-img-7883-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034988627-e5f34a40-img-7883-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034990650-84f6d8d3",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034990650-84f6d8d3-img-7894-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034990650-84f6d8d3-img-7894-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034992457-109e282f",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034992457-109e282f-img-7916-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034992457-109e282f-img-7916-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034993920-a5878138",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034993920-a5878138-img-7938-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034993920-a5878138-img-7938-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034995245-0817e532",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034995245-0817e532-img-7945-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034995245-0817e532-img-7945-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034996576-9b7b1619",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034996576-9b7b1619-img-7960-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034996576-9b7b1619-img-7960-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034998257-516ff525",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034998257-516ff525-img-7963-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034998257-516ff525-img-7963-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785034999710-88f217b6",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785034999710-88f217b6-img-7965-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785034999710-88f217b6-img-7965-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035001589-9158b699",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035001589-9158b699-img-7980-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035001589-9158b699-img-7980-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035003835-cfd68f5e",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035003835-cfd68f5e-img-7982-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035003835-cfd68f5e-img-7982-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035006122-400b5c91",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035006122-400b5c91-img-7985-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035006122-400b5c91-img-7985-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035008562-bf8e394a",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035008562-bf8e394a-img-8181-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035008562-bf8e394a-img-8181-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035011340-e5767151",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035011340-e5767151-img-8159-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035011340-e5767151-img-8159-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 1467,
+        height: 2200,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035014332-eeedb299",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035014332-eeedb299-img-8101-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035014332-eeedb299-img-8101-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035017208-04e45b21",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035017208-04e45b21-img-8095-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035017208-04e45b21-img-8095-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+      {
+        id: "1785035020236-1d0712f3",
+        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-display.webp",
+        thumbnailSrc:
+          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-thumb.webp",
+        storageKey:
+          "photography/turkey-2025/1785035020236-1d0712f3-img-8083-display.webp",
+        thumbnailStorageKey:
+          "photography/turkey-2025/1785035020236-1d0712f3-img-8083-thumb.webp",
+        alt: "Photograph from turkey 2025",
+        caption: "",
+        date: "2026-07-26",
+        width: 2200,
+        height: 1467,
+        status: "published",
+        locationId: "location-1",
+      },
+    ],
+    soundtrack: {
+      provider: "spotify",
+      title: "Trip soundtrack",
+      placeholder: true,
     },
     status: "published",
   },

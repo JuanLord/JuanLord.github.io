@@ -16,7 +16,7 @@ export function PlaceholderAction({
       aria-describedby={describedBy}
       className="action-link action-link-disabled"
       disabled
-      title="Placeholder content will be connected later"
+      title="This link is not available yet"
       type="button"
     >
       {children}

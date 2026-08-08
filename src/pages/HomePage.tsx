@@ -9,7 +9,6 @@ import { Link } from "react-router-dom";
 import { experience, profile, projects } from "../content";
 import { ActionLink } from "../components/ui/ActionLink";
 import { Container } from "../components/ui/Container";
-import { PlaceholderBadge } from "../components/ui/PlaceholderBadge";
 import { formatDateRange } from "../lib/content";
 
 const systemProfile = [
@@ -17,6 +16,12 @@ const systemProfile = [
   { label: "Location", value: profile.location },
   { label: "Status", value: profile.availability },
 ];
+const publishedProjects = projects.filter(
+  ({ status }) => status === "published",
+);
+const publishedExperience = experience.filter(
+  ({ status }) => status === "published",
+);
 
 export function HomePage() {
   return (
@@ -61,7 +66,6 @@ export function HomePage() {
           >
             <div className="system-profile-heading">
               <span>profile.config</span>
-              <PlaceholderBadge />
             </div>
             <dl>
               {systemProfile.map((item, index) => (
@@ -90,7 +94,7 @@ export function HomePage() {
             <h2 id="project-signal-title">Work in focus</h2>
           </div>
           <div className="project-signal-list">
-            {projects
+            {publishedProjects
               .filter((project) => project.featured)
               .slice(0, 3)
               .map((project) => (
@@ -133,17 +137,23 @@ export function HomePage() {
           <div className="home-experience">
             <div className="home-experience-heading">
               <span>Recent trajectory</span>
-              <span>{String(experience.length).padStart(2, "0")} records</span>
+              <span>
+                {String(publishedExperience.length).padStart(2, "0")} records
+              </span>
             </div>
-            {experience.map((item) => (
-              <div className="home-experience-row" key={item.id}>
-                <div>
-                  <h3>{item.role}</h3>
-                  <p>{item.organization}</p>
+            {publishedExperience.length ? (
+              publishedExperience.map((item) => (
+                <div className="home-experience-row" key={item.id}>
+                  <div>
+                    <h3>{item.role}</h3>
+                    <p>{item.organization}</p>
+                  </div>
+                  <span>{formatDateRange(item.startDate, item.endDate)}</span>
                 </div>
-                <span>{formatDateRange(item.startDate, item.endDate)}</span>
-              </div>
-            ))}
+              ))
+            ) : (
+              <p className="content-empty-state">Timeline in progress.</p>
+            )}
           </div>
         </Container>
       </section>

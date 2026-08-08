@@ -16,10 +16,9 @@ npm run studio
 Open `http://127.0.0.1:4174/`.
 
 Local drafts are saved to `.portfolio-studio/content.json`. This directory is
-ignored by Git. Selecting **Publish source** writes validated records to the
-typed modules in `src/content/`; it does not commit or push them.
-Records and photographs marked `draft` remain in the local Studio document and
-are excluded from the generated public source.
+ignored by Git. Selecting **Prepare site update** writes validated records to
+the typed modules in `src/content/`; it does not commit or push them. Only
+records and photographs marked `published` are written to public source.
 
 ## Cloudflare R2 Setup
 
@@ -99,7 +98,7 @@ writes:
 public/resume/juan-varela-resume.pdf
 ```
 
-The Studio then changes the resume record from a placeholder to a live download.
+The Studio then changes the resume record to a live download.
 The PDF is committed with the site when you are ready to publish it; it is not
 stored in R2.
 
@@ -109,7 +108,7 @@ metadata, featured state, and publication status.
 
 ## Where To Customize Text
 
-**Publish source** generates these public content files:
+**Prepare site update** generates these public content files:
 
 ```text
 src/content/profile.ts
@@ -132,11 +131,18 @@ src/content/creative/projects.ts
 ```
 
 The Studio is the preferred editor for profile basics, professional projects,
-and all creative records. Experience, education, certifications, skills, and
-the creative introduction can currently be edited directly in the listed typed
-files. After direct edits, run `npm run check`. If an older local Studio draft
-still contains previous values, update it too before the next **Publish source**
-operation so it does not overwrite those direct edits.
+and all creative records. Use these locations for the remaining personal text:
+
+- `src/content/profile.ts`: experience, education, certifications, and skills.
+- `src/content/creative/profile.ts`: creative introduction and closing
+  reflection.
+- `src/components/layout/DocumentMetadata.tsx`: browser and search descriptions.
+
+Records in typed content files need `status: "published"` to appear publicly.
+After direct edits, run `npm run check`. The next **Prepare site update** action
+regenerates these files from the local Studio draft, so make the same change in
+`.portfolio-studio/content.json` or finish direct file edits after the last
+Studio preparation step.
 
 ## Photography Workflow
 
@@ -149,7 +155,7 @@ operation so it does not overwrite those direct edits.
 5. Paste a public Spotify track, album, or playlist URL.
 6. Add meaningful alt text, captions, and dates.
 7. Reorder the contact sheet and change the content status.
-8. Resolve validation errors, preview the public site, and publish the source.
+8. Resolve validation errors, preview the public site, and prepare the update.
 
 The public trip page creates one gallery section per location. Photographs that
 are not assigned to a named location remain available in an **Across the trip**
@@ -192,18 +198,21 @@ activities cannot be displayed publicly.
 
 Short films support YouTube and Vimeo. Music projects support Spotify and
 SoundCloud. The Studio converts recognized HTTPS source URLs into the existing
-allowlisted embed format. Unrecognized URLs remain placeholders and generate a
+allowlisted embed format. Unrecognized URLs remain unpublished and generate a
 warning.
 
-## Publish And Deploy
+## Prepare And Deploy
 
-**Publish source** writes the current Studio document into the typed files under
-`src/content/`. It does not send data directly to GitHub. The complete path is:
+**Prepare site update** writes the current Studio document into the typed files
+under `src/content/`. It does not send data directly to GitHub. The complete
+path is:
 
 1. Save or edit records in Portfolio Studio.
-2. Select **Publish source** to update the repository's content files.
-3. Run the checks, commit those changed files, and push `main` to GitHub.
-4. The GitHub Actions workflow builds the static site and deploys it to GitHub
+2. Mark records that should be public as `published`.
+3. Select **Prepare site update** to update the repository's content files.
+4. Run `npm run check`.
+5. Commit the generated files and push `main` to GitHub.
+6. The GitHub Actions workflow builds the static site and deploys it to GitHub
    Pages.
 
 Review and test the generated source before committing:

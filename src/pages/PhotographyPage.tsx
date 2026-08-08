@@ -4,6 +4,10 @@ import { PhotoTripCard } from "../components/creative/PhotoTripCard";
 import { Container } from "../components/ui/Container";
 import { photoTrips } from "../content";
 
+const publishedPhotoTrips = photoTrips.filter(
+  ({ status }) => status === "published",
+);
+
 export function PhotographyPage() {
   return (
     <div className="creative-page">
@@ -32,7 +36,7 @@ export function PhotographyPage() {
           </div>
 
           <div className="photo-trip-list">
-            {photoTrips.map((trip, index) => (
+            {publishedPhotoTrips.map((trip, index) => (
               <PhotoTripCard index={index} key={trip.slug} trip={trip} />
             ))}
           </div>

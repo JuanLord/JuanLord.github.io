@@ -6,6 +6,7 @@ import { EmbedPanel } from "../components/creative/EmbedPanel";
 import { HikeRouteMap } from "../components/creative/HikeRouteMap";
 import { Container } from "../components/ui/Container";
 import { formatYearMonth, getHikeBySlug } from "../lib/content";
+import { hasTrustedEmbed } from "../lib/embeds";
 
 export function HikeDetailPage() {
   const { hikeSlug = "" } = useParams();
@@ -18,7 +19,7 @@ export function HikeDetailPage() {
           backLabel="Travel & hiking"
           backTo="/creative/travel"
           eyebrow="Trail record / Missing route"
-          introduction="The requested trail record is not part of the current placeholder atlas."
+          introduction="The requested trail record is not available in the current atlas."
           title="Hike unavailable."
         />
         <CreativeSectionNav />
@@ -42,7 +43,7 @@ export function HikeDetailPage() {
           <div className="hike-detail-route">
             <HikeRouteMap label={hike.trail} route={hike.route} />
             <span>
-              {hike.route.placeholder ? "Sample route" : "Imported GPX route"}
+              {hike.route.placeholder ? "Route overview" : "Imported GPX route"}
             </span>
           </div>
           <dl className="hike-detail-facts">
@@ -78,22 +79,20 @@ export function HikeDetailPage() {
         </Container>
       </section>
 
-      <section
-        aria-labelledby="strava-route-title"
-        className="creative-strava-section"
-      >
-        <Container className="creative-strava-inner">
-          <div>
-            <p>Activity record</p>
-            <h2 id="strava-route-title">Route and elevation.</h2>
-            <p>
-              A public Strava activity or route can occupy this space when its
-              official embed is available.
-            </p>
-          </div>
-          <EmbedPanel embed={hike.route.strava} />
-        </Container>
-      </section>
+      {hasTrustedEmbed(hike.route.strava) ? (
+        <section
+          aria-labelledby="strava-route-title"
+          className="creative-strava-section"
+        >
+          <Container className="creative-strava-inner">
+            <div>
+              <p>Activity record</p>
+              <h2 id="strava-route-title">Route and elevation.</h2>
+            </div>
+            <EmbedPanel embed={hike.route.strava} />
+          </Container>
+        </section>
+      ) : null}
 
       {hike.relatedPhotoTripSlug ? (
         <section className="hike-related-folder">

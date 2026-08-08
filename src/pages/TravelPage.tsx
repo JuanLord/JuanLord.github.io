@@ -5,8 +5,21 @@ import { CreativeSectionNav } from "../components/creative/CreativeSectionNav";
 import { HikeCard } from "../components/creative/HikeCard";
 import { WorldMap } from "../components/creative/WorldMap";
 import { Container } from "../components/ui/Container";
-import { creativeMapPoints, hikes, places } from "../content";
+import { creativeMapPoints, hikes, photoTrips, places } from "../content";
 import { formatYearMonth } from "../lib/content";
+
+const publishedPlaces = places.filter(({ status }) => status === "published");
+const publishedHikes = hikes.filter(({ status }) => status === "published");
+const publishedPhotoTrips = photoTrips.filter(
+  ({ status }) => status === "published",
+);
+const publishedMapTargets = new Set([
+  ...publishedPhotoTrips.map(({ slug }) => `/creative/photography/${slug}`),
+  ...publishedHikes.map(({ slug }) => `/creative/travel/hikes/${slug}`),
+]);
+const publishedMapPoints = creativeMapPoints.filter(({ to }) =>
+  publishedMapTargets.has(to),
+);
 
 export function TravelPage() {
   return (
@@ -21,7 +34,7 @@ export function TravelPage() {
 
       <section className="creative-map-section">
         <Container>
-          <WorldMap points={creativeMapPoints} />
+          <WorldMap points={publishedMapPoints} />
         </Container>
       </section>
 
@@ -42,7 +55,7 @@ export function TravelPage() {
           </div>
 
           <div className="creative-place-grid">
-            {places.map((place, index) => (
+            {publishedPlaces.map((place, index) => (
               <article className="creative-place-card" key={place.slug}>
                 <div className="creative-place-card-index">
                   <span>{String(index + 1).padStart(2, "0")}</span>
@@ -80,6 +93,9 @@ export function TravelPage() {
                 </div>
               </article>
             ))}
+            {!publishedPlaces.length ? (
+              <p className="content-empty-state">Travel archive in progress.</p>
+            ) : null}
           </div>
         </Container>
       </section>
@@ -97,9 +113,12 @@ export function TravelPage() {
             </p>
           </div>
           <div className="hike-card-list">
-            {hikes.map((hike, index) => (
+            {publishedHikes.map((hike, index) => (
               <HikeCard hike={hike} index={index} key={hike.slug} />
             ))}
+            {!publishedHikes.length ? (
+              <p className="content-empty-state">Trail archive in progress.</p>
+            ) : null}
           </div>
         </Container>
       </section>

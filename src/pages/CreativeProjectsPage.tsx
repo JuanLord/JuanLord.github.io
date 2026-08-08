@@ -5,10 +5,13 @@ import { Container } from "../components/ui/Container";
 import { creativeProjects } from "../content";
 
 export function CreativeProjectsPage() {
-  const films = creativeProjects.filter(
+  const publishedProjects = creativeProjects.filter(
+    ({ status }) => status === "published",
+  );
+  const films = publishedProjects.filter(
     (project) => project.kind === "short-film",
   );
-  const music = creativeProjects.filter((project) => project.kind === "music");
+  const music = publishedProjects.filter((project) => project.kind === "music");
 
   return (
     <div className="creative-page">
@@ -36,9 +39,13 @@ export function CreativeProjectsPage() {
             </p>
           </div>
           <div className="creative-project-grid">
-            {films.map((project) => (
-              <CreativeProjectCard key={project.slug} project={project} />
-            ))}
+            {films.length ? (
+              films.map((project) => (
+                <CreativeProjectCard key={project.slug} project={project} />
+              ))
+            ) : (
+              <p className="content-empty-state">Film archive in progress.</p>
+            )}
           </div>
         </Container>
       </section>
@@ -59,9 +66,13 @@ export function CreativeProjectsPage() {
             </p>
           </div>
           <div className="creative-project-grid">
-            {music.map((project) => (
-              <CreativeProjectCard key={project.slug} project={project} />
-            ))}
+            {music.length ? (
+              music.map((project) => (
+                <CreativeProjectCard key={project.slug} project={project} />
+              ))
+            ) : (
+              <p className="content-empty-state">Music archive in progress.</p>
+            )}
           </div>
         </Container>
       </section>
