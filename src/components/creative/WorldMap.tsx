@@ -104,6 +104,7 @@ export function WorldMap({ points }: WorldMapProps) {
 
     return () => {
       cancelled = true;
+      map?.stop();
       map?.remove();
     };
   }, [points]);
