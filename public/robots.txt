@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://juanlord.github.io/sitemap.xml
+Sitemap: https://juanvarela.dev/sitemap.xml

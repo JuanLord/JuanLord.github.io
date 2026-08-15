@@ -1,7 +1,7 @@
 # Juan Varela Portfolio
 
 Dark, developer-focused portfolio infrastructure for
-[`JuanLord.github.io`](https://JuanLord.github.io/).
+[`juanvarela.dev`](https://juanvarela.dev/).
 
 The current milestone includes:
 
@@ -92,13 +92,14 @@ adding photography, Spotify or Strava embeds, route files, film, or music.
 The project is configured for the root user site:
 
 - Repository: `JuanLord/JuanLord.github.io`
-- URL: `https://JuanLord.github.io/`
+- URL: `https://juanvarela.dev/`
+- Fallback URL: `https://JuanLord.github.io/`
 - Vite base: `/`
 - Router: `HashRouter`
 
 Pushes to `main` trigger `.github/workflows/deploy-pages.yml`. The workflow
 installs the locked dependencies, runs `npm run check`, uploads `dist/`, and
-deploys the verified artifact.
+deploys the verified artifact to the configured custom domain.
 
 For the first deployment, open the repository's **Settings > Pages** screen and
 set **Build and deployment > Source** to **GitHub Actions**. Later pushes deploy

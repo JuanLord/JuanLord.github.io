@@ -95,7 +95,7 @@ The production target is Juan's GitHub user site:
 
 - GitHub account: `JuanLord`.
 - Repository: `JuanLord.github.io`.
-- Production URL: `https://JuanLord.github.io/`.
+- Production URL: `https://juanvarela.dev/`.
 - Vite base path: `/`.
 - Deployment method: GitHub Actions, publishing the Vite `dist` artifact to GitHub Pages.
 
@@ -1090,7 +1090,7 @@ Steps:
 
 ### Option B: GitHub Actions
 
-Recommended for `JuanLord.github.io`. Every push to `main` should build, validate, and deploy the current production version.
+Recommended for `juanvarela.dev`. Every push to `main` should build, validate, and deploy the current production version.
 
 Workflow outline:
 
@@ -1226,7 +1226,7 @@ The first release is complete when:
   routed structure.
 - No AI-generated images are present in the repository or deployed site.
 - Placeholder content is visually complete and does not create broken links.
-- Production deployment is configured for `https://JuanLord.github.io/` with Vite `base: "/"`.
+- Production deployment is configured for `https://juanvarela.dev/` with Vite `base: "/"`.
 - Contact links work.
 - Build succeeds without TypeScript errors.
 - Lighthouse scores are within target range.

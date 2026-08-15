@@ -20,6 +20,12 @@ ignored by Git. Selecting **Prepare site update** writes validated records to
 the typed modules in `src/content/`; it does not commit or push them. Only
 records and photographs marked `published` are written to public source.
 
+The local draft can include unpublished personal information, so keep it in an
+encrypted computer backup such as FileVault-protected Time Machine storage.
+Do not place `.portfolio-studio` or `.env.studio.local` in the public repository.
+The published site content remains recoverable through Git history, while
+original photographs and RAW files should have a separate personal backup.
+
 ## Cloudflare R2 Setup
 
 Signing into Cloudflare with GitHub authenticates the Cloudflare dashboard, but
@@ -59,9 +65,9 @@ Cloudflare references:
 - [Public buckets and development URLs](https://developers.cloudflare.com/r2/buckets/public-buckets/)
 - [R2 pricing](https://developers.cloudflare.com/r2/pricing/)
 
-For production, connect a domain such as `media.your-domain.com` to R2 and set
-that HTTPS origin as `R2_PUBLIC_BASE_URL`. The `r2.dev` URL is suitable while the
-site is still being assembled.
+For production, connect `media.juanvarela.dev` to R2 and set that HTTPS origin
+as `R2_PUBLIC_BASE_URL`. Disable the `r2.dev` development URL after the custom
+domain is active so the bucket has one intentional public entry point.
 
 ## R2 Cost Guardrails
 
