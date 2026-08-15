@@ -17,9 +17,9 @@ export const photoTrips: PhotoTrip[] = [
     photos: [
       {
         id: "1784784249265-42a07511",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784249265-42a07511-mtrainier-00000088-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784249265-42a07511-mtrainier-00000088-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784249265-42a07511-mtrainier-00000088-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784249265-42a07511-mtrainier-00000088-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784249265-42a07511-mtrainier-00000088-display.webp",
         thumbnailStorageKey:
@@ -34,9 +34,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784250735-b7ade57e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784250735-b7ade57e-mtrainier-00000087-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784250735-b7ade57e-mtrainier-00000087-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784250735-b7ade57e-mtrainier-00000087-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784250735-b7ade57e-mtrainier-00000087-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784250735-b7ade57e-mtrainier-00000087-display.webp",
         thumbnailStorageKey:
@@ -51,9 +51,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784251699-466d80ce",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784251699-466d80ce-mtrainier-00000086-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784251699-466d80ce-mtrainier-00000086-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784251699-466d80ce-mtrainier-00000086-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784251699-466d80ce-mtrainier-00000086-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784251699-466d80ce-mtrainier-00000086-display.webp",
         thumbnailStorageKey:
@@ -68,9 +68,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784252459-d89d8d99",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784252459-d89d8d99-mtrainier-00000085-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784252459-d89d8d99-mtrainier-00000085-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784252459-d89d8d99-mtrainier-00000085-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784252459-d89d8d99-mtrainier-00000085-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784252459-d89d8d99-mtrainier-00000085-display.webp",
         thumbnailStorageKey:
@@ -85,9 +85,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784253339-5ebc12f2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784253339-5ebc12f2-mtrainier-00000084-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784253339-5ebc12f2-mtrainier-00000084-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784253339-5ebc12f2-mtrainier-00000084-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784253339-5ebc12f2-mtrainier-00000084-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784253339-5ebc12f2-mtrainier-00000084-display.webp",
         thumbnailStorageKey:
@@ -102,9 +102,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784254871-3c9029dd",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784254871-3c9029dd-mtrainier-00000083-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784254871-3c9029dd-mtrainier-00000083-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784254871-3c9029dd-mtrainier-00000083-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784254871-3c9029dd-mtrainier-00000083-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784254871-3c9029dd-mtrainier-00000083-display.webp",
         thumbnailStorageKey:
@@ -119,9 +119,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784255903-096b4989",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784255903-096b4989-mtrainier-00000082-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784255903-096b4989-mtrainier-00000082-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784255903-096b4989-mtrainier-00000082-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784255903-096b4989-mtrainier-00000082-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784255903-096b4989-mtrainier-00000082-display.webp",
         thumbnailStorageKey:
@@ -136,9 +136,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784256930-139d330b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784256930-139d330b-mtrainier-00000081-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784256930-139d330b-mtrainier-00000081-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784256930-139d330b-mtrainier-00000081-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784256930-139d330b-mtrainier-00000081-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784256930-139d330b-mtrainier-00000081-display.webp",
         thumbnailStorageKey:
@@ -153,9 +153,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784257857-09295ee1",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784257857-09295ee1-mtrainier-00000080-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784257857-09295ee1-mtrainier-00000080-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784257857-09295ee1-mtrainier-00000080-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784257857-09295ee1-mtrainier-00000080-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784257857-09295ee1-mtrainier-00000080-display.webp",
         thumbnailStorageKey:
@@ -170,9 +170,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784259136-40bbfa65",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784259136-40bbfa65-mtrainier-00000079-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784259136-40bbfa65-mtrainier-00000079-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784259136-40bbfa65-mtrainier-00000079-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784259136-40bbfa65-mtrainier-00000079-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784259136-40bbfa65-mtrainier-00000079-display.webp",
         thumbnailStorageKey:
@@ -187,9 +187,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784260223-a6cb15e6",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784260223-a6cb15e6-mtrainier-00000078-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784260223-a6cb15e6-mtrainier-00000078-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784260223-a6cb15e6-mtrainier-00000078-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784260223-a6cb15e6-mtrainier-00000078-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784260223-a6cb15e6-mtrainier-00000078-display.webp",
         thumbnailStorageKey:
@@ -204,9 +204,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784261194-c8d81be0",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784261194-c8d81be0-mtrainier-00000077-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784261194-c8d81be0-mtrainier-00000077-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784261194-c8d81be0-mtrainier-00000077-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784261194-c8d81be0-mtrainier-00000077-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784261194-c8d81be0-mtrainier-00000077-display.webp",
         thumbnailStorageKey:
@@ -221,9 +221,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784262302-ded8391b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784262302-ded8391b-mtrainier-00000076-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784262302-ded8391b-mtrainier-00000076-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784262302-ded8391b-mtrainier-00000076-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784262302-ded8391b-mtrainier-00000076-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784262302-ded8391b-mtrainier-00000076-display.webp",
         thumbnailStorageKey:
@@ -238,9 +238,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784263220-36567825",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784263220-36567825-mtrainier-00000075-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784263220-36567825-mtrainier-00000075-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784263220-36567825-mtrainier-00000075-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784263220-36567825-mtrainier-00000075-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784263220-36567825-mtrainier-00000075-display.webp",
         thumbnailStorageKey:
@@ -255,9 +255,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784264285-e8e64633",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784264285-e8e64633-mtrainier-00000074-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784264285-e8e64633-mtrainier-00000074-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784264285-e8e64633-mtrainier-00000074-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784264285-e8e64633-mtrainier-00000074-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784264285-e8e64633-mtrainier-00000074-display.webp",
         thumbnailStorageKey:
@@ -272,9 +272,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784265362-39eb0750",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784265362-39eb0750-mtrainier-00000073-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784265362-39eb0750-mtrainier-00000073-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784265362-39eb0750-mtrainier-00000073-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784265362-39eb0750-mtrainier-00000073-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784265362-39eb0750-mtrainier-00000073-display.webp",
         thumbnailStorageKey:
@@ -289,9 +289,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784266594-6d3010c6",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784266594-6d3010c6-mtrainier-00000072-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784266594-6d3010c6-mtrainier-00000072-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784266594-6d3010c6-mtrainier-00000072-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784266594-6d3010c6-mtrainier-00000072-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784266594-6d3010c6-mtrainier-00000072-display.webp",
         thumbnailStorageKey:
@@ -306,9 +306,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784267824-4b57c00f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784267824-4b57c00f-mtrainier-00000071-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784267824-4b57c00f-mtrainier-00000071-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784267824-4b57c00f-mtrainier-00000071-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784267824-4b57c00f-mtrainier-00000071-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784267824-4b57c00f-mtrainier-00000071-display.webp",
         thumbnailStorageKey:
@@ -323,9 +323,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784268620-8a1b7a59",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784268620-8a1b7a59-mtrainier-00000070-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784268620-8a1b7a59-mtrainier-00000070-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784268620-8a1b7a59-mtrainier-00000070-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784268620-8a1b7a59-mtrainier-00000070-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784268620-8a1b7a59-mtrainier-00000070-display.webp",
         thumbnailStorageKey:
@@ -340,9 +340,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784269552-5d2d7e19",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784269552-5d2d7e19-mtrainier-00000069-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784269552-5d2d7e19-mtrainier-00000069-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784269552-5d2d7e19-mtrainier-00000069-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784269552-5d2d7e19-mtrainier-00000069-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784269552-5d2d7e19-mtrainier-00000069-display.webp",
         thumbnailStorageKey:
@@ -357,9 +357,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784270771-06d06033",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784270771-06d06033-mtrainier-00000068-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784270771-06d06033-mtrainier-00000068-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784270771-06d06033-mtrainier-00000068-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784270771-06d06033-mtrainier-00000068-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784270771-06d06033-mtrainier-00000068-display.webp",
         thumbnailStorageKey:
@@ -374,9 +374,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784272134-2f7368ff",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784272134-2f7368ff-mtrainier-00000067-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784272134-2f7368ff-mtrainier-00000067-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784272134-2f7368ff-mtrainier-00000067-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784272134-2f7368ff-mtrainier-00000067-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784272134-2f7368ff-mtrainier-00000067-display.webp",
         thumbnailStorageKey:
@@ -391,9 +391,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784273207-2c4c02c4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784273207-2c4c02c4-mtrainier-00000066-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784273207-2c4c02c4-mtrainier-00000066-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784273207-2c4c02c4-mtrainier-00000066-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784273207-2c4c02c4-mtrainier-00000066-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784273207-2c4c02c4-mtrainier-00000066-display.webp",
         thumbnailStorageKey:
@@ -408,9 +408,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784274319-dd7b94eb",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784274319-dd7b94eb-mtrainier-00000065-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784274319-dd7b94eb-mtrainier-00000065-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784274319-dd7b94eb-mtrainier-00000065-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784274319-dd7b94eb-mtrainier-00000065-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784274319-dd7b94eb-mtrainier-00000065-display.webp",
         thumbnailStorageKey:
@@ -425,9 +425,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784275380-52392dba",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784275380-52392dba-mtrainier-00000064-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784275380-52392dba-mtrainier-00000064-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784275380-52392dba-mtrainier-00000064-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784275380-52392dba-mtrainier-00000064-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784275380-52392dba-mtrainier-00000064-display.webp",
         thumbnailStorageKey:
@@ -442,9 +442,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784276330-52efce12",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784276330-52efce12-mtrainier-00000063-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784276330-52efce12-mtrainier-00000063-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784276330-52efce12-mtrainier-00000063-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784276330-52efce12-mtrainier-00000063-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784276330-52efce12-mtrainier-00000063-display.webp",
         thumbnailStorageKey:
@@ -459,9 +459,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784277419-c29ab57b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784277419-c29ab57b-mtrainier-00000062-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784277419-c29ab57b-mtrainier-00000062-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784277419-c29ab57b-mtrainier-00000062-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784277419-c29ab57b-mtrainier-00000062-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784277419-c29ab57b-mtrainier-00000062-display.webp",
         thumbnailStorageKey:
@@ -476,9 +476,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784278520-5d66412a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784278520-5d66412a-mtrainier-00000061-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784278520-5d66412a-mtrainier-00000061-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784278520-5d66412a-mtrainier-00000061-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784278520-5d66412a-mtrainier-00000061-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784278520-5d66412a-mtrainier-00000061-display.webp",
         thumbnailStorageKey:
@@ -493,9 +493,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784279474-5ec1af47",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784279474-5ec1af47-mtrainier-00000060-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784279474-5ec1af47-mtrainier-00000060-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784279474-5ec1af47-mtrainier-00000060-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784279474-5ec1af47-mtrainier-00000060-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784279474-5ec1af47-mtrainier-00000060-display.webp",
         thumbnailStorageKey:
@@ -510,9 +510,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784281059-d942d2ee",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784281059-d942d2ee-mtrainier-00000059-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784281059-d942d2ee-mtrainier-00000059-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784281059-d942d2ee-mtrainier-00000059-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784281059-d942d2ee-mtrainier-00000059-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784281059-d942d2ee-mtrainier-00000059-display.webp",
         thumbnailStorageKey:
@@ -527,9 +527,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784282131-e966c8a3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784282131-e966c8a3-mtrainier-00000058-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784282131-e966c8a3-mtrainier-00000058-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784282131-e966c8a3-mtrainier-00000058-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784282131-e966c8a3-mtrainier-00000058-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784282131-e966c8a3-mtrainier-00000058-display.webp",
         thumbnailStorageKey:
@@ -544,9 +544,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784283358-49481ea2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784283358-49481ea2-mtrainier-00000057-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784283358-49481ea2-mtrainier-00000057-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784283358-49481ea2-mtrainier-00000057-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784283358-49481ea2-mtrainier-00000057-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784283358-49481ea2-mtrainier-00000057-display.webp",
         thumbnailStorageKey:
@@ -561,9 +561,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784284334-b7a59e42",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784284334-b7a59e42-mtrainier-00000056-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784284334-b7a59e42-mtrainier-00000056-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784284334-b7a59e42-mtrainier-00000056-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784284334-b7a59e42-mtrainier-00000056-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784284334-b7a59e42-mtrainier-00000056-display.webp",
         thumbnailStorageKey:
@@ -578,9 +578,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784285233-c30a43fc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784285233-c30a43fc-mtrainier-00000055-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784285233-c30a43fc-mtrainier-00000055-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784285233-c30a43fc-mtrainier-00000055-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784285233-c30a43fc-mtrainier-00000055-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784285233-c30a43fc-mtrainier-00000055-display.webp",
         thumbnailStorageKey:
@@ -595,9 +595,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784286062-5bb670f7",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784286062-5bb670f7-mtrainier-00000054-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784286062-5bb670f7-mtrainier-00000054-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784286062-5bb670f7-mtrainier-00000054-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784286062-5bb670f7-mtrainier-00000054-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784286062-5bb670f7-mtrainier-00000054-display.webp",
         thumbnailStorageKey:
@@ -612,9 +612,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784287145-56f5b591",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784287145-56f5b591-mtrainier-00000053-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784287145-56f5b591-mtrainier-00000053-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784287145-56f5b591-mtrainier-00000053-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784287145-56f5b591-mtrainier-00000053-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784287145-56f5b591-mtrainier-00000053-display.webp",
         thumbnailStorageKey:
@@ -629,9 +629,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784288105-8f28dd0f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784288105-8f28dd0f-mtrainier-00000052-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784288105-8f28dd0f-mtrainier-00000052-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784288105-8f28dd0f-mtrainier-00000052-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784288105-8f28dd0f-mtrainier-00000052-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784288105-8f28dd0f-mtrainier-00000052-display.webp",
         thumbnailStorageKey:
@@ -646,9 +646,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784288926-43d1239f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784288926-43d1239f-mtrainier-00000051-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784288926-43d1239f-mtrainier-00000051-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784288926-43d1239f-mtrainier-00000051-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784288926-43d1239f-mtrainier-00000051-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784288926-43d1239f-mtrainier-00000051-display.webp",
         thumbnailStorageKey:
@@ -663,9 +663,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784290013-3925ddd4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784290013-3925ddd4-mtrainier-00000050-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784290013-3925ddd4-mtrainier-00000050-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784290013-3925ddd4-mtrainier-00000050-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784290013-3925ddd4-mtrainier-00000050-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784290013-3925ddd4-mtrainier-00000050-display.webp",
         thumbnailStorageKey:
@@ -680,9 +680,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784291259-b48c4745",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784291259-b48c4745-mtrainier-00000049-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784291259-b48c4745-mtrainier-00000049-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784291259-b48c4745-mtrainier-00000049-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784291259-b48c4745-mtrainier-00000049-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784291259-b48c4745-mtrainier-00000049-display.webp",
         thumbnailStorageKey:
@@ -697,9 +697,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784293326-b282f41c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784293326-b282f41c-mtrainier-00000048-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784293326-b282f41c-mtrainier-00000048-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784293326-b282f41c-mtrainier-00000048-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784293326-b282f41c-mtrainier-00000048-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784293326-b282f41c-mtrainier-00000048-display.webp",
         thumbnailStorageKey:
@@ -714,9 +714,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784295266-fc52132c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784295266-fc52132c-mtrainier-00000047-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784295266-fc52132c-mtrainier-00000047-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784295266-fc52132c-mtrainier-00000047-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784295266-fc52132c-mtrainier-00000047-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784295266-fc52132c-mtrainier-00000047-display.webp",
         thumbnailStorageKey:
@@ -731,9 +731,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784296474-8b230e12",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784296474-8b230e12-mtrainier-00000046-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784296474-8b230e12-mtrainier-00000046-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784296474-8b230e12-mtrainier-00000046-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784296474-8b230e12-mtrainier-00000046-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784296474-8b230e12-mtrainier-00000046-display.webp",
         thumbnailStorageKey:
@@ -748,9 +748,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784297532-25ccdccc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784297532-25ccdccc-mtrainier-00000045-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784297532-25ccdccc-mtrainier-00000045-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784297532-25ccdccc-mtrainier-00000045-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784297532-25ccdccc-mtrainier-00000045-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784297532-25ccdccc-mtrainier-00000045-display.webp",
         thumbnailStorageKey:
@@ -765,9 +765,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784298895-7ed65585",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784298895-7ed65585-mtrainier-00000044-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784298895-7ed65585-mtrainier-00000044-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784298895-7ed65585-mtrainier-00000044-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784298895-7ed65585-mtrainier-00000044-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784298895-7ed65585-mtrainier-00000044-display.webp",
         thumbnailStorageKey:
@@ -782,9 +782,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784299924-be6b3884",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784299924-be6b3884-mtrainier-00000043-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784299924-be6b3884-mtrainier-00000043-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784299924-be6b3884-mtrainier-00000043-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784299924-be6b3884-mtrainier-00000043-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784299924-be6b3884-mtrainier-00000043-display.webp",
         thumbnailStorageKey:
@@ -799,9 +799,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784300990-e93a30f3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784300990-e93a30f3-mtrainier-00000042-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784300990-e93a30f3-mtrainier-00000042-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784300990-e93a30f3-mtrainier-00000042-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784300990-e93a30f3-mtrainier-00000042-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784300990-e93a30f3-mtrainier-00000042-display.webp",
         thumbnailStorageKey:
@@ -816,9 +816,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784302270-b7d8264e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784302270-b7d8264e-mtrainier-00000041-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784302270-b7d8264e-mtrainier-00000041-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784302270-b7d8264e-mtrainier-00000041-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784302270-b7d8264e-mtrainier-00000041-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784302270-b7d8264e-mtrainier-00000041-display.webp",
         thumbnailStorageKey:
@@ -833,9 +833,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784303426-f0ce1935",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784303426-f0ce1935-mtrainier-00000040-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784303426-f0ce1935-mtrainier-00000040-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784303426-f0ce1935-mtrainier-00000040-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784303426-f0ce1935-mtrainier-00000040-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784303426-f0ce1935-mtrainier-00000040-display.webp",
         thumbnailStorageKey:
@@ -850,9 +850,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784304433-1b415b1b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784304433-1b415b1b-mtrainier-00000039-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784304433-1b415b1b-mtrainier-00000039-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784304433-1b415b1b-mtrainier-00000039-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784304433-1b415b1b-mtrainier-00000039-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784304433-1b415b1b-mtrainier-00000039-display.webp",
         thumbnailStorageKey:
@@ -867,9 +867,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784305497-cce321fc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784305497-cce321fc-mtrainier-00000038-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784305497-cce321fc-mtrainier-00000038-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784305497-cce321fc-mtrainier-00000038-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784305497-cce321fc-mtrainier-00000038-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784305497-cce321fc-mtrainier-00000038-display.webp",
         thumbnailStorageKey:
@@ -884,9 +884,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784306756-452bdd6a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784306756-452bdd6a-mtrainier-00000037-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784306756-452bdd6a-mtrainier-00000037-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784306756-452bdd6a-mtrainier-00000037-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784306756-452bdd6a-mtrainier-00000037-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784306756-452bdd6a-mtrainier-00000037-display.webp",
         thumbnailStorageKey:
@@ -901,9 +901,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784308044-4cafbf58",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784308044-4cafbf58-mtrainier-00000036-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784308044-4cafbf58-mtrainier-00000036-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784308044-4cafbf58-mtrainier-00000036-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784308044-4cafbf58-mtrainier-00000036-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784308044-4cafbf58-mtrainier-00000036-display.webp",
         thumbnailStorageKey:
@@ -918,9 +918,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784309244-078a0009",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784309244-078a0009-mtrainier-00000035-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784309244-078a0009-mtrainier-00000035-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784309244-078a0009-mtrainier-00000035-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784309244-078a0009-mtrainier-00000035-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784309244-078a0009-mtrainier-00000035-display.webp",
         thumbnailStorageKey:
@@ -935,9 +935,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784310223-484f927d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784310223-484f927d-mtrainier-00000034-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784310223-484f927d-mtrainier-00000034-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784310223-484f927d-mtrainier-00000034-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784310223-484f927d-mtrainier-00000034-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784310223-484f927d-mtrainier-00000034-display.webp",
         thumbnailStorageKey:
@@ -952,9 +952,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784311521-378c9806",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784311521-378c9806-mtrainier-00000033-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784311521-378c9806-mtrainier-00000033-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784311521-378c9806-mtrainier-00000033-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784311521-378c9806-mtrainier-00000033-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784311521-378c9806-mtrainier-00000033-display.webp",
         thumbnailStorageKey:
@@ -969,9 +969,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784312521-6448fcdb",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784312521-6448fcdb-mtrainier-00000032-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784312521-6448fcdb-mtrainier-00000032-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784312521-6448fcdb-mtrainier-00000032-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784312521-6448fcdb-mtrainier-00000032-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784312521-6448fcdb-mtrainier-00000032-display.webp",
         thumbnailStorageKey:
@@ -986,9 +986,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784313467-e1e04c59",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784313467-e1e04c59-mtrainier-00000031-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784313467-e1e04c59-mtrainier-00000031-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784313467-e1e04c59-mtrainier-00000031-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784313467-e1e04c59-mtrainier-00000031-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784313467-e1e04c59-mtrainier-00000031-display.webp",
         thumbnailStorageKey:
@@ -1003,9 +1003,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784314462-a5dd68a2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784314462-a5dd68a2-mtrainier-00000030-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784314462-a5dd68a2-mtrainier-00000030-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784314462-a5dd68a2-mtrainier-00000030-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784314462-a5dd68a2-mtrainier-00000030-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784314462-a5dd68a2-mtrainier-00000030-display.webp",
         thumbnailStorageKey:
@@ -1020,9 +1020,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784315527-7798b8cf",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784315527-7798b8cf-mtrainier-00000029-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784315527-7798b8cf-mtrainier-00000029-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784315527-7798b8cf-mtrainier-00000029-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784315527-7798b8cf-mtrainier-00000029-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784315527-7798b8cf-mtrainier-00000029-display.webp",
         thumbnailStorageKey:
@@ -1037,9 +1037,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784316589-52120f8c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784316589-52120f8c-mtrainier-00000028-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784316589-52120f8c-mtrainier-00000028-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784316589-52120f8c-mtrainier-00000028-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784316589-52120f8c-mtrainier-00000028-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784316589-52120f8c-mtrainier-00000028-display.webp",
         thumbnailStorageKey:
@@ -1054,9 +1054,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784317518-1202ae1f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784317518-1202ae1f-mtrainier-00000027-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784317518-1202ae1f-mtrainier-00000027-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784317518-1202ae1f-mtrainier-00000027-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784317518-1202ae1f-mtrainier-00000027-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784317518-1202ae1f-mtrainier-00000027-display.webp",
         thumbnailStorageKey:
@@ -1071,9 +1071,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784318279-eec84786",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784318279-eec84786-mtrainier-00000026-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784318279-eec84786-mtrainier-00000026-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784318279-eec84786-mtrainier-00000026-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784318279-eec84786-mtrainier-00000026-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784318279-eec84786-mtrainier-00000026-display.webp",
         thumbnailStorageKey:
@@ -1088,9 +1088,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784319318-5d9790ba",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784319318-5d9790ba-mtrainier-00000025-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784319318-5d9790ba-mtrainier-00000025-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784319318-5d9790ba-mtrainier-00000025-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784319318-5d9790ba-mtrainier-00000025-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784319318-5d9790ba-mtrainier-00000025-display.webp",
         thumbnailStorageKey:
@@ -1105,9 +1105,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784320375-fe3aef4e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784320375-fe3aef4e-mtrainier-00000024-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784320375-fe3aef4e-mtrainier-00000024-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784320375-fe3aef4e-mtrainier-00000024-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784320375-fe3aef4e-mtrainier-00000024-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784320375-fe3aef4e-mtrainier-00000024-display.webp",
         thumbnailStorageKey:
@@ -1122,9 +1122,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784321215-54530223",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784321215-54530223-mtrainier-00000023-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784321215-54530223-mtrainier-00000023-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784321215-54530223-mtrainier-00000023-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784321215-54530223-mtrainier-00000023-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784321215-54530223-mtrainier-00000023-display.webp",
         thumbnailStorageKey:
@@ -1139,9 +1139,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784321952-f3f0d765",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784321952-f3f0d765-mtrainier-00000022-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784321952-f3f0d765-mtrainier-00000022-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784321952-f3f0d765-mtrainier-00000022-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784321952-f3f0d765-mtrainier-00000022-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784321952-f3f0d765-mtrainier-00000022-display.webp",
         thumbnailStorageKey:
@@ -1156,9 +1156,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784323002-1497fdd3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784323002-1497fdd3-mtrainier-00000021-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784323002-1497fdd3-mtrainier-00000021-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784323002-1497fdd3-mtrainier-00000021-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784323002-1497fdd3-mtrainier-00000021-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784323002-1497fdd3-mtrainier-00000021-display.webp",
         thumbnailStorageKey:
@@ -1173,9 +1173,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784324395-23ffef45",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784324395-23ffef45-mtrainier-00000020-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784324395-23ffef45-mtrainier-00000020-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784324395-23ffef45-mtrainier-00000020-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784324395-23ffef45-mtrainier-00000020-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784324395-23ffef45-mtrainier-00000020-display.webp",
         thumbnailStorageKey:
@@ -1190,9 +1190,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784325487-289c8315",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784325487-289c8315-mtrainier-00000019-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784325487-289c8315-mtrainier-00000019-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784325487-289c8315-mtrainier-00000019-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784325487-289c8315-mtrainier-00000019-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784325487-289c8315-mtrainier-00000019-display.webp",
         thumbnailStorageKey:
@@ -1207,9 +1207,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784326496-56622511",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784326496-56622511-mtrainier-00000018-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784326496-56622511-mtrainier-00000018-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784326496-56622511-mtrainier-00000018-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784326496-56622511-mtrainier-00000018-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784326496-56622511-mtrainier-00000018-display.webp",
         thumbnailStorageKey:
@@ -1224,9 +1224,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784327924-b7569e6a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784327924-b7569e6a-mtrainier-00000017-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784327924-b7569e6a-mtrainier-00000017-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784327924-b7569e6a-mtrainier-00000017-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784327924-b7569e6a-mtrainier-00000017-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784327924-b7569e6a-mtrainier-00000017-display.webp",
         thumbnailStorageKey:
@@ -1241,9 +1241,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784329540-625b8877",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784329540-625b8877-mtrainier-00000016-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784329540-625b8877-mtrainier-00000016-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784329540-625b8877-mtrainier-00000016-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784329540-625b8877-mtrainier-00000016-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784329540-625b8877-mtrainier-00000016-display.webp",
         thumbnailStorageKey:
@@ -1258,9 +1258,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784330910-2de1697c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784330910-2de1697c-mtrainier-00000015-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784330910-2de1697c-mtrainier-00000015-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784330910-2de1697c-mtrainier-00000015-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784330910-2de1697c-mtrainier-00000015-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784330910-2de1697c-mtrainier-00000015-display.webp",
         thumbnailStorageKey:
@@ -1275,9 +1275,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784333078-6969459e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784333078-6969459e-mtrainier-00000014-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784333078-6969459e-mtrainier-00000014-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784333078-6969459e-mtrainier-00000014-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784333078-6969459e-mtrainier-00000014-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784333078-6969459e-mtrainier-00000014-display.webp",
         thumbnailStorageKey:
@@ -1292,9 +1292,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784334868-b7730cc4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784334868-b7730cc4-mtrainier-00000013-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784334868-b7730cc4-mtrainier-00000013-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784334868-b7730cc4-mtrainier-00000013-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784334868-b7730cc4-mtrainier-00000013-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784334868-b7730cc4-mtrainier-00000013-display.webp",
         thumbnailStorageKey:
@@ -1309,9 +1309,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784337315-4aeaf789",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784337315-4aeaf789-mtrainier-00000012-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784337315-4aeaf789-mtrainier-00000012-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784337315-4aeaf789-mtrainier-00000012-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784337315-4aeaf789-mtrainier-00000012-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784337315-4aeaf789-mtrainier-00000012-display.webp",
         thumbnailStorageKey:
@@ -1326,9 +1326,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784338604-f5ad043e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784338604-f5ad043e-mtrainier-00000011-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784338604-f5ad043e-mtrainier-00000011-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784338604-f5ad043e-mtrainier-00000011-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784338604-f5ad043e-mtrainier-00000011-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784338604-f5ad043e-mtrainier-00000011-display.webp",
         thumbnailStorageKey:
@@ -1343,9 +1343,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784340025-a2ec26d9",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784340025-a2ec26d9-mtrainier-00000010-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784340025-a2ec26d9-mtrainier-00000010-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784340025-a2ec26d9-mtrainier-00000010-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784340025-a2ec26d9-mtrainier-00000010-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784340025-a2ec26d9-mtrainier-00000010-display.webp",
         thumbnailStorageKey:
@@ -1360,9 +1360,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784340819-b88006ea",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784340819-b88006ea-mtrainier-00000009-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784340819-b88006ea-mtrainier-00000009-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784340819-b88006ea-mtrainier-00000009-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784340819-b88006ea-mtrainier-00000009-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784340819-b88006ea-mtrainier-00000009-display.webp",
         thumbnailStorageKey:
@@ -1377,9 +1377,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784341868-ad3d02e4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784341868-ad3d02e4-mtrainier-00000008-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784341868-ad3d02e4-mtrainier-00000008-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784341868-ad3d02e4-mtrainier-00000008-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784341868-ad3d02e4-mtrainier-00000008-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784341868-ad3d02e4-mtrainier-00000008-display.webp",
         thumbnailStorageKey:
@@ -1394,9 +1394,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784343009-083f55b3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784343009-083f55b3-mtrainier-00000007-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784343009-083f55b3-mtrainier-00000007-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784343009-083f55b3-mtrainier-00000007-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784343009-083f55b3-mtrainier-00000007-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784343009-083f55b3-mtrainier-00000007-display.webp",
         thumbnailStorageKey:
@@ -1411,9 +1411,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784344489-37b8306b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784344489-37b8306b-mtrainier-00000006-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784344489-37b8306b-mtrainier-00000006-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784344489-37b8306b-mtrainier-00000006-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784344489-37b8306b-mtrainier-00000006-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784344489-37b8306b-mtrainier-00000006-display.webp",
         thumbnailStorageKey:
@@ -1428,9 +1428,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784345813-d46927d7",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784345813-d46927d7-mtrainier-00000005-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784345813-d46927d7-mtrainier-00000005-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784345813-d46927d7-mtrainier-00000005-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784345813-d46927d7-mtrainier-00000005-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784345813-d46927d7-mtrainier-00000005-display.webp",
         thumbnailStorageKey:
@@ -1445,9 +1445,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784346824-c13dd9bc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784346824-c13dd9bc-mtrainier-00000004-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784346824-c13dd9bc-mtrainier-00000004-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784346824-c13dd9bc-mtrainier-00000004-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784346824-c13dd9bc-mtrainier-00000004-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784346824-c13dd9bc-mtrainier-00000004-display.webp",
         thumbnailStorageKey:
@@ -1462,9 +1462,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784347653-e6976ae5",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784347653-e6976ae5-mtrainier-00000003-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784347653-e6976ae5-mtrainier-00000003-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784347653-e6976ae5-mtrainier-00000003-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784347653-e6976ae5-mtrainier-00000003-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784347653-e6976ae5-mtrainier-00000003-display.webp",
         thumbnailStorageKey:
@@ -1479,9 +1479,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784348697-9917376a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784348697-9917376a-mtrainier-00000002-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784348697-9917376a-mtrainier-00000002-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784348697-9917376a-mtrainier-00000002-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784348697-9917376a-mtrainier-00000002-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784348697-9917376a-mtrainier-00000002-display.webp",
         thumbnailStorageKey:
@@ -1496,9 +1496,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784784349725-9dbeac7f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784349725-9dbeac7f-mtrainier-00000001-display.webp",
+        src: "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784349725-9dbeac7f-mtrainier-00000001-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/mt-rainier-camping/1784784349725-9dbeac7f-mtrainier-00000001-thumb.webp",
+          "https://media.juanvarela.dev/photography/mt-rainier-camping/1784784349725-9dbeac7f-mtrainier-00000001-thumb.webp",
         storageKey:
           "photography/mt-rainier-camping/1784784349725-9dbeac7f-mtrainier-00000001-display.webp",
         thumbnailStorageKey:
@@ -1544,9 +1544,9 @@ export const photoTrips: PhotoTrip[] = [
     photos: [
       {
         id: "1784866647104-2e63f7b5",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866647104-2e63f7b5-north-cascades-00000001-display.webp",
         thumbnailStorageKey:
@@ -1561,9 +1561,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866648898-54ba6955",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866648898-54ba6955-north-cascades-00000071-display.webp",
         thumbnailStorageKey:
@@ -1578,9 +1578,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866650338-686702f2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866650338-686702f2-north-cascades-00000070-display.webp",
         thumbnailStorageKey:
@@ -1595,9 +1595,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866651416-0f08b54f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866651416-0f08b54f-north-cascades-00000069-display.webp",
         thumbnailStorageKey:
@@ -1612,9 +1612,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866652292-1196a125",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866652292-1196a125-north-cascades-00000068-display.webp",
         thumbnailStorageKey:
@@ -1629,9 +1629,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866653624-4c9e9cab",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866653624-4c9e9cab-north-cascades-00000067-display.webp",
         thumbnailStorageKey:
@@ -1646,9 +1646,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866655160-2b2758a8",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866655160-2b2758a8-north-cascades-00000066-display.webp",
         thumbnailStorageKey:
@@ -1663,9 +1663,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866656152-4530f324",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866656152-4530f324-north-cascades-00000065-display.webp",
         thumbnailStorageKey:
@@ -1680,9 +1680,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866657512-77c496cc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866657512-77c496cc-north-cascades-00000064-display.webp",
         thumbnailStorageKey:
@@ -1697,9 +1697,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866658987-dc65f021",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866658987-dc65f021-north-cascades-00000063-display.webp",
         thumbnailStorageKey:
@@ -1714,9 +1714,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866660599-4d7b0625",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866660599-4d7b0625-north-cascades-00000062-display.webp",
         thumbnailStorageKey:
@@ -1731,9 +1731,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866661590-f4edd116",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866661590-f4edd116-north-cascades-00000061-display.webp",
         thumbnailStorageKey:
@@ -1748,9 +1748,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866662647-b2f3f26d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866662647-b2f3f26d-north-cascades-00000060-display.webp",
         thumbnailStorageKey:
@@ -1765,9 +1765,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866663892-7d67a9d0",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866663892-7d67a9d0-north-cascades-00000059-display.webp",
         thumbnailStorageKey:
@@ -1782,9 +1782,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866665005-f446ed9b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866665005-f446ed9b-north-cascades-00000058-display.webp",
         thumbnailStorageKey:
@@ -1799,9 +1799,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866666354-a88e12cc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866666354-a88e12cc-north-cascades-00000057-display.webp",
         thumbnailStorageKey:
@@ -1816,9 +1816,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866667358-a40f07d3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866667358-a40f07d3-north-cascades-00000056-display.webp",
         thumbnailStorageKey:
@@ -1833,9 +1833,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866668262-12efaafc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866668262-12efaafc-north-cascades-00000055-display.webp",
         thumbnailStorageKey:
@@ -1850,9 +1850,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866669191-8d6741dc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866669191-8d6741dc-north-cascades-00000054-display.webp",
         thumbnailStorageKey:
@@ -1867,9 +1867,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866670311-5fa1ae92",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866670311-5fa1ae92-north-cascades-00000053-display.webp",
         thumbnailStorageKey:
@@ -1884,9 +1884,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866671296-5adedbe4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866671296-5adedbe4-north-cascades-00000052-display.webp",
         thumbnailStorageKey:
@@ -1901,9 +1901,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866672157-844d2192",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866672157-844d2192-north-cascades-00000051-display.webp",
         thumbnailStorageKey:
@@ -1918,9 +1918,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866673034-6b678ced",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866673034-6b678ced-north-cascades-00000050-display.webp",
         thumbnailStorageKey:
@@ -1935,9 +1935,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866674178-fa909663",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866674178-fa909663-north-cascades-00000049-display.webp",
         thumbnailStorageKey:
@@ -1952,9 +1952,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866675479-ccf4aa35",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866675479-ccf4aa35-north-cascades-00000048-display.webp",
         thumbnailStorageKey:
@@ -1969,9 +1969,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866676508-f5b19e22",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866676508-f5b19e22-north-cascades-00000047-display.webp",
         thumbnailStorageKey:
@@ -1986,9 +1986,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866678202-3893e2d4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866678202-3893e2d4-north-cascades-00000046-display.webp",
         thumbnailStorageKey:
@@ -2003,9 +2003,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866679147-003612be",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866679147-003612be-north-cascades-00000045-display.webp",
         thumbnailStorageKey:
@@ -2020,9 +2020,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866680210-1f47b8a2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866680210-1f47b8a2-north-cascades-00000044-display.webp",
         thumbnailStorageKey:
@@ -2037,9 +2037,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866681571-826ac2fd",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866681571-826ac2fd-north-cascades-00000043-display.webp",
         thumbnailStorageKey:
@@ -2054,9 +2054,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866682574-ec59b37d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866682574-ec59b37d-north-cascades-00000042-display.webp",
         thumbnailStorageKey:
@@ -2071,9 +2071,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866683940-8f915e7a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866683940-8f915e7a-north-cascades-00000041-display.webp",
         thumbnailStorageKey:
@@ -2088,9 +2088,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866684913-997e5986",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866684913-997e5986-north-cascades-00000040-display.webp",
         thumbnailStorageKey:
@@ -2105,9 +2105,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866686075-c8180eb2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866686075-c8180eb2-north-cascades-00000039-display.webp",
         thumbnailStorageKey:
@@ -2122,9 +2122,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866687306-fcf5e468",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866687306-fcf5e468-north-cascades-00000038-display.webp",
         thumbnailStorageKey:
@@ -2139,9 +2139,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866688430-5b1d6918",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866688430-5b1d6918-north-cascades-00000037-display.webp",
         thumbnailStorageKey:
@@ -2156,9 +2156,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866689746-3d1aaece",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866689746-3d1aaece-north-cascades-00000036-display.webp",
         thumbnailStorageKey:
@@ -2173,9 +2173,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866691040-9f45cca1",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866691040-9f45cca1-north-cascades-00000035-display.webp",
         thumbnailStorageKey:
@@ -2190,9 +2190,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866692296-57eb421f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866692296-57eb421f-north-cascades-00000034-display.webp",
         thumbnailStorageKey:
@@ -2207,9 +2207,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866693580-9b8f746d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866693580-9b8f746d-north-cascades-00000033-display.webp",
         thumbnailStorageKey:
@@ -2224,9 +2224,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866694937-b3d19993",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866694937-b3d19993-north-cascades-00000032-display.webp",
         thumbnailStorageKey:
@@ -2241,9 +2241,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866695977-b4f1e2d8",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866695977-b4f1e2d8-north-cascades-00000031-display.webp",
         thumbnailStorageKey:
@@ -2258,9 +2258,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866697349-f616cf09",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866697349-f616cf09-north-cascades-00000030-display.webp",
         thumbnailStorageKey:
@@ -2275,9 +2275,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866698371-e779b13f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866698371-e779b13f-north-cascades-00000029-display.webp",
         thumbnailStorageKey:
@@ -2292,9 +2292,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866699343-a49adf35",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866699343-a49adf35-north-cascades-00000028-display.webp",
         thumbnailStorageKey:
@@ -2309,9 +2309,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866700394-0054df7d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866700394-0054df7d-north-cascades-00000027-display.webp",
         thumbnailStorageKey:
@@ -2326,9 +2326,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866701459-e91eaa05",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866701459-e91eaa05-north-cascades-00000026-display.webp",
         thumbnailStorageKey:
@@ -2343,9 +2343,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866702576-ed486166",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866702576-ed486166-north-cascades-00000025-display.webp",
         thumbnailStorageKey:
@@ -2360,9 +2360,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866703829-1ee61252",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866703829-1ee61252-north-cascades-00000024-display.webp",
         thumbnailStorageKey:
@@ -2377,9 +2377,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866705013-649f732c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866705013-649f732c-north-cascades-00000023-display.webp",
         thumbnailStorageKey:
@@ -2394,9 +2394,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866706163-0566740e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866706163-0566740e-north-cascades-00000022-display.webp",
         thumbnailStorageKey:
@@ -2411,9 +2411,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866707537-7d0408fc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866707537-7d0408fc-north-cascades-00000021-display.webp",
         thumbnailStorageKey:
@@ -2428,9 +2428,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866708668-4420a995",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866708668-4420a995-north-cascades-00000020-display.webp",
         thumbnailStorageKey:
@@ -2445,9 +2445,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866709614-81e57d76",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866709614-81e57d76-north-cascades-00000019-display.webp",
         thumbnailStorageKey:
@@ -2462,9 +2462,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866710698-5f46bdab",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866710698-5f46bdab-north-cascades-00000018-display.webp",
         thumbnailStorageKey:
@@ -2479,9 +2479,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866711643-98a83a0b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866711643-98a83a0b-north-cascades-00000017-display.webp",
         thumbnailStorageKey:
@@ -2496,9 +2496,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866712822-816ca7c0",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866712822-816ca7c0-north-cascades-00000016-display.webp",
         thumbnailStorageKey:
@@ -2513,9 +2513,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866714028-cf9dee40",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866714028-cf9dee40-north-cascades-00000015-display.webp",
         thumbnailStorageKey:
@@ -2530,9 +2530,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866715114-a799fe7c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866715114-a799fe7c-north-cascades-00000014-display.webp",
         thumbnailStorageKey:
@@ -2547,9 +2547,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866716179-e784c8a8",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866716179-e784c8a8-north-cascades-00000013-display.webp",
         thumbnailStorageKey:
@@ -2564,9 +2564,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866717301-d44f7eb9",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866717301-d44f7eb9-north-cascades-00000012-display.webp",
         thumbnailStorageKey:
@@ -2581,9 +2581,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866719788-fbead842",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866719788-fbead842-north-cascades-00000011-display.webp",
         thumbnailStorageKey:
@@ -2598,9 +2598,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866721016-164b339a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866721016-164b339a-north-cascades-00000010-display.webp",
         thumbnailStorageKey:
@@ -2615,9 +2615,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866722829-e08e3413",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866722829-e08e3413-north-cascades-00000009-display.webp",
         thumbnailStorageKey:
@@ -2632,9 +2632,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866725450-644bdd90",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866725450-644bdd90-north-cascades-00000008-display.webp",
         thumbnailStorageKey:
@@ -2649,9 +2649,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866728142-699e1c4e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866728142-699e1c4e-north-cascades-00000007-display.webp",
         thumbnailStorageKey:
@@ -2666,9 +2666,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866729828-67e28e40",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866729828-67e28e40-north-cascades-00000006-display.webp",
         thumbnailStorageKey:
@@ -2683,9 +2683,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866731033-061f6cba",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866731033-061f6cba-north-cascades-00000005-display.webp",
         thumbnailStorageKey:
@@ -2700,9 +2700,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866732393-2a943268",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866732393-2a943268-north-cascades-00000004-display.webp",
         thumbnailStorageKey:
@@ -2717,9 +2717,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866733423-75c5bac4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866733423-75c5bac4-north-cascades-00000003-display.webp",
         thumbnailStorageKey:
@@ -2734,9 +2734,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1784866734938-19a1543c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-display.webp",
+        src: "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-thumb.webp",
+          "https://media.juanvarela.dev/photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-thumb.webp",
         storageKey:
           "photography/north-cascades-national-park/1784866734938-19a1543c-north-cascades-00000002-display.webp",
         thumbnailStorageKey:
@@ -2799,9 +2799,9 @@ export const photoTrips: PhotoTrip[] = [
     photos: [
       {
         id: "1785028946270-9c9a8c12",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-thumb.webp",
         storageKey:
           "photography/egypt/1785028946270-9c9a8c12-egypt26-00000001-display.webp",
         thumbnailStorageKey:
@@ -2815,9 +2815,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028951914-3cf0fd5f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-thumb.webp",
         storageKey:
           "photography/egypt/1785028951914-3cf0fd5f-egypt26-00000002-display.webp",
         thumbnailStorageKey:
@@ -2831,9 +2831,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028954253-67984f1f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028954253-67984f1f-egypt26-00000003-thumb.webp",
         storageKey:
           "photography/egypt/1785028954253-67984f1f-egypt26-00000003-display.webp",
         thumbnailStorageKey:
@@ -2848,9 +2848,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028956204-a270d667",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028956204-a270d667-egypt26-00000004-thumb.webp",
         storageKey:
           "photography/egypt/1785028956204-a270d667-egypt26-00000004-display.webp",
         thumbnailStorageKey:
@@ -2865,9 +2865,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028958473-a8fe0a31",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-thumb.webp",
         storageKey:
           "photography/egypt/1785028958473-a8fe0a31-egypt26-00000005-display.webp",
         thumbnailStorageKey:
@@ -2882,9 +2882,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028960426-68c9ea40",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028960426-68c9ea40-egypt26-00000006-thumb.webp",
         storageKey:
           "photography/egypt/1785028960426-68c9ea40-egypt26-00000006-display.webp",
         thumbnailStorageKey:
@@ -2899,9 +2899,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028962749-89552600",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028962749-89552600-egypt26-00000007-thumb.webp",
         storageKey:
           "photography/egypt/1785028962749-89552600-egypt26-00000007-display.webp",
         thumbnailStorageKey:
@@ -2916,9 +2916,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028964785-b0c8b857",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028964785-b0c8b857-egypt26-00000008-thumb.webp",
         storageKey:
           "photography/egypt/1785028964785-b0c8b857-egypt26-00000008-display.webp",
         thumbnailStorageKey:
@@ -2933,9 +2933,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028968435-ce20d77c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028968435-ce20d77c-egypt26-00000009-thumb.webp",
         storageKey:
           "photography/egypt/1785028968435-ce20d77c-egypt26-00000009-display.webp",
         thumbnailStorageKey:
@@ -2950,9 +2950,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028972057-165a5dcc",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028972057-165a5dcc-egypt26-00000010-thumb.webp",
         storageKey:
           "photography/egypt/1785028972057-165a5dcc-egypt26-00000010-display.webp",
         thumbnailStorageKey:
@@ -2967,9 +2967,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028974088-ee86371b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028974088-ee86371b-egypt26-00000011-thumb.webp",
         storageKey:
           "photography/egypt/1785028974088-ee86371b-egypt26-00000011-display.webp",
         thumbnailStorageKey:
@@ -2984,9 +2984,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028975722-ef9cda35",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028975722-ef9cda35-egypt26-00000012-thumb.webp",
         storageKey:
           "photography/egypt/1785028975722-ef9cda35-egypt26-00000012-display.webp",
         thumbnailStorageKey:
@@ -3001,9 +3001,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028977696-8f5d7763",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028977696-8f5d7763-egypt26-00000013-thumb.webp",
         storageKey:
           "photography/egypt/1785028977696-8f5d7763-egypt26-00000013-display.webp",
         thumbnailStorageKey:
@@ -3018,9 +3018,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028979869-7aa04582",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028979869-7aa04582-egypt26-00000014-thumb.webp",
         storageKey:
           "photography/egypt/1785028979869-7aa04582-egypt26-00000014-display.webp",
         thumbnailStorageKey:
@@ -3035,9 +3035,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028981626-4953be89",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028981626-4953be89-egypt26-00000015-thumb.webp",
         storageKey:
           "photography/egypt/1785028981626-4953be89-egypt26-00000015-display.webp",
         thumbnailStorageKey:
@@ -3052,9 +3052,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028983840-7b84ef00",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028983840-7b84ef00-egypt26-00000016-thumb.webp",
         storageKey:
           "photography/egypt/1785028983840-7b84ef00-egypt26-00000016-display.webp",
         thumbnailStorageKey:
@@ -3069,9 +3069,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028986132-1de831d3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028986132-1de831d3-egypt26-00000017-thumb.webp",
         storageKey:
           "photography/egypt/1785028986132-1de831d3-egypt26-00000017-display.webp",
         thumbnailStorageKey:
@@ -3086,9 +3086,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028988243-017a32f5",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028988243-017a32f5-egypt26-00000018-thumb.webp",
         storageKey:
           "photography/egypt/1785028988243-017a32f5-egypt26-00000018-display.webp",
         thumbnailStorageKey:
@@ -3103,9 +3103,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028990183-2b9429a9",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028990183-2b9429a9-egypt26-00000019-thumb.webp",
         storageKey:
           "photography/egypt/1785028990183-2b9429a9-egypt26-00000019-display.webp",
         thumbnailStorageKey:
@@ -3120,9 +3120,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028992096-bd4fd3ca",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-thumb.webp",
         storageKey:
           "photography/egypt/1785028992096-bd4fd3ca-egypt26-00000020-display.webp",
         thumbnailStorageKey:
@@ -3137,9 +3137,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028994257-0f9ecd65",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-thumb.webp",
         storageKey:
           "photography/egypt/1785028994257-0f9ecd65-egypt26-00000021-display.webp",
         thumbnailStorageKey:
@@ -3154,9 +3154,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028996088-4b9917f2",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028996088-4b9917f2-egypt26-00000022-thumb.webp",
         storageKey:
           "photography/egypt/1785028996088-4b9917f2-egypt26-00000022-display.webp",
         thumbnailStorageKey:
@@ -3171,9 +3171,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785028998207-cf4fd4b8",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-thumb.webp",
         storageKey:
           "photography/egypt/1785028998207-cf4fd4b8-egypt26-00000023-display.webp",
         thumbnailStorageKey:
@@ -3188,9 +3188,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785029001071-80664454",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785029001071-80664454-egypt26-00000024-thumb.webp",
         storageKey:
           "photography/egypt/1785029001071-80664454-egypt26-00000024-display.webp",
         thumbnailStorageKey:
@@ -3205,9 +3205,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785029006063-7964aa04",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785029006063-7964aa04-egypt26-00000025-thumb.webp",
         storageKey:
           "photography/egypt/1785029006063-7964aa04-egypt26-00000025-display.webp",
         thumbnailStorageKey:
@@ -3221,9 +3221,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785029008901-090bca34",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785029008901-090bca34-egypt26-00000026-thumb.webp",
         storageKey:
           "photography/egypt/1785029008901-090bca34-egypt26-00000026-display.webp",
         thumbnailStorageKey:
@@ -3237,9 +3237,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785029011937-35876349",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785029011937-35876349-egypt26-00000027-thumb.webp",
         storageKey:
           "photography/egypt/1785029011937-35876349-egypt26-00000027-display.webp",
         thumbnailStorageKey:
@@ -3253,9 +3253,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785029014793-bbb950a7",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-display.webp",
+        src: "https://media.juanvarela.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-thumb.webp",
+          "https://media.juanvarela.dev/photography/egypt/1785029014793-bbb950a7-egypt26-00000028-thumb.webp",
         storageKey:
           "photography/egypt/1785029014793-bbb950a7-egypt26-00000028-display.webp",
         thumbnailStorageKey:
@@ -3310,9 +3310,9 @@ export const photoTrips: PhotoTrip[] = [
     photos: [
       {
         id: "1785030519325-57650ffd",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030519325-57650ffd-dsc01497-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030519325-57650ffd-dsc01497-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030519325-57650ffd-dsc01497-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030519325-57650ffd-dsc01497-thumb.webp",
         storageKey:
           "photography/croatia/1785030519325-57650ffd-dsc01497-display.webp",
         thumbnailStorageKey:
@@ -3326,9 +3326,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030521424-1e319208",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030521424-1e319208-dsc01475-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030521424-1e319208-dsc01475-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030521424-1e319208-dsc01475-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030521424-1e319208-dsc01475-thumb.webp",
         storageKey:
           "photography/croatia/1785030521424-1e319208-dsc01475-display.webp",
         thumbnailStorageKey:
@@ -3342,9 +3342,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030523438-02330dee",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030523438-02330dee-dsc01476-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030523438-02330dee-dsc01476-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030523438-02330dee-dsc01476-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030523438-02330dee-dsc01476-thumb.webp",
         storageKey:
           "photography/croatia/1785030523438-02330dee-dsc01476-display.webp",
         thumbnailStorageKey:
@@ -3358,9 +3358,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030527098-6d943d2a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030527098-6d943d2a-dsc01520-thumb.webp",
         storageKey:
           "photography/croatia/1785030527098-6d943d2a-dsc01520-display.webp",
         thumbnailStorageKey:
@@ -3374,9 +3374,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030529028-de6e358c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030529028-de6e358c-dsc01521-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030529028-de6e358c-dsc01521-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030529028-de6e358c-dsc01521-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030529028-de6e358c-dsc01521-thumb.webp",
         storageKey:
           "photography/croatia/1785030529028-de6e358c-dsc01521-display.webp",
         thumbnailStorageKey:
@@ -3390,9 +3390,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030531366-6ae4680c",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030531366-6ae4680c-dsc01527-thumb.webp",
         storageKey:
           "photography/croatia/1785030531366-6ae4680c-dsc01527-display.webp",
         thumbnailStorageKey:
@@ -3406,9 +3406,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030537426-0ee7312b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030537426-0ee7312b-dsc01532-thumb.webp",
         storageKey:
           "photography/croatia/1785030537426-0ee7312b-dsc01532-display.webp",
         thumbnailStorageKey:
@@ -3422,9 +3422,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030541436-2cfd23ef",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030541436-2cfd23ef-dsc01534-thumb.webp",
         storageKey:
           "photography/croatia/1785030541436-2cfd23ef-dsc01534-display.webp",
         thumbnailStorageKey:
@@ -3438,9 +3438,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030544177-7d93394b",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030544177-7d93394b-dsc01550-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030544177-7d93394b-dsc01550-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030544177-7d93394b-dsc01550-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030544177-7d93394b-dsc01550-thumb.webp",
         storageKey:
           "photography/croatia/1785030544177-7d93394b-dsc01550-display.webp",
         thumbnailStorageKey:
@@ -3454,9 +3454,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030546606-901e8940",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030546606-901e8940-dsc01552-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030546606-901e8940-dsc01552-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030546606-901e8940-dsc01552-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030546606-901e8940-dsc01552-thumb.webp",
         storageKey:
           "photography/croatia/1785030546606-901e8940-dsc01552-display.webp",
         thumbnailStorageKey:
@@ -3470,9 +3470,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030548797-92d100d8",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030548797-92d100d8-dsc01563-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030548797-92d100d8-dsc01563-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030548797-92d100d8-dsc01563-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030548797-92d100d8-dsc01563-thumb.webp",
         storageKey:
           "photography/croatia/1785030548797-92d100d8-dsc01563-display.webp",
         thumbnailStorageKey:
@@ -3486,9 +3486,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030638246-0f3a2e3a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030638246-0f3a2e3a-dsc01578-thumb.webp",
         storageKey:
           "photography/croatia/1785030638246-0f3a2e3a-dsc01578-display.webp",
         thumbnailStorageKey:
@@ -3502,9 +3502,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030643018-cf103872",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030643018-cf103872-dsc01585-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030643018-cf103872-dsc01585-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030643018-cf103872-dsc01585-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030643018-cf103872-dsc01585-thumb.webp",
         storageKey:
           "photography/croatia/1785030643018-cf103872-dsc01585-display.webp",
         thumbnailStorageKey:
@@ -3518,9 +3518,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030646020-7c0af566",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030646020-7c0af566-dsc01591-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030646020-7c0af566-dsc01591-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030646020-7c0af566-dsc01591-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030646020-7c0af566-dsc01591-thumb.webp",
         storageKey:
           "photography/croatia/1785030646020-7c0af566-dsc01591-display.webp",
         thumbnailStorageKey:
@@ -3534,9 +3534,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030651809-fef2f78a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030651809-fef2f78a-dsc01600-thumb.webp",
         storageKey:
           "photography/croatia/1785030651809-fef2f78a-dsc01600-display.webp",
         thumbnailStorageKey:
@@ -3550,9 +3550,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030654831-927dc028",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030654831-927dc028-dsc01602-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030654831-927dc028-dsc01602-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030654831-927dc028-dsc01602-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030654831-927dc028-dsc01602-thumb.webp",
         storageKey:
           "photography/croatia/1785030654831-927dc028-dsc01602-display.webp",
         thumbnailStorageKey:
@@ -3566,9 +3566,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030730369-e2d17bfe",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030730369-e2d17bfe-dsc01610-thumb.webp",
         storageKey:
           "photography/croatia/1785030730369-e2d17bfe-dsc01610-display.webp",
         thumbnailStorageKey:
@@ -3582,9 +3582,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030732560-63013482",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030732560-63013482-dsc01616-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030732560-63013482-dsc01616-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030732560-63013482-dsc01616-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030732560-63013482-dsc01616-thumb.webp",
         storageKey:
           "photography/croatia/1785030732560-63013482-dsc01616-display.webp",
         thumbnailStorageKey:
@@ -3598,9 +3598,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030734545-cd9fbe75",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030734545-cd9fbe75-dsc01624-thumb.webp",
         storageKey:
           "photography/croatia/1785030734545-cd9fbe75-dsc01624-display.webp",
         thumbnailStorageKey:
@@ -3614,9 +3614,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030736838-8cdecdeb",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030736838-8cdecdeb-dsc01636-thumb.webp",
         storageKey:
           "photography/croatia/1785030736838-8cdecdeb-dsc01636-display.webp",
         thumbnailStorageKey:
@@ -3630,9 +3630,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030739309-bc9cccd4",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030739309-bc9cccd4-dsc01650-thumb.webp",
         storageKey:
           "photography/croatia/1785030739309-bc9cccd4-dsc01650-display.webp",
         thumbnailStorageKey:
@@ -3646,9 +3646,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030742330-6ba4f3e5",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030742330-6ba4f3e5-dsc01659-thumb.webp",
         storageKey:
           "photography/croatia/1785030742330-6ba4f3e5-dsc01659-display.webp",
         thumbnailStorageKey:
@@ -3662,9 +3662,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030745180-a6bc0863",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030745180-a6bc0863-dsc01669-thumb.webp",
         storageKey:
           "photography/croatia/1785030745180-a6bc0863-dsc01669-display.webp",
         thumbnailStorageKey:
@@ -3678,9 +3678,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030747385-54c105a0",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030747385-54c105a0-dsc01678-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030747385-54c105a0-dsc01678-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030747385-54c105a0-dsc01678-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030747385-54c105a0-dsc01678-thumb.webp",
         storageKey:
           "photography/croatia/1785030747385-54c105a0-dsc01678-display.webp",
         thumbnailStorageKey:
@@ -3694,9 +3694,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785030749388-3c326a6a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-display.webp",
+        src: "https://media.juanvarela.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-thumb.webp",
+          "https://media.juanvarela.dev/photography/croatia/1785030749388-3c326a6a-dsc01691-thumb.webp",
         storageKey:
           "photography/croatia/1785030749388-3c326a6a-dsc01691-display.webp",
         thumbnailStorageKey:
@@ -3741,9 +3741,9 @@ export const photoTrips: PhotoTrip[] = [
     photos: [
       {
         id: "1785034959996-72ac5dda",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034959996-72ac5dda-img-8221-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034959996-72ac5dda-img-8221-display.webp",
         thumbnailStorageKey:
@@ -3758,9 +3758,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034966449-b9e8bd6d",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034966449-b9e8bd6d-img-7747-display.webp",
         thumbnailStorageKey:
@@ -3775,9 +3775,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034970631-e752d7ba",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034970631-e752d7ba-img-7768-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034970631-e752d7ba-img-7768-display.webp",
         thumbnailStorageKey:
@@ -3792,9 +3792,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034972956-b82fca95",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034972956-b82fca95-img-7775-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034972956-b82fca95-img-7775-display.webp",
         thumbnailStorageKey:
@@ -3809,9 +3809,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034975220-6000a268",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034975220-6000a268-img-7781-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034975220-6000a268-img-7781-display.webp",
         thumbnailStorageKey:
@@ -3826,9 +3826,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034977493-62a73268",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034977493-62a73268-img-7829-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034977493-62a73268-img-7829-display.webp",
         thumbnailStorageKey:
@@ -3843,9 +3843,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034979472-c4af2845",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034979472-c4af2845-img-7833-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034979472-c4af2845-img-7833-display.webp",
         thumbnailStorageKey:
@@ -3860,9 +3860,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034981794-8a12f82f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034981794-8a12f82f-img-7859-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034981794-8a12f82f-img-7859-display.webp",
         thumbnailStorageKey:
@@ -3877,9 +3877,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034984321-aaf5665e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034984321-aaf5665e-img-7863-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034984321-aaf5665e-img-7863-display.webp",
         thumbnailStorageKey:
@@ -3894,9 +3894,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034986382-9b136f8f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034986382-9b136f8f-img-7878-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034986382-9b136f8f-img-7878-display.webp",
         thumbnailStorageKey:
@@ -3911,9 +3911,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034988627-e5f34a40",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034988627-e5f34a40-img-7883-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034988627-e5f34a40-img-7883-display.webp",
         thumbnailStorageKey:
@@ -3928,9 +3928,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034990650-84f6d8d3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034990650-84f6d8d3-img-7894-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034990650-84f6d8d3-img-7894-display.webp",
         thumbnailStorageKey:
@@ -3945,9 +3945,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034992457-109e282f",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034992457-109e282f-img-7916-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034992457-109e282f-img-7916-display.webp",
         thumbnailStorageKey:
@@ -3962,9 +3962,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034993920-a5878138",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034993920-a5878138-img-7938-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034993920-a5878138-img-7938-display.webp",
         thumbnailStorageKey:
@@ -3979,9 +3979,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034995245-0817e532",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034995245-0817e532-img-7945-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034995245-0817e532-img-7945-display.webp",
         thumbnailStorageKey:
@@ -3996,9 +3996,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034996576-9b7b1619",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034996576-9b7b1619-img-7960-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034996576-9b7b1619-img-7960-display.webp",
         thumbnailStorageKey:
@@ -4013,9 +4013,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034998257-516ff525",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034998257-516ff525-img-7963-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034998257-516ff525-img-7963-display.webp",
         thumbnailStorageKey:
@@ -4030,9 +4030,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785034999710-88f217b6",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785034999710-88f217b6-img-7965-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785034999710-88f217b6-img-7965-display.webp",
         thumbnailStorageKey:
@@ -4047,9 +4047,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035001589-9158b699",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035001589-9158b699-img-7980-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035001589-9158b699-img-7980-display.webp",
         thumbnailStorageKey:
@@ -4064,9 +4064,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035003835-cfd68f5e",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035003835-cfd68f5e-img-7982-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035003835-cfd68f5e-img-7982-display.webp",
         thumbnailStorageKey:
@@ -4081,9 +4081,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035006122-400b5c91",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035006122-400b5c91-img-7985-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035006122-400b5c91-img-7985-display.webp",
         thumbnailStorageKey:
@@ -4098,9 +4098,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035008562-bf8e394a",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035008562-bf8e394a-img-8181-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035008562-bf8e394a-img-8181-display.webp",
         thumbnailStorageKey:
@@ -4115,9 +4115,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035011340-e5767151",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035011340-e5767151-img-8159-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035011340-e5767151-img-8159-display.webp",
         thumbnailStorageKey:
@@ -4132,9 +4132,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035014332-eeedb299",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035014332-eeedb299-img-8101-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035014332-eeedb299-img-8101-display.webp",
         thumbnailStorageKey:
@@ -4149,9 +4149,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035017208-04e45b21",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035017208-04e45b21-img-8095-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035017208-04e45b21-img-8095-display.webp",
         thumbnailStorageKey:
@@ -4166,9 +4166,9 @@ export const photoTrips: PhotoTrip[] = [
       },
       {
         id: "1785035020236-1d0712f3",
-        src: "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-display.webp",
+        src: "https://media.juanvarela.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-display.webp",
         thumbnailSrc:
-          "https://pub-a0133653770b4f9ba6d644f3ff2465aa.r2.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-thumb.webp",
+          "https://media.juanvarela.dev/photography/turkey-2025/1785035020236-1d0712f3-img-8083-thumb.webp",
         storageKey:
           "photography/turkey-2025/1785035020236-1d0712f3-img-8083-display.webp",
         thumbnailStorageKey:
