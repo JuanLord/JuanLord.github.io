@@ -26,7 +26,8 @@ const creativeChapters = [
     title: "Photography",
     description:
       "Trip folders built for complete image collections, captions, stories, named locations, and listening companions.",
-    to: "/creative/photography",
+    to: "/photos/",
+    external: true,
     icon: Camera,
     detail: `${publishedPhotoTrips.length} trip folders`,
   },
@@ -36,6 +37,7 @@ const creativeChapters = [
     description:
       "A connected atlas of places, trail records, route geometry, and optional public Strava embeds.",
     to: "/creative/travel",
+    external: false,
     icon: Map,
     detail: `${publishedPlaces.length} places / ${publishedHikes.length} hikes`,
   },
@@ -45,6 +47,7 @@ const creativeChapters = [
     description:
       "Short films, sound studies, and music projects with room for their original media players.",
     to: "/creative/projects",
+    external: false,
     icon: Film,
     detail: `${publishedCreativeProjects.length} projects`,
   },
@@ -69,7 +72,15 @@ export function CreativePage() {
 
           <div className="creative-chapter-grid">
             {creativeChapters.map(
-              ({ description, detail, icon: Icon, index, title, to }) => (
+              ({
+                description,
+                detail,
+                external,
+                icon: Icon,
+                index,
+                title,
+                to,
+              }) => (
                 <article className="creative-chapter-card" key={to}>
                   <div className="creative-chapter-card-top">
                     <span>{index}</span>
@@ -79,9 +90,15 @@ export function CreativePage() {
                   <p>{description}</p>
                   <div className="creative-chapter-card-footer">
                     <small>{detail}</small>
-                    <Link aria-label={`Open ${title}`} to={to}>
-                      <ArrowUpRight aria-hidden size={19} />
-                    </Link>
+                    {external ? (
+                      <a aria-label={`Open ${title}`} href={to}>
+                        <ArrowUpRight aria-hidden size={19} />
+                      </a>
+                    ) : (
+                      <Link aria-label={`Open ${title}`} to={to}>
+                        <ArrowUpRight aria-hidden size={19} />
+                      </Link>
+                    )}
                   </div>
                 </article>
               ),

@@ -8,6 +8,7 @@
     "studio": "node studio/dev.mjs",
     "studio:build": "vite build --config studio/vite.config.ts",
     "build": "tsc -b && vite build",
+    "build:photos": "tsc -b && vite build --mode photos --outDir dist-photos",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "eslint .",
@@ -15,6 +16,7 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "preview": "vite preview",
+    "preview:photos": "vite preview --outDir dist-photos",
     "check": "npm run format:check && npm run lint && npm run typecheck && npm run test && npm run build && npm run studio:build"
   },
   "dependencies": {

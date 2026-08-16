@@ -1,14 +1,9 @@
-import { MotionConfig } from "framer-motion";
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import { App } from "./App";
-import "./styles/index.css";
-import "./styles/creative.css";
+const isPhotographyPath =
+  window.location.pathname === "/photos" ||
+  window.location.pathname.startsWith("/photos/");
 
-createRoot(document.getElementById("root")!).render(
-  <StrictMode>
-    <MotionConfig reducedMotion="user">
-      <App />
-    </MotionConfig>
-  </StrictMode>,
-);
+if (import.meta.env.VITE_PHOTOS_SITE === "1" || isPhotographyPath) {
+  void import("./photos-main");
+} else {
+  void import("./portfolio-main");
+}
