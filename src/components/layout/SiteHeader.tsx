@@ -8,8 +8,9 @@ const navigation = [
   { label: "About", to: "/about" },
   { label: "Projects", to: "/projects" },
   { label: "Creative", to: "/creative" },
+  { label: "Photos", href: "/photos/" },
   { label: "Contact", to: "/contact" },
-];
+] as const;
 
 function navClassName({ isActive }: { isActive: boolean }) {
   return `nav-link${isActive ? " nav-link-active" : ""}`;
@@ -51,11 +52,17 @@ export function SiteHeader() {
         </NavLink>
 
         <nav aria-label="Primary navigation" className="desktop-nav">
-          {navigation.map((item) => (
-            <NavLink className={navClassName} key={item.to} to={item.to}>
-              {item.label}
-            </NavLink>
-          ))}
+          {navigation.map((item) =>
+            "href" in item ? (
+              <a className="nav-link" href={item.href} key={item.href}>
+                {item.label}
+              </a>
+            ) : (
+              <NavLink className={navClassName} key={item.to} to={item.to}>
+                {item.label}
+              </NavLink>
+            ),
+          )}
         </nav>
 
         <div className="header-status" aria-label="Current availability">
@@ -87,19 +94,36 @@ export function SiteHeader() {
           id="mobile-navigation"
         >
           <Container className="mobile-nav-inner">
-            {navigation.map((item, index) => (
-              <NavLink
-                className={navClassName}
-                key={item.to}
-                onClick={() => setIsOpen(false)}
-                to={item.to}
-              >
-                <span className="mobile-nav-index">
-                  {String(index).padStart(2, "0")}
-                </span>
-                {item.label}
-              </NavLink>
-            ))}
+            {navigation.map((item, index) => {
+              const label = (
+                <>
+                  <span className="mobile-nav-index">
+                    {String(index).padStart(2, "0")}
+                  </span>
+                  {item.label}
+                </>
+              );
+
+              return "href" in item ? (
+                <a
+                  className="nav-link"
+                  href={item.href}
+                  key={item.href}
+                  onClick={() => setIsOpen(false)}
+                >
+                  {label}
+                </a>
+              ) : (
+                <NavLink
+                  className={navClassName}
+                  key={item.to}
+                  onClick={() => setIsOpen(false)}
+                  to={item.to}
+                >
+                  {label}
+                </NavLink>
+              );
+            })}
           </Container>
         </nav>
       ) : null}

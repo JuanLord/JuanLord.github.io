@@ -1,5 +1,7 @@
 import { HashRouter, Route, Routes } from "react-router-dom";
 import { SiteLayout } from "./components/layout/SiteLayout";
+import { PhotoArchiveLayout } from "./components/photos/PhotoArchiveLayout";
+import { isDedicatedPhotoArchive } from "./lib/photoArchive";
 import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { CreativePage } from "./pages/CreativePage";
@@ -8,35 +10,62 @@ import { HikeDetailPage } from "./pages/HikeDetailPage";
 import { HomePage } from "./pages/HomePage";
 import { NotFoundPage } from "./pages/NotFoundPage";
 import { PhotographyPage } from "./pages/PhotographyPage";
+import { PhotoArchivePage } from "./pages/PhotoArchivePage";
+import { PhotoArchiveTripPage } from "./pages/PhotoArchiveTripPage";
 import { PhotoTripPage } from "./pages/PhotoTripPage";
 import { ProjectDetailPage } from "./pages/ProjectDetailPage";
 import { ProjectsPage } from "./pages/ProjectsPage";
 import { TravelPage } from "./pages/TravelPage";
 
 export function App() {
+  const dedicatedPhotoArchive = isDedicatedPhotoArchive();
+
   return (
     <HashRouter>
       <Routes>
-        <Route element={<SiteLayout />}>
-          <Route index element={<HomePage />} />
-          <Route path="about" element={<AboutPage />} />
-          <Route path="contact" element={<ContactPage />} />
-          <Route path="creative" element={<CreativePage />} />
-          <Route path="creative/photography" element={<PhotographyPage />} />
-          <Route
-            path="creative/photography/:tripSlug"
-            element={<PhotoTripPage />}
-          />
-          <Route path="creative/travel" element={<TravelPage />} />
-          <Route
-            path="creative/travel/hikes/:hikeSlug"
-            element={<HikeDetailPage />}
-          />
-          <Route path="creative/projects" element={<CreativeProjectsPage />} />
-          <Route path="projects" element={<ProjectsPage />} />
-          <Route path="projects/:slug" element={<ProjectDetailPage />} />
-          <Route path="*" element={<NotFoundPage />} />
-        </Route>
+        {dedicatedPhotoArchive ? (
+          <Route element={<PhotoArchiveLayout />}>
+            <Route index element={<PhotoArchivePage />} />
+            <Route path=":tripSlug" element={<PhotoArchiveTripPage />} />
+          </Route>
+        ) : (
+          <>
+            <Route element={<PhotoArchiveLayout />}>
+              <Route path="photos" element={<PhotoArchivePage />} />
+              <Route
+                path="photos/:tripSlug"
+                element={<PhotoArchiveTripPage />}
+              />
+            </Route>
+
+            <Route element={<SiteLayout />}>
+              <Route index element={<HomePage />} />
+              <Route path="about" element={<AboutPage />} />
+              <Route path="contact" element={<ContactPage />} />
+              <Route path="creative" element={<CreativePage />} />
+              <Route
+                path="creative/photography"
+                element={<PhotographyPage />}
+              />
+              <Route
+                path="creative/photography/:tripSlug"
+                element={<PhotoTripPage />}
+              />
+              <Route path="creative/travel" element={<TravelPage />} />
+              <Route
+                path="creative/travel/hikes/:hikeSlug"
+                element={<HikeDetailPage />}
+              />
+              <Route
+                path="creative/projects"
+                element={<CreativeProjectsPage />}
+              />
+              <Route path="projects" element={<ProjectsPage />} />
+              <Route path="projects/:slug" element={<ProjectDetailPage />} />
+              <Route path="*" element={<NotFoundPage />} />
+            </Route>
+          </>
+        )}
       </Routes>
     </HashRouter>
   );

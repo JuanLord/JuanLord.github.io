@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { render, screen, waitFor } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { App } from "./App";
 import {
@@ -10,12 +10,16 @@ import {
   profile,
   projects,
 } from "./content";
+import { hasTrustedEmbed } from "./lib/embeds";
 
 const publishedProjects = projects.filter(
   ({ status }) => status === "published",
 );
 const publishedTrips = photoTrips.filter(
   ({ status }) => status === "published",
+);
+const publishedArchivePhotos = publishedTrips.flatMap((trip) =>
+  trip.photos.filter(({ src, status }) => status === "published" && src),
 );
 const publishedHikes = hikes.filter(({ status }) => status === "published");
 const publishedPlaces = places.filter(({ status }) => status === "published");
@@ -37,6 +41,10 @@ describe("App shell", () => {
     expect(
       screen.getByRole("link", { name: "Juan Varela, home" }),
     ).toBeInTheDocument();
+    expect(screen.getByRole("link", { name: "Photos" })).toHaveAttribute(
+      "href",
+      "/photos/",
+    );
     expect(screen.queryByText(/placeholder/i)).not.toBeInTheDocument();
   });
 
@@ -201,6 +209,119 @@ describe("App shell", () => {
     expect(
       screen.getAllByRole("link", { name: /Open .* photo folder/ }),
     ).toHaveLength(publishedTrips.length);
+  });
+
+  it("renders the photography journal with an incremental image wall, folders, map, and soundtracks", async () => {
+    const user = userEvent.setup();
+    window.location.hash = "#/photos";
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", {
+        level: 1,
+      }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("button", { name: /Preview photograph/ }),
+    ).toHaveLength(Math.min(48, publishedArchivePhotos.length));
+    await user.click(screen.getByRole("button", { name: "Load more" }));
+    expect(
+      screen.getAllByRole("button", { name: /Preview photograph/ }),
+    ).toHaveLength(Math.min(96, publishedArchivePhotos.length));
+    expect(
+      screen.getAllByRole("link", {
+        name: /Open .* photography folder/,
+      }),
+    ).toHaveLength(publishedTrips.length);
+    expect(
+      await screen.findByRole("region", {
+        name: "Interactive map of all photography locations",
+      }),
+    ).toBeInTheDocument();
+    expect(
+      document.querySelectorAll(".photo-archive-soundtrack iframe"),
+    ).toHaveLength(
+      publishedTrips.filter(({ soundtrack }) => hasTrustedEmbed(soundtrack))
+        .length,
+    );
+    expect(document.querySelector(".photo-archive-wall figcaption")).toBeNull();
+  });
+
+  it("opens the photography lightbox without adding text to the photo wall", async () => {
+    const user = userEvent.setup();
+    window.location.hash = "#/photos";
+    render(<App />);
+
+    const firstPhoto = screen.getAllByRole("button", {
+      name: /Preview photograph/,
+    })[0];
+    await user.click(firstPhoto);
+
+    expect(
+      screen.getByRole("dialog", { name: /photograph preview/ }),
+    ).toBeInTheDocument();
+    await user.click(screen.getByRole("button", { name: "Next photograph" }));
+    expect(
+      screen.getByText(
+        `002 / ${String(Math.min(48, publishedArchivePhotos.length)).padStart(3, "0")}`,
+      ),
+    ).toBeInTheDocument();
+  });
+
+  it("renders a photography folder with its complete captionless photo wall", async () => {
+    const trip = publishedTrips[0];
+    window.location.hash = `#/photos/${trip.slug}`;
+    render(<App />);
+
+    expect(
+      screen.getByRole("heading", { level: 1, name: trip.title }),
+    ).toBeInTheDocument();
+    expect(
+      screen.getAllByRole("button", { name: /Preview photograph/ }),
+    ).toHaveLength(
+      trip.photos.filter(({ src, status }) => status === "published" && src)
+        .length,
+    );
+    expect(document.querySelector(".photo-archive-wall figcaption")).toBeNull();
+    expect(document.title).toBe(`${trip.title} | Juan Varela Photography`);
+    await waitFor(() => {
+      expect(
+        screen.queryByText("Loading location atlas"),
+      ).not.toBeInTheDocument();
+    });
+  });
+
+  it("orders a folder chronologically from left to right", async () => {
+    const user = userEvent.setup();
+    const trip = publishedTrips[0];
+    const publishedPhotos = trip.photos.filter(
+      ({ src, status }) => status === "published" && src,
+    );
+    const expectedFirst = [...publishedPhotos].sort((left, right) => {
+      const dateDifference = Date.parse(left.date) - Date.parse(right.date);
+      return (
+        dateDifference ||
+        publishedPhotos.indexOf(left) - publishedPhotos.indexOf(right)
+      );
+    })[0];
+
+    window.location.hash = `#/photos/${trip.slug}`;
+    render(<App />);
+
+    await user.click(
+      screen.getByRole("button", {
+        name: "Arrange photographs chronologically",
+      }),
+    );
+
+    const wall = document.querySelector(".photo-archive-wall");
+    expect(wall).toHaveClass("photo-archive-wall--chronological");
+    expect(
+      wall?.querySelector<HTMLImageElement>("img")?.getAttribute("src"),
+    ).toBe(expectedFirst.thumbnailSrc ?? expectedFirst.src);
+    expect(
+      screen.getByRole("button", { name: "Use original photo order" }),
+    ).toHaveAttribute("aria-pressed", "true");
   });
 
   it("renders a photography trip with a named location section", () => {
